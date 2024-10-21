@@ -144,6 +144,7 @@
             this.btn_DangNhap.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_DangNhap.UseAccentColor = true;
             this.btn_DangNhap.UseVisualStyleBackColor = true;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // label_QuenMatKhau
             // 

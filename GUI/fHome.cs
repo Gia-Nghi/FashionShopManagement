@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,9 +22,17 @@ namespace GUI
 
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
-        public fHome()
+        private Account loginAccount;
+        public Account LoginAccount
+        {
+            get { return loginAccount; }
+            set { loginAccount = value; }
+        }
+
+        public fHome(Account loginAccount)
         {
             InitializeComponent();
+            this.LoginAccount = loginAccount;
         }
 
         private void SCANT_Click(object sender, EventArgs e)
