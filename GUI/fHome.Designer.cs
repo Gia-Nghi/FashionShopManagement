@@ -40,22 +40,19 @@
             this.MAILLLE = new ReaLTaiizor.Controls.LinkLabelEdit();
             this.BOTPLSR = new ReaLTaiizor.Controls.LostSeparator();
             this.STATELLE = new ReaLTaiizor.Controls.LinkLabelEdit();
-            this.PRIVACYT = new ReaLTaiizor.Controls.PoisonTile();
-            this.CONNECTIONT = new ReaLTaiizor.Controls.PoisonTile();
-            this.PHONET = new ReaLTaiizor.Controls.PoisonTile();
-            this.MONEYT = new ReaLTaiizor.Controls.PoisonTile();
-            this.SCANT = new ReaLTaiizor.Controls.PoisonTile();
-            this.PASSWORDT = new ReaLTaiizor.Controls.PoisonTile();
-            this.CLEANT = new ReaLTaiizor.Controls.PoisonTile();
-            this.UPDATET = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_NhanVien = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_ThongTin = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_CaiDat = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_HoTro = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_SanPham = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_BaoCao = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_DanhMucSanPham = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_GioHang = new ReaLTaiizor.Controls.PoisonTile();
             this.TOPPL = new System.Windows.Forms.Panel();
             this.MINIMIZEB = new ReaLTaiizor.Controls.RoyalButton();
             this.CLOSEB = new ReaLTaiizor.Controls.RoyalButton();
-            this.DETAILB = new ReaLTaiizor.Controls.MetroButton();
             this.PROTECTPB = new System.Windows.Forms.PictureBox();
             this.PROTECTLE = new ReaLTaiizor.Controls.LabelEdit();
-            this.USINGLE = new ReaLTaiizor.Controls.LabelEdit();
-            this.UPGRADEB = new ReaLTaiizor.Controls.LostCancelButton();
             this.MIDPL.SuspendLayout();
             this.FILLPL.SuspendLayout();
             this.BOTPL.SuspendLayout();
@@ -75,7 +72,7 @@
             this.TOPSR.Margin = new System.Windows.Forms.Padding(0);
             this.TOPSR.Name = "TOPSR";
             this.TOPSR.NoRounding = false;
-            this.TOPSR.Size = new System.Drawing.Size(1149, 1);
+            this.TOPSR.Size = new System.Drawing.Size(1200, 1);
             this.TOPSR.TabIndex = 5;
             this.TOPSR.Text = "airSeparator1";
             this.TOPSR.Transparent = false;
@@ -88,11 +85,11 @@
             this.BOTSR.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BOTSR.Font = new System.Drawing.Font("Verdana", 8F);
             this.BOTSR.Image = null;
-            this.BOTSR.Location = new System.Drawing.Point(0, 826);
+            this.BOTSR.Location = new System.Drawing.Point(0, 911);
             this.BOTSR.Margin = new System.Windows.Forms.Padding(0);
             this.BOTSR.Name = "BOTSR";
             this.BOTSR.NoRounding = false;
-            this.BOTSR.Size = new System.Drawing.Size(1149, 1);
+            this.BOTSR.Size = new System.Drawing.Size(1200, 1);
             this.BOTSR.TabIndex = 3;
             this.BOTSR.Text = "BOTSR";
             this.BOTSR.Transparent = false;
@@ -100,19 +97,19 @@
             // MIDPL
             // 
             this.MIDPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MIDPL.Controls.Add(this.PRIVACYT);
-            this.MIDPL.Controls.Add(this.CONNECTIONT);
-            this.MIDPL.Controls.Add(this.PHONET);
-            this.MIDPL.Controls.Add(this.MONEYT);
-            this.MIDPL.Controls.Add(this.SCANT);
-            this.MIDPL.Controls.Add(this.PASSWORDT);
-            this.MIDPL.Controls.Add(this.CLEANT);
-            this.MIDPL.Controls.Add(this.UPDATET);
+            this.MIDPL.Controls.Add(this.btn_NhanVien);
+            this.MIDPL.Controls.Add(this.btn_ThongTin);
+            this.MIDPL.Controls.Add(this.btn_CaiDat);
+            this.MIDPL.Controls.Add(this.btn_HoTro);
+            this.MIDPL.Controls.Add(this.btn_SanPham);
+            this.MIDPL.Controls.Add(this.btn_BaoCao);
+            this.MIDPL.Controls.Add(this.btn_DanhMucSanPham);
+            this.MIDPL.Controls.Add(this.btn_GioHang);
             this.MIDPL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MIDPL.Location = new System.Drawing.Point(0, 309);
             this.MIDPL.Margin = new System.Windows.Forms.Padding(0);
             this.MIDPL.Name = "MIDPL";
-            this.MIDPL.Size = new System.Drawing.Size(1149, 517);
+            this.MIDPL.Size = new System.Drawing.Size(1200, 602);
             this.MIDPL.TabIndex = 6;
             // 
             // FILLPL
@@ -128,7 +125,7 @@
             this.FILLPL.Location = new System.Drawing.Point(0, 0);
             this.FILLPL.Margin = new System.Windows.Forms.Padding(0);
             this.FILLPL.Name = "FILLPL";
-            this.FILLPL.Size = new System.Drawing.Size(1149, 875);
+            this.FILLPL.Size = new System.Drawing.Size(1200, 960);
             this.FILLPL.TabIndex = 5;
             // 
             // BOTPL
@@ -142,10 +139,10 @@
             this.BOTPL.Controls.Add(this.BOTPLSR);
             this.BOTPL.Controls.Add(this.STATELLE);
             this.BOTPL.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BOTPL.Location = new System.Drawing.Point(0, 827);
+            this.BOTPL.Location = new System.Drawing.Point(0, 912);
             this.BOTPL.Margin = new System.Windows.Forms.Padding(0);
             this.BOTPL.Name = "BOTPL";
-            this.BOTPL.Size = new System.Drawing.Size(1149, 48);
+            this.BOTPL.Size = new System.Drawing.Size(1200, 48);
             this.BOTPL.TabIndex = 0;
             // 
             // CONNECTT
@@ -266,7 +263,7 @@
             this.MAILLLE.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MAILLLE.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.MAILLLE.LinkColor = System.Drawing.Color.SeaGreen;
-            this.MAILLLE.Location = new System.Drawing.Point(878, 0);
+            this.MAILLLE.Location = new System.Drawing.Point(929, 0);
             this.MAILLLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MAILLLE.Name = "MAILLLE";
             this.MAILLLE.Size = new System.Drawing.Size(189, 48);
@@ -298,7 +295,7 @@
             this.STATELLE.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.STATELLE.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.STATELLE.LinkColor = System.Drawing.Color.SeaGreen;
-            this.STATELLE.Location = new System.Drawing.Point(1067, 0);
+            this.STATELLE.Location = new System.Drawing.Point(1118, 0);
             this.STATELLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.STATELLE.Name = "STATELLE";
             this.STATELLE.Size = new System.Drawing.Size(82, 48);
@@ -308,187 +305,187 @@
             this.STATELLE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.STATELLE.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             // 
-            // PRIVACYT
+            // btn_NhanVien
             // 
-            this.PRIVACYT.ActiveControl = null;
-            this.PRIVACYT.BackColor = System.Drawing.Color.White;
-            this.PRIVACYT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PRIVACYT.ForeColor = System.Drawing.Color.Black;
-            this.PRIVACYT.Location = new System.Drawing.Point(38, 228);
-            this.PRIVACYT.Margin = new System.Windows.Forms.Padding(4);
-            this.PRIVACYT.Name = "PRIVACYT";
-            this.PRIVACYT.Size = new System.Drawing.Size(260, 176);
-            this.PRIVACYT.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.PRIVACYT.TabIndex = 12;
-            this.PRIVACYT.Text = "Nhân viên";
-            this.PRIVACYT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.PRIVACYT.TileImage = global::GUI.Properties.Resources.people;
-            this.PRIVACYT.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PRIVACYT.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.PRIVACYT.UseCustomBackColor = true;
-            this.PRIVACYT.UseCustomForeColor = true;
-            this.PRIVACYT.UseSelectable = true;
-            this.PRIVACYT.UseStyleColors = true;
-            this.PRIVACYT.UseTileImage = true;
+            this.btn_NhanVien.ActiveControl = null;
+            this.btn_NhanVien.BackColor = System.Drawing.Color.White;
+            this.btn_NhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_NhanVien.ForeColor = System.Drawing.Color.Black;
+            this.btn_NhanVien.Location = new System.Drawing.Point(38, 228);
+            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_NhanVien.Name = "btn_NhanVien";
+            this.btn_NhanVien.Size = new System.Drawing.Size(260, 176);
+            this.btn_NhanVien.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_NhanVien.TabIndex = 12;
+            this.btn_NhanVien.Text = "Nhân viên";
+            this.btn_NhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_NhanVien.TileImage = global::GUI.Properties.Resources.people;
+            this.btn_NhanVien.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_NhanVien.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_NhanVien.UseCustomBackColor = true;
+            this.btn_NhanVien.UseCustomForeColor = true;
+            this.btn_NhanVien.UseSelectable = true;
+            this.btn_NhanVien.UseStyleColors = true;
+            this.btn_NhanVien.UseTileImage = true;
             // 
-            // CONNECTIONT
+            // btn_ThongTin
             // 
-            this.CONNECTIONT.ActiveControl = null;
-            this.CONNECTIONT.BackColor = System.Drawing.Color.White;
-            this.CONNECTIONT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CONNECTIONT.ForeColor = System.Drawing.Color.Black;
-            this.CONNECTIONT.Location = new System.Drawing.Point(860, 228);
-            this.CONNECTIONT.Margin = new System.Windows.Forms.Padding(4);
-            this.CONNECTIONT.Name = "CONNECTIONT";
-            this.CONNECTIONT.Size = new System.Drawing.Size(260, 176);
-            this.CONNECTIONT.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.CONNECTIONT.TabIndex = 11;
-            this.CONNECTIONT.Text = "Thông tin";
-            this.CONNECTIONT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.CONNECTIONT.TileImage = global::GUI.Properties.Resources.list;
-            this.CONNECTIONT.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CONNECTIONT.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.CONNECTIONT.UseCustomBackColor = true;
-            this.CONNECTIONT.UseCustomForeColor = true;
-            this.CONNECTIONT.UseSelectable = true;
-            this.CONNECTIONT.UseStyleColors = true;
-            this.CONNECTIONT.UseTileImage = true;
+            this.btn_ThongTin.ActiveControl = null;
+            this.btn_ThongTin.BackColor = System.Drawing.Color.White;
+            this.btn_ThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ThongTin.ForeColor = System.Drawing.Color.Black;
+            this.btn_ThongTin.Location = new System.Drawing.Point(860, 228);
+            this.btn_ThongTin.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ThongTin.Name = "btn_ThongTin";
+            this.btn_ThongTin.Size = new System.Drawing.Size(260, 176);
+            this.btn_ThongTin.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_ThongTin.TabIndex = 11;
+            this.btn_ThongTin.Text = "Thông tin";
+            this.btn_ThongTin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ThongTin.TileImage = global::GUI.Properties.Resources.list;
+            this.btn_ThongTin.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ThongTin.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_ThongTin.UseCustomBackColor = true;
+            this.btn_ThongTin.UseCustomForeColor = true;
+            this.btn_ThongTin.UseSelectable = true;
+            this.btn_ThongTin.UseStyleColors = true;
+            this.btn_ThongTin.UseTileImage = true;
             // 
-            // PHONET
+            // btn_CaiDat
             // 
-            this.PHONET.ActiveControl = null;
-            this.PHONET.BackColor = System.Drawing.Color.White;
-            this.PHONET.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PHONET.ForeColor = System.Drawing.Color.Black;
-            this.PHONET.Location = new System.Drawing.Point(585, 228);
-            this.PHONET.Margin = new System.Windows.Forms.Padding(4);
-            this.PHONET.Name = "PHONET";
-            this.PHONET.Size = new System.Drawing.Size(260, 176);
-            this.PHONET.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.PHONET.TabIndex = 10;
-            this.PHONET.Text = "Cài đặt";
-            this.PHONET.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.PHONET.TileImage = global::GUI.Properties.Resources.cogwheel;
-            this.PHONET.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PHONET.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.PHONET.UseCustomBackColor = true;
-            this.PHONET.UseCustomForeColor = true;
-            this.PHONET.UseSelectable = true;
-            this.PHONET.UseStyleColors = true;
-            this.PHONET.UseTileImage = true;
+            this.btn_CaiDat.ActiveControl = null;
+            this.btn_CaiDat.BackColor = System.Drawing.Color.White;
+            this.btn_CaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CaiDat.ForeColor = System.Drawing.Color.Black;
+            this.btn_CaiDat.Location = new System.Drawing.Point(585, 228);
+            this.btn_CaiDat.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CaiDat.Name = "btn_CaiDat";
+            this.btn_CaiDat.Size = new System.Drawing.Size(260, 176);
+            this.btn_CaiDat.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_CaiDat.TabIndex = 10;
+            this.btn_CaiDat.Text = "Cài đặt";
+            this.btn_CaiDat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_CaiDat.TileImage = global::GUI.Properties.Resources.cogwheel;
+            this.btn_CaiDat.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_CaiDat.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_CaiDat.UseCustomBackColor = true;
+            this.btn_CaiDat.UseCustomForeColor = true;
+            this.btn_CaiDat.UseSelectable = true;
+            this.btn_CaiDat.UseStyleColors = true;
+            this.btn_CaiDat.UseTileImage = true;
             // 
-            // MONEYT
+            // btn_HoTro
             // 
-            this.MONEYT.ActiveControl = null;
-            this.MONEYT.BackColor = System.Drawing.Color.White;
-            this.MONEYT.ForeColor = System.Drawing.Color.Black;
-            this.MONEYT.Location = new System.Drawing.Point(310, 228);
-            this.MONEYT.Margin = new System.Windows.Forms.Padding(4);
-            this.MONEYT.Name = "MONEYT";
-            this.MONEYT.Size = new System.Drawing.Size(260, 176);
-            this.MONEYT.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.MONEYT.TabIndex = 9;
-            this.MONEYT.Text = "Hỗ trợ";
-            this.MONEYT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.MONEYT.TileImage = global::GUI.Properties.Resources.working;
-            this.MONEYT.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MONEYT.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.MONEYT.UseCustomBackColor = true;
-            this.MONEYT.UseCustomForeColor = true;
-            this.MONEYT.UseSelectable = true;
-            this.MONEYT.UseStyleColors = true;
-            this.MONEYT.UseTileImage = true;
+            this.btn_HoTro.ActiveControl = null;
+            this.btn_HoTro.BackColor = System.Drawing.Color.White;
+            this.btn_HoTro.ForeColor = System.Drawing.Color.Black;
+            this.btn_HoTro.Location = new System.Drawing.Point(310, 228);
+            this.btn_HoTro.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_HoTro.Name = "btn_HoTro";
+            this.btn_HoTro.Size = new System.Drawing.Size(260, 176);
+            this.btn_HoTro.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_HoTro.TabIndex = 9;
+            this.btn_HoTro.Text = "Hỗ trợ";
+            this.btn_HoTro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_HoTro.TileImage = global::GUI.Properties.Resources.working;
+            this.btn_HoTro.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_HoTro.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_HoTro.UseCustomBackColor = true;
+            this.btn_HoTro.UseCustomForeColor = true;
+            this.btn_HoTro.UseSelectable = true;
+            this.btn_HoTro.UseStyleColors = true;
+            this.btn_HoTro.UseTileImage = true;
             // 
-            // SCANT
+            // btn_SanPham
             // 
-            this.SCANT.ActiveControl = null;
-            this.SCANT.BackColor = System.Drawing.Color.White;
-            this.SCANT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SCANT.ForeColor = System.Drawing.Color.Black;
-            this.SCANT.Location = new System.Drawing.Point(38, 38);
-            this.SCANT.Margin = new System.Windows.Forms.Padding(4);
-            this.SCANT.Name = "SCANT";
-            this.SCANT.Size = new System.Drawing.Size(260, 176);
-            this.SCANT.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.SCANT.TabIndex = 8;
-            this.SCANT.Text = "Sản phẩm";
-            this.SCANT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.SCANT.TileImage = global::GUI.Properties.Resources.wardrobe;
-            this.SCANT.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SCANT.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.SCANT.UseCustomBackColor = true;
-            this.SCANT.UseCustomForeColor = true;
-            this.SCANT.UseSelectable = true;
-            this.SCANT.UseStyleColors = true;
-            this.SCANT.UseTileImage = true;
-            this.SCANT.Click += new System.EventHandler(this.SCANT_Click);
+            this.btn_SanPham.ActiveControl = null;
+            this.btn_SanPham.BackColor = System.Drawing.Color.White;
+            this.btn_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SanPham.ForeColor = System.Drawing.Color.Black;
+            this.btn_SanPham.Location = new System.Drawing.Point(38, 38);
+            this.btn_SanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_SanPham.Name = "btn_SanPham";
+            this.btn_SanPham.Size = new System.Drawing.Size(260, 176);
+            this.btn_SanPham.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_SanPham.TabIndex = 8;
+            this.btn_SanPham.Text = "Sản phẩm";
+            this.btn_SanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_SanPham.TileImage = global::GUI.Properties.Resources.wardrobe;
+            this.btn_SanPham.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_SanPham.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_SanPham.UseCustomBackColor = true;
+            this.btn_SanPham.UseCustomForeColor = true;
+            this.btn_SanPham.UseSelectable = true;
+            this.btn_SanPham.UseStyleColors = true;
+            this.btn_SanPham.UseTileImage = true;
+            this.btn_SanPham.Click += new System.EventHandler(this.SCANT_Click);
             // 
-            // PASSWORDT
+            // btn_BaoCao
             // 
-            this.PASSWORDT.ActiveControl = null;
-            this.PASSWORDT.BackColor = System.Drawing.Color.White;
-            this.PASSWORDT.ForeColor = System.Drawing.Color.Black;
-            this.PASSWORDT.Location = new System.Drawing.Point(860, 38);
-            this.PASSWORDT.Margin = new System.Windows.Forms.Padding(4);
-            this.PASSWORDT.Name = "PASSWORDT";
-            this.PASSWORDT.Size = new System.Drawing.Size(260, 176);
-            this.PASSWORDT.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.PASSWORDT.TabIndex = 7;
-            this.PASSWORDT.Text = "Báo cáo";
-            this.PASSWORDT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.PASSWORDT.TileImage = global::GUI.Properties.Resources.report1;
-            this.PASSWORDT.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PASSWORDT.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.PASSWORDT.UseCustomBackColor = true;
-            this.PASSWORDT.UseCustomForeColor = true;
-            this.PASSWORDT.UseSelectable = true;
-            this.PASSWORDT.UseStyleColors = true;
-            this.PASSWORDT.UseTileImage = true;
+            this.btn_BaoCao.ActiveControl = null;
+            this.btn_BaoCao.BackColor = System.Drawing.Color.White;
+            this.btn_BaoCao.ForeColor = System.Drawing.Color.Black;
+            this.btn_BaoCao.Location = new System.Drawing.Point(860, 38);
+            this.btn_BaoCao.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_BaoCao.Name = "btn_BaoCao";
+            this.btn_BaoCao.Size = new System.Drawing.Size(260, 176);
+            this.btn_BaoCao.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_BaoCao.TabIndex = 7;
+            this.btn_BaoCao.Text = "Báo cáo";
+            this.btn_BaoCao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_BaoCao.TileImage = global::GUI.Properties.Resources.report1;
+            this.btn_BaoCao.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_BaoCao.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_BaoCao.UseCustomBackColor = true;
+            this.btn_BaoCao.UseCustomForeColor = true;
+            this.btn_BaoCao.UseSelectable = true;
+            this.btn_BaoCao.UseStyleColors = true;
+            this.btn_BaoCao.UseTileImage = true;
             // 
-            // CLEANT
+            // btn_DanhMucSanPham
             // 
-            this.CLEANT.ActiveControl = null;
-            this.CLEANT.BackColor = System.Drawing.Color.White;
-            this.CLEANT.ForeColor = System.Drawing.Color.Black;
-            this.CLEANT.Location = new System.Drawing.Point(585, 38);
-            this.CLEANT.Margin = new System.Windows.Forms.Padding(4);
-            this.CLEANT.Name = "CLEANT";
-            this.CLEANT.Size = new System.Drawing.Size(260, 176);
-            this.CLEANT.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.CLEANT.TabIndex = 6;
-            this.CLEANT.Text = "Danh mục sản phẩm";
-            this.CLEANT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.CLEANT.TileImage = global::GUI.Properties.Resources.categories;
-            this.CLEANT.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CLEANT.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.CLEANT.UseCustomBackColor = true;
-            this.CLEANT.UseCustomForeColor = true;
-            this.CLEANT.UseSelectable = true;
-            this.CLEANT.UseStyleColors = true;
-            this.CLEANT.UseTileImage = true;
+            this.btn_DanhMucSanPham.ActiveControl = null;
+            this.btn_DanhMucSanPham.BackColor = System.Drawing.Color.White;
+            this.btn_DanhMucSanPham.ForeColor = System.Drawing.Color.Black;
+            this.btn_DanhMucSanPham.Location = new System.Drawing.Point(585, 38);
+            this.btn_DanhMucSanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_DanhMucSanPham.Name = "btn_DanhMucSanPham";
+            this.btn_DanhMucSanPham.Size = new System.Drawing.Size(260, 176);
+            this.btn_DanhMucSanPham.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_DanhMucSanPham.TabIndex = 6;
+            this.btn_DanhMucSanPham.Text = "Danh mục sản phẩm";
+            this.btn_DanhMucSanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_DanhMucSanPham.TileImage = global::GUI.Properties.Resources.categories;
+            this.btn_DanhMucSanPham.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_DanhMucSanPham.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_DanhMucSanPham.UseCustomBackColor = true;
+            this.btn_DanhMucSanPham.UseCustomForeColor = true;
+            this.btn_DanhMucSanPham.UseSelectable = true;
+            this.btn_DanhMucSanPham.UseStyleColors = true;
+            this.btn_DanhMucSanPham.UseTileImage = true;
             // 
-            // UPDATET
+            // btn_GioHang
             // 
-            this.UPDATET.ActiveControl = null;
-            this.UPDATET.BackColor = System.Drawing.Color.White;
-            this.UPDATET.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UPDATET.ForeColor = System.Drawing.Color.Black;
-            this.UPDATET.Location = new System.Drawing.Point(310, 38);
-            this.UPDATET.Margin = new System.Windows.Forms.Padding(4);
-            this.UPDATET.Name = "UPDATET";
-            this.UPDATET.Size = new System.Drawing.Size(260, 176);
-            this.UPDATET.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.UPDATET.TabIndex = 5;
-            this.UPDATET.Text = "Giỏ hàng";
-            this.UPDATET.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.UPDATET.TileImage = global::GUI.Properties.Resources.trolley;
-            this.UPDATET.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.UPDATET.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.UPDATET.UseCustomBackColor = true;
-            this.UPDATET.UseCustomForeColor = true;
-            this.UPDATET.UseSelectable = true;
-            this.UPDATET.UseStyleColors = true;
-            this.UPDATET.UseTileImage = true;
+            this.btn_GioHang.ActiveControl = null;
+            this.btn_GioHang.BackColor = System.Drawing.Color.White;
+            this.btn_GioHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_GioHang.ForeColor = System.Drawing.Color.Black;
+            this.btn_GioHang.Location = new System.Drawing.Point(310, 38);
+            this.btn_GioHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_GioHang.Name = "btn_GioHang";
+            this.btn_GioHang.Size = new System.Drawing.Size(260, 176);
+            this.btn_GioHang.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_GioHang.TabIndex = 5;
+            this.btn_GioHang.Text = "Giỏ hàng";
+            this.btn_GioHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_GioHang.TileImage = global::GUI.Properties.Resources.trolley;
+            this.btn_GioHang.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_GioHang.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_GioHang.UseCustomBackColor = true;
+            this.btn_GioHang.UseCustomForeColor = true;
+            this.btn_GioHang.UseSelectable = true;
+            this.btn_GioHang.UseStyleColors = true;
+            this.btn_GioHang.UseTileImage = true;
             // 
             // TOPPL
             // 
@@ -497,16 +494,13 @@
             this.TOPPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TOPPL.Controls.Add(this.MINIMIZEB);
             this.TOPPL.Controls.Add(this.CLOSEB);
-            this.TOPPL.Controls.Add(this.DETAILB);
             this.TOPPL.Controls.Add(this.PROTECTPB);
             this.TOPPL.Controls.Add(this.PROTECTLE);
-            this.TOPPL.Controls.Add(this.USINGLE);
-            this.TOPPL.Controls.Add(this.UPGRADEB);
             this.TOPPL.Dock = System.Windows.Forms.DockStyle.Top;
             this.TOPPL.Location = new System.Drawing.Point(0, 0);
             this.TOPPL.Margin = new System.Windows.Forms.Padding(0);
             this.TOPPL.Name = "TOPPL";
-            this.TOPPL.Size = new System.Drawing.Size(1149, 308);
+            this.TOPPL.Size = new System.Drawing.Size(1200, 308);
             this.TOPPL.TabIndex = 1;
             this.TOPPL.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             // 
@@ -552,33 +546,6 @@
             this.CLOSEB.Text = "royalButton1";
             this.CLOSEB.Click += new System.EventHandler(this.CLOSEB_Click);
             // 
-            // DETAILB
-            // 
-            this.DETAILB.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.DETAILB.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.DETAILB.DisabledForeColor = System.Drawing.Color.Gray;
-            this.DETAILB.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
-            this.DETAILB.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(162)))), ((int)(((byte)(163)))));
-            this.DETAILB.HoverColor = System.Drawing.Color.White;
-            this.DETAILB.HoverTextColor = System.Drawing.Color.DarkGreen;
-            this.DETAILB.IsDerivedStyle = true;
-            this.DETAILB.Location = new System.Drawing.Point(614, 234);
-            this.DETAILB.Margin = new System.Windows.Forms.Padding(4);
-            this.DETAILB.Name = "DETAILB";
-            this.DETAILB.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(192)))), ((int)(((byte)(193)))));
-            this.DETAILB.NormalColor = System.Drawing.Color.White;
-            this.DETAILB.NormalTextColor = System.Drawing.Color.DarkGreen;
-            this.DETAILB.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(192)))), ((int)(((byte)(193)))));
-            this.DETAILB.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.DETAILB.PressTextColor = System.Drawing.Color.DarkGreen;
-            this.DETAILB.Size = new System.Drawing.Size(180, 48);
-            this.DETAILB.Style = ReaLTaiizor.Enum.Metro.Style.Custom;
-            this.DETAILB.StyleManager = null;
-            this.DETAILB.TabIndex = 12;
-            this.DETAILB.Text = "Details";
-            this.DETAILB.ThemeAuthor = "Taiizor";
-            this.DETAILB.ThemeName = "MetroLight";
-            // 
             // PROTECTPB
             // 
             this.PROTECTPB.BackColor = System.Drawing.Color.Transparent;
@@ -587,7 +554,7 @@
             this.PROTECTPB.Location = new System.Drawing.Point(22, 44);
             this.PROTECTPB.Margin = new System.Windows.Forms.Padding(4);
             this.PROTECTPB.Name = "PROTECTPB";
-            this.PROTECTPB.Size = new System.Drawing.Size(524, 238);
+            this.PROTECTPB.Size = new System.Drawing.Size(563, 238);
             this.PROTECTPB.TabIndex = 9;
             this.PROTECTPB.TabStop = false;
             this.PROTECTPB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
@@ -598,46 +565,18 @@
             this.PROTECTLE.BackColor = System.Drawing.Color.Transparent;
             this.PROTECTLE.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.PROTECTLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PROTECTLE.Location = new System.Drawing.Point(593, 97);
+            this.PROTECTLE.Location = new System.Drawing.Point(634, 80);
             this.PROTECTLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PROTECTLE.Name = "PROTECTLE";
             this.PROTECTLE.Size = new System.Drawing.Size(484, 29);
             this.PROTECTLE.TabIndex = 8;
             this.PROTECTLE.Text = "Hi ! Chào bạn đến với Fashion Shop";
             // 
-            // USINGLE
-            // 
-            this.USINGLE.AutoSize = true;
-            this.USINGLE.BackColor = System.Drawing.Color.Transparent;
-            this.USINGLE.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.USINGLE.ForeColor = System.Drawing.Color.Gray;
-            this.USINGLE.Location = new System.Drawing.Point(821, 44);
-            this.USINGLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.USINGLE.Name = "USINGLE";
-            this.USINGLE.Size = new System.Drawing.Size(231, 25);
-            this.USINGLE.TabIndex = 7;
-            this.USINGLE.Text = "You are using: Free package";
-            // 
-            // UPGRADEB
-            // 
-            this.UPGRADEB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.UPGRADEB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UPGRADEB.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
-            this.UPGRADEB.ForeColor = System.Drawing.Color.White;
-            this.UPGRADEB.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(68)))), ((int)(((byte)(85)))));
-            this.UPGRADEB.Image = null;
-            this.UPGRADEB.Location = new System.Drawing.Point(881, 222);
-            this.UPGRADEB.Margin = new System.Windows.Forms.Padding(4);
-            this.UPGRADEB.Name = "UPGRADEB";
-            this.UPGRADEB.Size = new System.Drawing.Size(225, 60);
-            this.UPGRADEB.TabIndex = 6;
-            this.UPGRADEB.Text = "Upgrade Package";
-            // 
             // fHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 875);
+            this.ClientSize = new System.Drawing.Size(1200, 960);
             this.Controls.Add(this.FILLPL);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -658,23 +597,20 @@
 
         private ReaLTaiizor.Controls.RoyalButton MINIMIZEB;
         private ReaLTaiizor.Controls.RoyalButton CLOSEB;
-        private ReaLTaiizor.Controls.MetroButton DETAILB;
         private System.Windows.Forms.PictureBox PROTECTPB;
         private ReaLTaiizor.Controls.LabelEdit PROTECTLE;
-        private ReaLTaiizor.Controls.LabelEdit USINGLE;
         private ReaLTaiizor.Controls.AirSeparator TOPSR;
         private ReaLTaiizor.Controls.AirSeparator BOTSR;
         private System.Windows.Forms.Panel TOPPL;
-        private ReaLTaiizor.Controls.LostCancelButton UPGRADEB;
-        private ReaLTaiizor.Controls.PoisonTile PRIVACYT;
-        private ReaLTaiizor.Controls.PoisonTile CONNECTIONT;
-        private ReaLTaiizor.Controls.PoisonTile PHONET;
-        private ReaLTaiizor.Controls.PoisonTile MONEYT;
-        private ReaLTaiizor.Controls.PoisonTile SCANT;
-        private ReaLTaiizor.Controls.PoisonTile PASSWORDT;
-        private ReaLTaiizor.Controls.PoisonTile CLEANT;
+        private ReaLTaiizor.Controls.PoisonTile btn_NhanVien;
+        private ReaLTaiizor.Controls.PoisonTile btn_ThongTin;
+        private ReaLTaiizor.Controls.PoisonTile btn_CaiDat;
+        private ReaLTaiizor.Controls.PoisonTile btn_HoTro;
+        private ReaLTaiizor.Controls.PoisonTile btn_SanPham;
+        private ReaLTaiizor.Controls.PoisonTile btn_BaoCao;
+        private ReaLTaiizor.Controls.PoisonTile btn_DanhMucSanPham;
         private System.Windows.Forms.Panel MIDPL;
-        private ReaLTaiizor.Controls.PoisonTile UPDATET;
+        private ReaLTaiizor.Controls.PoisonTile btn_GioHang;
         private System.Windows.Forms.Panel FILLPL;
         private System.Windows.Forms.Panel BOTPL;
         private ReaLTaiizor.Controls.MetroTile CONNECTT;

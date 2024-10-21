@@ -30,20 +30,17 @@
         {
             this.parrotFormEllipse1 = new ReaLTaiizor.Controls.ParrotFormEllipse();
             this.parrotFormHandle1 = new ReaLTaiizor.Controls.ParrotFormHandle();
-            this.parrotFormHandle2 = new ReaLTaiizor.Controls.ParrotFormHandle();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.materialButton2 = new ReaLTaiizor.Controls.MaterialButton();
-            this.materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
-            this.dungeonLinkLabel1 = new ReaLTaiizor.Controls.DungeonLinkLabel();
-            this.materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
-            this.hopeSwitch1 = new ReaLTaiizor.Controls.HopeSwitch();
-            this.hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
+            this.parrotFormHandle2 = new ReaLTaiizor.Controls.ParrotFormHandle();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
+            this.btn_DangNhap = new ReaLTaiizor.Controls.MaterialButton();
+            this.label_QuenMatKhau = new ReaLTaiizor.Controls.DungeonLinkLabel();
+            this.textBox_MatKhau = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBox_Email = new ReaLTaiizor.Controls.HopeTextBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,183 +53,6 @@
             // 
             this.parrotFormHandle1.DockAtTop = true;
             this.parrotFormHandle1.HandleControl = this.panel1;
-            // 
-            // parrotFormHandle2
-            // 
-            this.parrotFormHandle2.DockAtTop = true;
-            this.parrotFormHandle2.HandleControl = this.panel2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LightPink;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.materialButton2);
-            this.panel2.Controls.Add(this.materialButton1);
-            this.panel2.Controls.Add(this.dungeonLinkLabel1);
-            this.panel2.Controls.Add(this.materialLabel1);
-            this.panel2.Controls.Add(this.hopeSwitch1);
-            this.panel2.Controls.Add(this.hopeTextBox2);
-            this.panel2.Controls.Add(this.hopeTextBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(420, 584);
-            this.panel2.TabIndex = 3;
-            // 
-            // materialButton2
-            // 
-            this.materialButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.CharacterCasing = ReaLTaiizor.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.materialButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton2.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton2.Location = new System.Drawing.Point(243, 492);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
-            this.materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(162, 54);
-            this.materialButton2.TabIndex = 21;
-            this.materialButton2.Text = "Sign Up";
-            this.materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.CharacterCasing = ReaLTaiizor.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.materialButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton1.Location = new System.Drawing.Point(15, 492);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
-            this.materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(162, 54);
-            this.materialButton1.TabIndex = 20;
-            this.materialButton1.Text = "Sign In";
-            this.materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // dungeonLinkLabel1
-            // 
-            this.dungeonLinkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(72)))), ((int)(((byte)(20)))));
-            this.dungeonLinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.dungeonLinkLabel1.AutoSize = true;
-            this.dungeonLinkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dungeonLinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.dungeonLinkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.dungeonLinkLabel1.Location = new System.Drawing.Point(236, 377);
-            this.dungeonLinkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.dungeonLinkLabel1.Name = "dungeonLinkLabel1";
-            this.dungeonLinkLabel1.Size = new System.Drawing.Size(174, 30);
-            this.dungeonLinkLabel1.TabIndex = 18;
-            this.dungeonLinkLabel1.TabStop = true;
-            this.dungeonLinkLabel1.Text = "Forgot Password";
-            this.dungeonLinkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(119)))), ((int)(((byte)(70)))));
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = ReaLTaiizor.Manager.MaterialSkinManager.FontType.Subtitle2;
-            this.materialLabel1.HighEmphasis = true;
-            this.materialLabel1.Location = new System.Drawing.Point(87, 383);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(94, 17);
-            this.materialLabel1.TabIndex = 12;
-            this.materialLabel1.Text = "Remember me";
-            this.materialLabel1.UseAccent = true;
-            // 
-            // hopeSwitch1
-            // 
-            this.hopeSwitch1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.hopeSwitch1.AutoSize = true;
-            this.hopeSwitch1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(12)))), ((int)(((byte)(45)))));
-            this.hopeSwitch1.BaseOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(141)))), ((int)(((byte)(144)))));
-            this.hopeSwitch1.BaseOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.hopeSwitch1.Checked = true;
-            this.hopeSwitch1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.hopeSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeSwitch1.Location = new System.Drawing.Point(18, 380);
-            this.hopeSwitch1.Margin = new System.Windows.Forms.Padding(4);
-            this.hopeSwitch1.Name = "hopeSwitch1";
-            this.hopeSwitch1.Size = new System.Drawing.Size(40, 20);
-            this.hopeSwitch1.TabIndex = 10;
-            this.hopeSwitch1.Text = "hopeSwitch1";
-            this.hopeSwitch1.UseVisualStyleBackColor = true;
-            // 
-            // hopeTextBox2
-            // 
-            this.hopeTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.hopeTextBox2.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox2.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBox2.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.hopeTextBox2.BorderColorB = System.Drawing.Color.DarkGray;
-            this.hopeTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox2.ForeColor = System.Drawing.Color.Black;
-            this.hopeTextBox2.Hint = "";
-            this.hopeTextBox2.Location = new System.Drawing.Point(15, 292);
-            this.hopeTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.hopeTextBox2.MaxLength = 128;
-            this.hopeTextBox2.Multiline = false;
-            this.hopeTextBox2.Name = "hopeTextBox2";
-            this.hopeTextBox2.PasswordChar = '\0';
-            this.hopeTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox2.SelectedText = "";
-            this.hopeTextBox2.SelectionLength = 0;
-            this.hopeTextBox2.SelectionStart = 0;
-            this.hopeTextBox2.Size = new System.Drawing.Size(390, 48);
-            this.hopeTextBox2.TabIndex = 8;
-            this.hopeTextBox2.TabStop = false;
-            this.hopeTextBox2.Text = "Password";
-            this.hopeTextBox2.UseSystemPasswordChar = false;
-            // 
-            // hopeTextBox1
-            // 
-            this.hopeTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.hopeTextBox1.BackColor = System.Drawing.Color.SeaShell;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.DarkGray;
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(15, 210);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.hopeTextBox1.MaxLength = 128;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(390, 48);
-            this.hopeTextBox1.TabIndex = 7;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.Text = "Email";
-            this.hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // panel1
             // 
@@ -271,6 +91,26 @@
             this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
             this.nightControlBox1.TabIndex = 6;
             // 
+            // parrotFormHandle2
+            // 
+            this.parrotFormHandle2.DockAtTop = true;
+            this.parrotFormHandle2.HandleControl = this.panel2;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightPink;
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btn_DangNhap);
+            this.panel2.Controls.Add(this.label_QuenMatKhau);
+            this.panel2.Controls.Add(this.textBox_MatKhau);
+            this.panel2.Controls.Add(this.textBox_Email);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(420, 584);
+            this.panel2.TabIndex = 3;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::GUI.Properties.Resources.end_user1;
@@ -281,6 +121,100 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_DangNhap
+            // 
+            this.btn_DangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_DangNhap.AutoSize = false;
+            this.btn_DangNhap.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_DangNhap.CharacterCasing = ReaLTaiizor.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            this.btn_DangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DangNhap.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_DangNhap.Depth = 0;
+            this.btn_DangNhap.HighEmphasis = true;
+            this.btn_DangNhap.Icon = null;
+            this.btn_DangNhap.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btn_DangNhap.Location = new System.Drawing.Point(125, 463);
+            this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btn_DangNhap.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btn_DangNhap.Name = "btn_DangNhap";
+            this.btn_DangNhap.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_DangNhap.Size = new System.Drawing.Size(162, 54);
+            this.btn_DangNhap.TabIndex = 20;
+            this.btn_DangNhap.Text = "Đăng nhập";
+            this.btn_DangNhap.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_DangNhap.UseAccentColor = true;
+            this.btn_DangNhap.UseVisualStyleBackColor = true;
+            // 
+            // label_QuenMatKhau
+            // 
+            this.label_QuenMatKhau.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(72)))), ((int)(((byte)(20)))));
+            this.label_QuenMatKhau.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_QuenMatKhau.AutoSize = true;
+            this.label_QuenMatKhau.BackColor = System.Drawing.Color.Transparent;
+            this.label_QuenMatKhau.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label_QuenMatKhau.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.label_QuenMatKhau.LinkColor = System.Drawing.Color.Black;
+            this.label_QuenMatKhau.Location = new System.Drawing.Point(113, 380);
+            this.label_QuenMatKhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_QuenMatKhau.Name = "label_QuenMatKhau";
+            this.label_QuenMatKhau.Size = new System.Drawing.Size(171, 30);
+            this.label_QuenMatKhau.TabIndex = 18;
+            this.label_QuenMatKhau.TabStop = true;
+            this.label_QuenMatKhau.Text = "Quên mật khẩu?";
+            this.label_QuenMatKhau.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(119)))), ((int)(((byte)(70)))));
+            // 
+            // textBox_MatKhau
+            // 
+            this.textBox_MatKhau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_MatKhau.BackColor = System.Drawing.Color.White;
+            this.textBox_MatKhau.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_MatKhau.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_MatKhau.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_MatKhau.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_MatKhau.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MatKhau.Hint = "";
+            this.textBox_MatKhau.Location = new System.Drawing.Point(15, 292);
+            this.textBox_MatKhau.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_MatKhau.MaxLength = 128;
+            this.textBox_MatKhau.Multiline = false;
+            this.textBox_MatKhau.Name = "textBox_MatKhau";
+            this.textBox_MatKhau.PasswordChar = '\0';
+            this.textBox_MatKhau.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_MatKhau.SelectedText = "";
+            this.textBox_MatKhau.SelectionLength = 0;
+            this.textBox_MatKhau.SelectionStart = 0;
+            this.textBox_MatKhau.Size = new System.Drawing.Size(390, 48);
+            this.textBox_MatKhau.TabIndex = 8;
+            this.textBox_MatKhau.TabStop = false;
+            this.textBox_MatKhau.Text = "Mật khẩu";
+            this.textBox_MatKhau.UseSystemPasswordChar = false;
+            // 
+            // textBox_Email
+            // 
+            this.textBox_Email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Email.BackColor = System.Drawing.Color.SeaShell;
+            this.textBox_Email.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_Email.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_Email.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_Email.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_Email.ForeColor = System.Drawing.Color.Black;
+            this.textBox_Email.Hint = "";
+            this.textBox_Email.Location = new System.Drawing.Point(15, 210);
+            this.textBox_Email.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Email.MaxLength = 128;
+            this.textBox_Email.Multiline = false;
+            this.textBox_Email.Name = "textBox_Email";
+            this.textBox_Email.PasswordChar = '\0';
+            this.textBox_Email.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_Email.SelectedText = "";
+            this.textBox_Email.SelectionLength = 0;
+            this.textBox_Email.SelectionStart = 0;
+            this.textBox_Email.Size = new System.Drawing.Size(390, 48);
+            this.textBox_Email.TabIndex = 7;
+            this.textBox_Email.TabStop = false;
+            this.textBox_Email.Text = "Email";
+            this.textBox_Email.UseSystemPasswordChar = false;
+            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -288,12 +222,13 @@
             this.ClientSize = new System.Drawing.Size(1081, 584);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
             this.Text = "fLogin";
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -305,13 +240,10 @@
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private ReaLTaiizor.Controls.ParrotFormEllipse parrotFormEllipse1;
         private System.Windows.Forms.Panel panel2;
-        private ReaLTaiizor.Controls.MaterialButton materialButton2;
-        private ReaLTaiizor.Controls.MaterialButton materialButton1;
-        private ReaLTaiizor.Controls.DungeonLinkLabel dungeonLinkLabel1;
-        private ReaLTaiizor.Controls.MaterialLabel materialLabel1;
-        private ReaLTaiizor.Controls.HopeSwitch hopeSwitch1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
+        private ReaLTaiizor.Controls.MaterialButton btn_DangNhap;
+        private ReaLTaiizor.Controls.DungeonLinkLabel label_QuenMatKhau;
+        private ReaLTaiizor.Controls.HopeTextBox textBox_MatKhau;
+        private ReaLTaiizor.Controls.HopeTextBox textBox_Email;
         private ReaLTaiizor.Controls.ParrotFormHandle parrotFormHandle1;
         private ReaLTaiizor.Controls.ParrotFormHandle parrotFormHandle2;
         private System.Windows.Forms.PictureBox pictureBox1;

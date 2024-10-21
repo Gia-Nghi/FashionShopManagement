@@ -47,6 +47,8 @@
     <Compile Include="Category.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendEmailBySMTPInput.cs" />
+    <Compile Include="SendEmailBySMTPOutput.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="TempBill.cs" />
   </ItemGroup>
