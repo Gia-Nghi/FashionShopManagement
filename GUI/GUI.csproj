@@ -88,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Properties\expired.licenses.licx.txt" />
+    <None Include="Resources\Home1 %282%29.jpg" />
+    <None Include="Resources\38856324_8682965.jpg" />
+    <None Include="Resources\3685416_934 %281%29.jpg" />
+    <None Include="Resources\Login1.jpg" />
+    <None Include="Resources\Login.jpg" />
+    <None Include="Resources\905453_64862-OB1L40-350.jpg" />
+    <None Include="Resources\end-user1.png" />
+    <None Include="Resources\end-user.png" />
+    <EmbeddedResource Include="fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

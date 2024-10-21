@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class fLogin : Form
+    public partial class fHome : Form
     {
-        public fLogin()
+        public fHome()
         {
             InitializeComponent();
         }
 
-        private void hopePictureBox1_Click(object sender, EventArgs e)
+        private void SCANT_Click(object sender, EventArgs e)
         {
 
         }
