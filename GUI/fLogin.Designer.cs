@@ -126,6 +126,8 @@
             this.btn_DangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_DangNhap.AutoSize = false;
             this.btn_DangNhap.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_DangNhap.BackColor = System.Drawing.Color.Crimson;
+            this.btn_DangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_DangNhap.CharacterCasing = ReaLTaiizor.Controls.MaterialButton.CharacterCasingEnum.Normal;
             this.btn_DangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DangNhap.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
@@ -143,7 +145,7 @@
             this.btn_DangNhap.Text = "Đăng nhập";
             this.btn_DangNhap.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_DangNhap.UseAccentColor = true;
-            this.btn_DangNhap.UseVisualStyleBackColor = true;
+            this.btn_DangNhap.UseVisualStyleBackColor = false;
             this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // label_QuenMatKhau

@@ -58,5 +58,29 @@ namespace GUI
                 _ = SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+        private void btn_SanPham_Click(object sender, EventArgs e)
+        {
+            fSanPham fSanPham = new fSanPham(); 
+            fSanPham.Show();
+        }
+
+        private void btn_DonHang_Click(object sender, EventArgs e)
+        {
+            fDonHang fDonHang = new fDonHang();
+            fDonHang.Show();
+        }
+
+        private void btn_KhachHang_Click(object sender, EventArgs e)
+        {
+            fKhachHang fKhachHang = new fKhachHang();
+            fKhachHang.Show();
+        }
+
+        private void btn_NhanVien_Click(object sender, EventArgs e)
+        {
+            fNhanVien fNhanVien = new fNhanVien();
+            fNhanVien.Show();
+        }
     }
 }
