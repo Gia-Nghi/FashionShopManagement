@@ -220,6 +220,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChiTietHoaDon.Designer.cs">
+      <DependentUpon>fChiTietHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     <None Include="Resources\Remove-bg.ai_1729599973417.png" />
     <None Include="Resources\fashion.jpg" />
     <None Include="Resources\customer-satisfaction.png" />
+    <EmbeddedResource Include="fChiTietHoaDon.resx">
+      <DependentUpon>fChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDonHang.resx">
       <DependentUpon>fDonHang.cs</DependentUpon>
     </EmbeddedResource>

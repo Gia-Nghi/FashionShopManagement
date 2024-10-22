@@ -34,13 +34,13 @@
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.parrotFormHandle2 = new ReaLTaiizor.Controls.ParrotFormHandle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.skyLabel2 = new ReaLTaiizor.Controls.SkyLabel();
+            this.skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_DangNhap = new ReaLTaiizor.Controls.MaterialButton();
             this.label_QuenMatKhau = new ReaLTaiizor.Controls.DungeonLinkLabel();
             this.textBox_MatKhau = new ReaLTaiizor.Controls.HopeTextBox();
             this.textBox_Email = new ReaLTaiizor.Controls.HopeTextBox();
-            this.skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
-            this.skyLabel2 = new ReaLTaiizor.Controls.SkyLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,6 +114,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(420, 584);
             this.panel2.TabIndex = 3;
+            // 
+            // skyLabel2
+            // 
+            this.skyLabel2.AutoSize = true;
+            this.skyLabel2.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
+            this.skyLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
+            this.skyLabel2.Location = new System.Drawing.Point(12, 336);
+            this.skyLabel2.Name = "skyLabel2";
+            this.skyLabel2.Size = new System.Drawing.Size(79, 17);
+            this.skyLabel2.TabIndex = 24;
+            this.skyLabel2.Text = "Mật khẩu";
+            // 
+            // skyLabel1
+            // 
+            this.skyLabel1.AutoSize = true;
+            this.skyLabel1.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
+            this.skyLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
+            this.skyLabel1.Location = new System.Drawing.Point(12, 244);
+            this.skyLabel1.Name = "skyLabel1";
+            this.skyLabel1.Size = new System.Drawing.Size(125, 17);
+            this.skyLabel1.TabIndex = 23;
+            this.skyLabel1.Text = "Tên đăng nhập";
             // 
             // pictureBox1
             // 
@@ -221,28 +243,6 @@
             this.textBox_Email.TabStop = false;
             this.textBox_Email.UseSystemPasswordChar = false;
             // 
-            // skyLabel1
-            // 
-            this.skyLabel1.AutoSize = true;
-            this.skyLabel1.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
-            this.skyLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.skyLabel1.Location = new System.Drawing.Point(12, 244);
-            this.skyLabel1.Name = "skyLabel1";
-            this.skyLabel1.Size = new System.Drawing.Size(125, 17);
-            this.skyLabel1.TabIndex = 23;
-            this.skyLabel1.Text = "Tên đăng nhập";
-            // 
-            // skyLabel2
-            // 
-            this.skyLabel2.AutoSize = true;
-            this.skyLabel2.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
-            this.skyLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.skyLabel2.Location = new System.Drawing.Point(12, 336);
-            this.skyLabel2.Name = "skyLabel2";
-            this.skyLabel2.Size = new System.Drawing.Size(79, 17);
-            this.skyLabel2.TabIndex = 24;
-            this.skyLabel2.Text = "Mật khẩu";
-            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -253,6 +253,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fLogin";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fLogin_KeyDown);
             this.panel1.ResumeLayout(false);

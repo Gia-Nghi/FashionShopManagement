@@ -22,15 +22,28 @@ namespace GUI
 
         }
 
-        private void poisonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btn_TaoDon_Click(object sender, EventArgs e)
         {
             fTaoDonHang fTaoDonHang = new fTaoDonHang();
             fTaoDonHang.ShowDialog();
+        }
+
+        private void data_DSDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Lấy thông tin row được chọn
+            //var selectedRow = (sender as DataGridViewRow).Selected;
+
+            fChiTietHoaDon fChiTietHoaDon = new fChiTietHoaDon();
+            fChiTietHoaDon.ShowDialog();
+        }
+
+        private void data_DSDonHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Lấy thông tin row được chọn
+            //var selectedRow = (sender as DataGridViewRow).Selected;
+
+            fChiTietHoaDon fChiTietHoaDon = new fChiTietHoaDon();
+            fChiTietHoaDon.ShowDialog();
         }
     }
 }

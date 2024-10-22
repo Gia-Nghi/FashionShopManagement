@@ -30,9 +30,7 @@
         {
             this.MIDPL = new System.Windows.Forms.Panel();
             this.btn_NhanVien = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_ThongTin = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_CaiDat = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_ThongKe = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_SanPham = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_BaoCao = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_KhachHang = new ReaLTaiizor.Controls.PoisonTile();
@@ -60,9 +58,7 @@
             // 
             this.MIDPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.MIDPL.Controls.Add(this.btn_NhanVien);
-            this.MIDPL.Controls.Add(this.btn_ThongTin);
             this.MIDPL.Controls.Add(this.btn_CaiDat);
-            this.MIDPL.Controls.Add(this.btn_ThongKe);
             this.MIDPL.Controls.Add(this.btn_SanPham);
             this.MIDPL.Controls.Add(this.btn_BaoCao);
             this.MIDPL.Controls.Add(this.btn_KhachHang);
@@ -71,7 +67,7 @@
             this.MIDPL.Location = new System.Drawing.Point(0, 201);
             this.MIDPL.Margin = new System.Windows.Forms.Padding(0);
             this.MIDPL.Name = "MIDPL";
-            this.MIDPL.Size = new System.Drawing.Size(1200, 711);
+            this.MIDPL.Size = new System.Drawing.Size(873, 433);
             this.MIDPL.TabIndex = 6;
             // 
             // btn_NhanVien
@@ -98,29 +94,6 @@
             this.btn_NhanVien.UseTileImage = true;
             this.btn_NhanVien.Click += new System.EventHandler(this.btn_NhanVien_Click);
             // 
-            // btn_ThongTin
-            // 
-            this.btn_ThongTin.ActiveControl = null;
-            this.btn_ThongTin.BackColor = System.Drawing.Color.White;
-            this.btn_ThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ThongTin.ForeColor = System.Drawing.Color.Black;
-            this.btn_ThongTin.Location = new System.Drawing.Point(860, 228);
-            this.btn_ThongTin.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ThongTin.Name = "btn_ThongTin";
-            this.btn_ThongTin.Size = new System.Drawing.Size(260, 176);
-            this.btn_ThongTin.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_ThongTin.TabIndex = 11;
-            this.btn_ThongTin.Text = "Thông tin";
-            this.btn_ThongTin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ThongTin.TileImage = global::GUI.Properties.Resources.list;
-            this.btn_ThongTin.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ThongTin.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_ThongTin.UseCustomBackColor = true;
-            this.btn_ThongTin.UseCustomForeColor = true;
-            this.btn_ThongTin.UseSelectable = true;
-            this.btn_ThongTin.UseStyleColors = true;
-            this.btn_ThongTin.UseTileImage = true;
-            // 
             // btn_CaiDat
             // 
             this.btn_CaiDat.ActiveControl = null;
@@ -143,28 +116,6 @@
             this.btn_CaiDat.UseSelectable = true;
             this.btn_CaiDat.UseStyleColors = true;
             this.btn_CaiDat.UseTileImage = true;
-            // 
-            // btn_ThongKe
-            // 
-            this.btn_ThongKe.ActiveControl = null;
-            this.btn_ThongKe.BackColor = System.Drawing.Color.White;
-            this.btn_ThongKe.ForeColor = System.Drawing.Color.Black;
-            this.btn_ThongKe.Location = new System.Drawing.Point(310, 228);
-            this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ThongKe.Name = "btn_ThongKe";
-            this.btn_ThongKe.Size = new System.Drawing.Size(260, 176);
-            this.btn_ThongKe.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_ThongKe.TabIndex = 9;
-            this.btn_ThongKe.Text = "Thống kê";
-            this.btn_ThongKe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ThongKe.TileImage = global::GUI.Properties.Resources.working;
-            this.btn_ThongKe.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ThongKe.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_ThongKe.UseCustomBackColor = true;
-            this.btn_ThongKe.UseCustomForeColor = true;
-            this.btn_ThongKe.UseSelectable = true;
-            this.btn_ThongKe.UseStyleColors = true;
-            this.btn_ThongKe.UseTileImage = true;
             // 
             // btn_SanPham
             // 
@@ -195,7 +146,7 @@
             this.btn_BaoCao.ActiveControl = null;
             this.btn_BaoCao.BackColor = System.Drawing.Color.White;
             this.btn_BaoCao.ForeColor = System.Drawing.Color.Black;
-            this.btn_BaoCao.Location = new System.Drawing.Point(860, 38);
+            this.btn_BaoCao.Location = new System.Drawing.Point(310, 228);
             this.btn_BaoCao.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BaoCao.Name = "btn_BaoCao";
             this.btn_BaoCao.Size = new System.Drawing.Size(260, 176);
@@ -270,7 +221,7 @@
             this.FILLPL.Location = new System.Drawing.Point(0, 0);
             this.FILLPL.Margin = new System.Windows.Forms.Padding(0);
             this.FILLPL.Name = "FILLPL";
-            this.FILLPL.Size = new System.Drawing.Size(1200, 960);
+            this.FILLPL.Size = new System.Drawing.Size(873, 682);
             this.FILLPL.TabIndex = 5;
             // 
             // panel_Top
@@ -284,7 +235,7 @@
             this.panel_Top.Location = new System.Drawing.Point(0, 0);
             this.panel_Top.Margin = new System.Windows.Forms.Padding(0);
             this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(1200, 201);
+            this.panel_Top.Size = new System.Drawing.Size(873, 201);
             this.panel_Top.TabIndex = 1;
             this.panel_Top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             // 
@@ -296,23 +247,23 @@
             this.image_Banner.Location = new System.Drawing.Point(22, 13);
             this.image_Banner.Margin = new System.Windows.Forms.Padding(4);
             this.image_Banner.Name = "image_Banner";
-            this.image_Banner.Size = new System.Drawing.Size(604, 169);
+            this.image_Banner.Size = new System.Drawing.Size(491, 169);
             this.image_Banner.TabIndex = 9;
             this.image_Banner.TabStop = false;
             this.image_Banner.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             // 
             // PROTECTLE
             // 
-            this.PROTECTLE.AutoSize = true;
             this.PROTECTLE.BackColor = System.Drawing.Color.Transparent;
             this.PROTECTLE.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.PROTECTLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PROTECTLE.Location = new System.Drawing.Point(634, 80);
+            this.PROTECTLE.Location = new System.Drawing.Point(533, 58);
             this.PROTECTLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PROTECTLE.Name = "PROTECTLE";
-            this.PROTECTLE.Size = new System.Drawing.Size(484, 29);
+            this.PROTECTLE.Size = new System.Drawing.Size(312, 77);
             this.PROTECTLE.TabIndex = 8;
             this.PROTECTLE.Text = "Hi ! Chào bạn đến với Fashion Shop";
+            this.PROTECTLE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BOTPL
             // 
@@ -325,10 +276,10 @@
             this.BOTPL.Controls.Add(this.BOTPLSR);
             this.BOTPL.Controls.Add(this.STATELLE);
             this.BOTPL.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BOTPL.Location = new System.Drawing.Point(0, 912);
+            this.BOTPL.Location = new System.Drawing.Point(0, 634);
             this.BOTPL.Margin = new System.Windows.Forms.Padding(0);
             this.BOTPL.Name = "BOTPL";
-            this.BOTPL.Size = new System.Drawing.Size(1200, 48);
+            this.BOTPL.Size = new System.Drawing.Size(873, 48);
             this.BOTPL.TabIndex = 0;
             // 
             // CONNECTT
@@ -449,7 +400,7 @@
             this.MAILLLE.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.MAILLLE.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.MAILLLE.LinkColor = System.Drawing.Color.SeaGreen;
-            this.MAILLLE.Location = new System.Drawing.Point(929, 0);
+            this.MAILLLE.Location = new System.Drawing.Point(602, 0);
             this.MAILLLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MAILLLE.Name = "MAILLLE";
             this.MAILLLE.Size = new System.Drawing.Size(189, 48);
@@ -481,7 +432,7 @@
             this.STATELLE.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.STATELLE.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.STATELLE.LinkColor = System.Drawing.Color.SeaGreen;
-            this.STATELLE.Location = new System.Drawing.Point(1118, 0);
+            this.STATELLE.Location = new System.Drawing.Point(791, 0);
             this.STATELLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.STATELLE.Name = "STATELLE";
             this.STATELLE.Size = new System.Drawing.Size(82, 48);
@@ -495,16 +446,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 960);
+            this.ClientSize = new System.Drawing.Size(873, 682);
             this.Controls.Add(this.FILLPL);
             this.DoubleBuffered = true;
             this.Name = "fHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý cửa hàng thời trang";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             this.MIDPL.ResumeLayout(false);
             this.FILLPL.ResumeLayout(false);
             this.panel_Top.ResumeLayout(false);
-            this.panel_Top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).EndInit();
             this.BOTPL.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -516,9 +467,7 @@
         private ReaLTaiizor.Controls.LabelEdit PROTECTLE;
         private System.Windows.Forms.Panel panel_Top;
         private ReaLTaiizor.Controls.PoisonTile btn_NhanVien;
-        private ReaLTaiizor.Controls.PoisonTile btn_ThongTin;
         private ReaLTaiizor.Controls.PoisonTile btn_CaiDat;
-        private ReaLTaiizor.Controls.PoisonTile btn_ThongKe;
         private ReaLTaiizor.Controls.PoisonTile btn_SanPham;
         private ReaLTaiizor.Controls.PoisonTile btn_BaoCao;
         private ReaLTaiizor.Controls.PoisonTile btn_KhachHang;
