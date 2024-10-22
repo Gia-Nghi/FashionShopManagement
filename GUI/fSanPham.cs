@@ -21,5 +21,11 @@ namespace GUI
         {
 
         }
+
+        private void data_DSDonHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            fChiTietSanPham fChiTietSanPham = new fChiTietSanPham();
+            fChiTietSanPham.ShowDialog();
+        }
     }
 }
