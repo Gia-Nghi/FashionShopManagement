@@ -23,7 +23,7 @@ namespace DAO
 
         // Kết nối tới DB
         private string connectionString = @"Data Source=.;Initial Catalog=FashionShopManagement;Integrated Security=True";
-
+     
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable table = new DataTable();

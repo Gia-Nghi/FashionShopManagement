@@ -226,11 +226,23 @@
     <Compile Include="fHome.Designer.cs">
       <DependentUpon>fHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.Designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="fSanPham.cs">
       <SubType>Form</SubType>
@@ -253,6 +265,15 @@
     </Compile>
     <Compile Include="UC\WordHelper.cs" />
     <Content Include="Properties\expired.licenses.licx.txt" />
+    <None Include="Resources\Remove-bg.ai_1729599973417.png" />
+    <None Include="Resources\fashion.jpg" />
+    <None Include="Resources\customer-satisfaction.png" />
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UCJobCard.resx">
       <DependentUpon>UCJobCard.cs</DependentUpon>
     </EmbeddedResource>
