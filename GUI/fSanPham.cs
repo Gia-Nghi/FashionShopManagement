@@ -44,6 +44,7 @@ namespace GUI
             List<Product> result = ProductBUS.Instance.SearchProductByName(text);
             if (result.Count > 0)
             {
+                this.data_DSDonHang.DataSource = result;
                 foreach (Product product in result)
                 {
                     Console.WriteLine(product.Name);
