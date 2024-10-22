@@ -32,6 +32,7 @@ namespace GUI
         public fHome(Account loginAccount)
         {
             InitializeComponent();
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.LoginAccount = loginAccount;
         }
 

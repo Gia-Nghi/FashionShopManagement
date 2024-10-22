@@ -34,14 +34,8 @@
             this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.label1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox_Ten = new ReaLTaiizor.Controls.CyberTextBox();
-            this.textBox_Ho = new ReaLTaiizor.Controls.CyberTextBox();
-            this.label_NgaySinh = new System.Windows.Forms.Label();
-            this.label_Ten = new System.Windows.Forms.Label();
-            this.label_Ho = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Them = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox_Luong = new ReaLTaiizor.Controls.CyberTextBox();
@@ -52,13 +46,19 @@
             this.textBox_ChucVu = new ReaLTaiizor.Controls.CyberTextBox();
             this.btn_Xoa = new ReaLTaiizor.Controls.MaterialButton();
             this.textBox_DiaChi = new ReaLTaiizor.Controls.CyberTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox_Ten = new ReaLTaiizor.Controls.CyberTextBox();
+            this.textBox_Ho = new ReaLTaiizor.Controls.CyberTextBox();
+            this.label_NgaySinh = new System.Windows.Forms.Label();
+            this.label_Ten = new System.Windows.Forms.Label();
+            this.label_Ho = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // poisonDataGridView1
@@ -138,6 +138,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1167, 141);
             this.tableLayoutPanel1.TabIndex = 34;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::GUI.Properties.Resources.Remove_bg_ai_1729599973417;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(228, 135);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -152,126 +163,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1167, 251);
             this.tableLayoutPanel2.TabIndex = 37;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox_Ten);
-            this.panel1.Controls.Add(this.textBox_Ho);
-            this.panel1.Controls.Add(this.label_NgaySinh);
-            this.panel1.Controls.Add(this.label_Ten);
-            this.panel1.Controls.Add(this.label_Ho);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(577, 245);
-            this.panel1.TabIndex = 36;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(163, 158);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(380, 30);
-            this.dateTimePicker1.TabIndex = 51;
-            // 
-            // textBox_Ten
-            // 
-            this.textBox_Ten.Alpha = 20;
-            this.textBox_Ten.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_Ten.Background_WidthPen = 3F;
-            this.textBox_Ten.BackgroundPen = true;
-            this.textBox_Ten.ColorBackground = System.Drawing.Color.White;
-            this.textBox_Ten.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Ten.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Ten.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Ten.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_Ten.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_Ten.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_Ten.ForeColor = System.Drawing.Color.Black;
-            this.textBox_Ten.Lighting = false;
-            this.textBox_Ten.LinearGradientPen = false;
-            this.textBox_Ten.Location = new System.Drawing.Point(144, 74);
-            this.textBox_Ten.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_Ten.Name = "textBox_Ten";
-            this.textBox_Ten.PenWidth = 15;
-            this.textBox_Ten.RGB = false;
-            this.textBox_Ten.Rounding = true;
-            this.textBox_Ten.RoundingInt = 60;
-            this.textBox_Ten.Size = new System.Drawing.Size(399, 50);
-            this.textBox_Ten.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_Ten.TabIndex = 50;
-            this.textBox_Ten.Tag = "Cyber";
-            this.textBox_Ten.TextButton = "";
-            this.textBox_Ten.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_Ten.Timer_RGB = 300;
-            // 
-            // textBox_Ho
-            // 
-            this.textBox_Ho.Alpha = 20;
-            this.textBox_Ho.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_Ho.Background_WidthPen = 3F;
-            this.textBox_Ho.BackgroundPen = true;
-            this.textBox_Ho.ColorBackground = System.Drawing.Color.White;
-            this.textBox_Ho.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Ho.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Ho.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Ho.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_Ho.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_Ho.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox_Ho.ForeColor = System.Drawing.Color.Black;
-            this.textBox_Ho.Lighting = false;
-            this.textBox_Ho.LinearGradientPen = false;
-            this.textBox_Ho.Location = new System.Drawing.Point(144, 15);
-            this.textBox_Ho.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_Ho.Name = "textBox_Ho";
-            this.textBox_Ho.PenWidth = 15;
-            this.textBox_Ho.RGB = false;
-            this.textBox_Ho.Rounding = true;
-            this.textBox_Ho.RoundingInt = 60;
-            this.textBox_Ho.Size = new System.Drawing.Size(399, 50);
-            this.textBox_Ho.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_Ho.TabIndex = 49;
-            this.textBox_Ho.Tag = "Cyber";
-            this.textBox_Ho.TextButton = "";
-            this.textBox_Ho.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_Ho.Timer_RGB = 300;
-            // 
-            // label_NgaySinh
-            // 
-            this.label_NgaySinh.AutoSize = true;
-            this.label_NgaySinh.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_NgaySinh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_NgaySinh.Location = new System.Drawing.Point(20, 162);
-            this.label_NgaySinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_NgaySinh.Name = "label_NgaySinh";
-            this.label_NgaySinh.Size = new System.Drawing.Size(99, 23);
-            this.label_NgaySinh.TabIndex = 48;
-            this.label_NgaySinh.Text = "Ngày sinh:";
-            // 
-            // label_Ten
-            // 
-            this.label_Ten.AutoSize = true;
-            this.label_Ten.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_Ten.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_Ten.Location = new System.Drawing.Point(24, 87);
-            this.label_Ten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Ten.Name = "label_Ten";
-            this.label_Ten.Size = new System.Drawing.Size(49, 23);
-            this.label_Ten.TabIndex = 47;
-            this.label_Ten.Text = "Tên:";
-            // 
-            // label_Ho
-            // 
-            this.label_Ho.AutoSize = true;
-            this.label_Ho.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Ho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_Ho.Location = new System.Drawing.Point(24, 23);
-            this.label_Ho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Ho.Name = "label_Ho";
-            this.label_Ho.Size = new System.Drawing.Size(42, 23);
-            this.label_Ho.TabIndex = 46;
-            this.label_Ho.Text = "Họ:";
             // 
             // panel2
             // 
@@ -482,16 +373,125 @@
             this.textBox_DiaChi.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.textBox_DiaChi.Timer_RGB = 300;
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.BackgroundImage = global::GUI.Properties.Resources.Remove_bg_ai_1729599973417;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 135);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.textBox_Ten);
+            this.panel1.Controls.Add(this.textBox_Ho);
+            this.panel1.Controls.Add(this.label_NgaySinh);
+            this.panel1.Controls.Add(this.label_Ten);
+            this.panel1.Controls.Add(this.label_Ho);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(577, 245);
+            this.panel1.TabIndex = 36;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(163, 158);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(380, 30);
+            this.dateTimePicker1.TabIndex = 51;
+            // 
+            // textBox_Ten
+            // 
+            this.textBox_Ten.Alpha = 20;
+            this.textBox_Ten.BackColor = System.Drawing.Color.Transparent;
+            this.textBox_Ten.Background_WidthPen = 3F;
+            this.textBox_Ten.BackgroundPen = true;
+            this.textBox_Ten.ColorBackground = System.Drawing.Color.White;
+            this.textBox_Ten.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.textBox_Ten.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.textBox_Ten.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.textBox_Ten.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.textBox_Ten.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.textBox_Ten.Font = new System.Drawing.Font("Arial", 12F);
+            this.textBox_Ten.ForeColor = System.Drawing.Color.Black;
+            this.textBox_Ten.Lighting = false;
+            this.textBox_Ten.LinearGradientPen = false;
+            this.textBox_Ten.Location = new System.Drawing.Point(144, 74);
+            this.textBox_Ten.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_Ten.Name = "textBox_Ten";
+            this.textBox_Ten.PenWidth = 15;
+            this.textBox_Ten.RGB = false;
+            this.textBox_Ten.Rounding = true;
+            this.textBox_Ten.RoundingInt = 60;
+            this.textBox_Ten.Size = new System.Drawing.Size(399, 50);
+            this.textBox_Ten.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.textBox_Ten.TabIndex = 50;
+            this.textBox_Ten.Tag = "Cyber";
+            this.textBox_Ten.TextButton = "";
+            this.textBox_Ten.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.textBox_Ten.Timer_RGB = 300;
+            // 
+            // textBox_Ho
+            // 
+            this.textBox_Ho.Alpha = 20;
+            this.textBox_Ho.BackColor = System.Drawing.Color.Transparent;
+            this.textBox_Ho.Background_WidthPen = 3F;
+            this.textBox_Ho.BackgroundPen = true;
+            this.textBox_Ho.ColorBackground = System.Drawing.Color.White;
+            this.textBox_Ho.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.textBox_Ho.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.textBox_Ho.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
+            this.textBox_Ho.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
+            this.textBox_Ho.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            this.textBox_Ho.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox_Ho.ForeColor = System.Drawing.Color.Black;
+            this.textBox_Ho.Lighting = false;
+            this.textBox_Ho.LinearGradientPen = false;
+            this.textBox_Ho.Location = new System.Drawing.Point(144, 15);
+            this.textBox_Ho.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_Ho.Name = "textBox_Ho";
+            this.textBox_Ho.PenWidth = 15;
+            this.textBox_Ho.RGB = false;
+            this.textBox_Ho.Rounding = true;
+            this.textBox_Ho.RoundingInt = 60;
+            this.textBox_Ho.Size = new System.Drawing.Size(399, 50);
+            this.textBox_Ho.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.textBox_Ho.TabIndex = 49;
+            this.textBox_Ho.Tag = "Cyber";
+            this.textBox_Ho.TextButton = "";
+            this.textBox_Ho.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.textBox_Ho.Timer_RGB = 300;
+            // 
+            // label_NgaySinh
+            // 
+            this.label_NgaySinh.AutoSize = true;
+            this.label_NgaySinh.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_NgaySinh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_NgaySinh.Location = new System.Drawing.Point(20, 162);
+            this.label_NgaySinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_NgaySinh.Name = "label_NgaySinh";
+            this.label_NgaySinh.Size = new System.Drawing.Size(99, 23);
+            this.label_NgaySinh.TabIndex = 48;
+            this.label_NgaySinh.Text = "Ngày sinh:";
+            // 
+            // label_Ten
+            // 
+            this.label_Ten.AutoSize = true;
+            this.label_Ten.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_Ten.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Ten.Location = new System.Drawing.Point(24, 87);
+            this.label_Ten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Ten.Name = "label_Ten";
+            this.label_Ten.Size = new System.Drawing.Size(49, 23);
+            this.label_Ten.TabIndex = 47;
+            this.label_Ten.Text = "Tên:";
+            // 
+            // label_Ho
+            // 
+            this.label_Ho.AutoSize = true;
+            this.label_Ho.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Ho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Ho.Location = new System.Drawing.Point(24, 23);
+            this.label_Ho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Ho.Name = "label_Ho";
+            this.label_Ho.Size = new System.Drawing.Size(42, 23);
+            this.label_Ho.TabIndex = 46;
+            this.label_Ho.Text = "Họ:";
             // 
             // fNhanVien
             // 
@@ -509,12 +509,12 @@
             this.Text = "fNhanVien";
             ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

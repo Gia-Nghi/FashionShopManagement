@@ -154,8 +154,8 @@
   <data name="905453_64862-OB1L40-3501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\905453_64862-OB1L40-3501.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Check-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Check-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="categories" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\categories.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +163,14 @@
   <data name="3685416_934" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3685416_934.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Home1 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home1 (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="38856324_8682965" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\38856324_8682965.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avatar-anh-meo-cute-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avatar-anh-meo-cute-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1489514013___Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1489514013___Download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,6 +180,9 @@
   </data>
   <data name="end-user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\end-user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button-Previous-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button-Previous-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trolley1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trolley1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +208,8 @@
   <data name="3685416_934 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3685416_934 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Home1 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home1 (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fashion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fashion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Presentation-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Presentation-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,9 +268,6 @@
   <data name="customer-satisfaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\customer-satisfaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fashion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fashion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Household-Table-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Household-Table-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -283,9 +283,6 @@
   <data name="report1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\report1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="categories" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\categories.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cogwheel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cogwheel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -294,6 +291,9 @@
   </data>
   <data name="trolley" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trolley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Check-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ecommerce-Bill-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ecommerce-Bill-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,8 +316,8 @@
   <data name="Reset-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reset-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button-Previous-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button-Previous-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Remove-bg.ai_1729599973417" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Remove-bg.ai_1729599973417.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\people1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -327,8 +327,5 @@
   </data>
   <data name="3685416_934 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3685416_934 (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Remove-bg.ai_1729599973417" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Remove-bg.ai_1729599973417.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

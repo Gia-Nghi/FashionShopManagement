@@ -39,6 +39,8 @@
             this.label_QuenMatKhau = new ReaLTaiizor.Controls.DungeonLinkLabel();
             this.textBox_MatKhau = new ReaLTaiizor.Controls.HopeTextBox();
             this.textBox_Email = new ReaLTaiizor.Controls.HopeTextBox();
+            this.skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
+            this.skyLabel2 = new ReaLTaiizor.Controls.SkyLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,6 +101,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightPink;
+            this.panel2.Controls.Add(this.skyLabel2);
+            this.panel2.Controls.Add(this.skyLabel1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_DangNhap);
             this.panel2.Controls.Add(this.label_QuenMatKhau);
@@ -135,7 +139,7 @@
             this.btn_DangNhap.HighEmphasis = true;
             this.btn_DangNhap.Icon = null;
             this.btn_DangNhap.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_DangNhap.Location = new System.Drawing.Point(125, 463);
+            this.btn_DangNhap.Location = new System.Drawing.Point(118, 485);
             this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
             this.btn_DangNhap.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btn_DangNhap.Name = "btn_DangNhap";
@@ -157,7 +161,7 @@
             this.label_QuenMatKhau.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.label_QuenMatKhau.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.label_QuenMatKhau.LinkColor = System.Drawing.Color.Black;
-            this.label_QuenMatKhau.Location = new System.Drawing.Point(113, 380);
+            this.label_QuenMatKhau.Location = new System.Drawing.Point(113, 423);
             this.label_QuenMatKhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_QuenMatKhau.Name = "label_QuenMatKhau";
             this.label_QuenMatKhau.Size = new System.Drawing.Size(171, 30);
@@ -176,7 +180,7 @@
             this.textBox_MatKhau.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_MatKhau.ForeColor = System.Drawing.Color.Black;
             this.textBox_MatKhau.Hint = "";
-            this.textBox_MatKhau.Location = new System.Drawing.Point(15, 292);
+            this.textBox_MatKhau.Location = new System.Drawing.Point(15, 357);
             this.textBox_MatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_MatKhau.MaxLength = 128;
             this.textBox_MatKhau.Multiline = false;
@@ -189,20 +193,20 @@
             this.textBox_MatKhau.Size = new System.Drawing.Size(390, 48);
             this.textBox_MatKhau.TabIndex = 8;
             this.textBox_MatKhau.TabStop = false;
-            this.textBox_MatKhau.Text = "Mật khẩu";
-            this.textBox_MatKhau.UseSystemPasswordChar = false;
+            this.textBox_MatKhau.UseSystemPasswordChar = true;
+            this.textBox_MatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_MatKhau_KeyDown);
             // 
             // textBox_Email
             // 
             this.textBox_Email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Email.BackColor = System.Drawing.Color.SeaShell;
+            this.textBox_Email.BackColor = System.Drawing.Color.Snow;
             this.textBox_Email.BaseColor = System.Drawing.Color.Transparent;
             this.textBox_Email.BorderColorA = System.Drawing.Color.DodgerBlue;
             this.textBox_Email.BorderColorB = System.Drawing.Color.DarkGray;
             this.textBox_Email.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_Email.ForeColor = System.Drawing.Color.Black;
             this.textBox_Email.Hint = "";
-            this.textBox_Email.Location = new System.Drawing.Point(15, 210);
+            this.textBox_Email.Location = new System.Drawing.Point(13, 265);
             this.textBox_Email.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Email.MaxLength = 128;
             this.textBox_Email.Multiline = false;
@@ -215,8 +219,29 @@
             this.textBox_Email.Size = new System.Drawing.Size(390, 48);
             this.textBox_Email.TabIndex = 7;
             this.textBox_Email.TabStop = false;
-            this.textBox_Email.Text = "Email";
             this.textBox_Email.UseSystemPasswordChar = false;
+            // 
+            // skyLabel1
+            // 
+            this.skyLabel1.AutoSize = true;
+            this.skyLabel1.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
+            this.skyLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
+            this.skyLabel1.Location = new System.Drawing.Point(12, 244);
+            this.skyLabel1.Name = "skyLabel1";
+            this.skyLabel1.Size = new System.Drawing.Size(125, 17);
+            this.skyLabel1.TabIndex = 23;
+            this.skyLabel1.Text = "Tên đăng nhập";
+            // 
+            // skyLabel2
+            // 
+            this.skyLabel2.AutoSize = true;
+            this.skyLabel2.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
+            this.skyLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
+            this.skyLabel2.Location = new System.Drawing.Point(12, 336);
+            this.skyLabel2.Name = "skyLabel2";
+            this.skyLabel2.Size = new System.Drawing.Size(79, 17);
+            this.skyLabel2.TabIndex = 24;
+            this.skyLabel2.Text = "Mật khẩu";
             // 
             // fLogin
             // 
@@ -229,6 +254,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
             this.Text = "fLogin";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fLogin_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -250,5 +276,7 @@
         private ReaLTaiizor.Controls.ParrotFormHandle parrotFormHandle1;
         private ReaLTaiizor.Controls.ParrotFormHandle parrotFormHandle2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ReaLTaiizor.Controls.SkyLabel skyLabel2;
+        private ReaLTaiizor.Controls.SkyLabel skyLabel1;
     }
 }

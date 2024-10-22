@@ -21,5 +21,16 @@ namespace GUI
         {
 
         }
+
+        private void poisonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_TaoDon_Click(object sender, EventArgs e)
+        {
+            fTaoDonHang fTaoDonHang = new fTaoDonHang();
+            fTaoDonHang.ShowDialog();
+        }
     }
 }

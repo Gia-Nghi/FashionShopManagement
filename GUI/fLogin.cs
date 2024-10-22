@@ -21,6 +21,19 @@ namespace GUI
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
+            DangNhap();
+        }
+
+        private void fLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DangNhap();
+            }
+        }
+
+        private void DangNhap()
+        {
             Account account = new Account(textBox_Email.Text, textBox_MatKhau.Text);
             try
             {
@@ -43,6 +56,14 @@ namespace GUI
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex);
+            }
+        }
+
+        private void textBox_MatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DangNhap();
             }
         }
     }
