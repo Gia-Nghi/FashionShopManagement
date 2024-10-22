@@ -27,5 +27,11 @@ namespace GUI
             fChiTietSanPham fChiTietSanPham = new fChiTietSanPham();
             fChiTietSanPham.ShowDialog();
         }
+
+        private void btn_ThemSanPham_Click(object sender, EventArgs e)
+        {
+            fThemSanPham fThemSanPham = new fThemSanPham();
+            fThemSanPham.ShowDialog();
+        }
     }
 }

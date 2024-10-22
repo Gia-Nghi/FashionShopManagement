@@ -120,6 +120,7 @@
             this.btn_ThemSanPham.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_ThemSanPham.UseAccentColor = true;
             this.btn_ThemSanPham.UseVisualStyleBackColor = true;
+            this.btn_ThemSanPham.Click += new System.EventHandler(this.btn_ThemSanPham_Click);
             // 
             // textBox_TimKiem
             // 
