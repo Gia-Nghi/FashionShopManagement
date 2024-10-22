@@ -49,6 +49,12 @@ namespace BUS
 
         public List<Product> SearchProductByName(string name)
         {
+            if (name == null || name == "")
+            {
+                //throw new ArgumentNullException("name");
+                throw new Exception("Chưa nhập dữ liệu tìm kiếm.");
+            }    
+
             DataTable table;
             try
             {

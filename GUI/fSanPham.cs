@@ -40,16 +40,24 @@ namespace GUI
         {
             // Lấy từ khóa tìm kiếm từ textBox_TimKiem.TextButton
             string text = textBox_TimKiem.TextButton;
-            // Gọi qua Product BUS để thực hiện tìm kiếm
-            List<Product> result = ProductBUS.Instance.SearchProductByName(text);
-            if (result.Count > 0)
+
+            try
             {
-                this.data_DSDonHang.DataSource = result;
-                foreach (Product product in result)
+                // Gọi qua Product BUS để thực hiện tìm kiếm
+                List<Product> result = ProductBUS.Instance.SearchProductByName(text);
+                if (result.Count > 0)
                 {
-                    Console.WriteLine(product.Name);
+                    this.data_DSDonHang.DataSource = result;
+                    foreach (Product product in result)
+                    {
+                        Console.WriteLine(product.Name);
+                    }
+                    MessageBox.Show($"Đã tìm thấy {result.Count} sản phẩm");
                 }
-                MessageBox.Show($"Đã tìm thấy {result.Count} sản phẩm");
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message, "Lỗi !");
             }
         }
     }
