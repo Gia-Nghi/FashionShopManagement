@@ -21,5 +21,15 @@ namespace GUI
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_ThanhToan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -63,10 +63,10 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.nightControlBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(420, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(373, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 584);
+            this.panel1.Size = new System.Drawing.Size(588, 467);
             this.panel1.TabIndex = 2;
             // 
             // nightControlBox1
@@ -84,7 +84,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(522, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(464, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -110,19 +110,20 @@
             this.panel2.Controls.Add(this.textBox_Email);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(420, 584);
+            this.panel2.Size = new System.Drawing.Size(373, 467);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // skyLabel2
             // 
             this.skyLabel2.AutoSize = true;
             this.skyLabel2.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.skyLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.skyLabel2.Location = new System.Drawing.Point(12, 336);
+            this.skyLabel2.Location = new System.Drawing.Point(11, 269);
             this.skyLabel2.Name = "skyLabel2";
-            this.skyLabel2.Size = new System.Drawing.Size(79, 17);
+            this.skyLabel2.Size = new System.Drawing.Size(67, 14);
             this.skyLabel2.TabIndex = 24;
             this.skyLabel2.Text = "Mật khẩu";
             // 
@@ -131,9 +132,9 @@
             this.skyLabel1.AutoSize = true;
             this.skyLabel1.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.skyLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.skyLabel1.Location = new System.Drawing.Point(12, 244);
+            this.skyLabel1.Location = new System.Drawing.Point(11, 195);
             this.skyLabel1.Name = "skyLabel1";
-            this.skyLabel1.Size = new System.Drawing.Size(125, 17);
+            this.skyLabel1.Size = new System.Drawing.Size(103, 14);
             this.skyLabel1.TabIndex = 23;
             this.skyLabel1.Text = "Tên đăng nhập";
             // 
@@ -141,9 +142,10 @@
             // 
             this.pictureBox1.BackgroundImage = global::GUI.Properties.Resources.end_user1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(90, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(207, 178);
+            this.pictureBox1.Size = new System.Drawing.Size(184, 142);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
@@ -161,12 +163,12 @@
             this.btn_DangNhap.HighEmphasis = true;
             this.btn_DangNhap.Icon = null;
             this.btn_DangNhap.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_DangNhap.Location = new System.Drawing.Point(118, 485);
-            this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btn_DangNhap.Location = new System.Drawing.Point(105, 388);
+            this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btn_DangNhap.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_DangNhap.Size = new System.Drawing.Size(162, 54);
+            this.btn_DangNhap.Size = new System.Drawing.Size(144, 43);
             this.btn_DangNhap.TabIndex = 20;
             this.btn_DangNhap.Text = "Đăng nhập";
             this.btn_DangNhap.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -183,10 +185,10 @@
             this.label_QuenMatKhau.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.label_QuenMatKhau.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.label_QuenMatKhau.LinkColor = System.Drawing.Color.Black;
-            this.label_QuenMatKhau.Location = new System.Drawing.Point(113, 423);
+            this.label_QuenMatKhau.Location = new System.Drawing.Point(100, 338);
             this.label_QuenMatKhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_QuenMatKhau.Name = "label_QuenMatKhau";
-            this.label_QuenMatKhau.Size = new System.Drawing.Size(171, 30);
+            this.label_QuenMatKhau.Size = new System.Drawing.Size(150, 25);
             this.label_QuenMatKhau.TabIndex = 18;
             this.label_QuenMatKhau.TabStop = true;
             this.label_QuenMatKhau.Text = "Quên mật khẩu?";
@@ -202,8 +204,8 @@
             this.textBox_MatKhau.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_MatKhau.ForeColor = System.Drawing.Color.Black;
             this.textBox_MatKhau.Hint = "";
-            this.textBox_MatKhau.Location = new System.Drawing.Point(15, 357);
-            this.textBox_MatKhau.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_MatKhau.Location = new System.Drawing.Point(13, 286);
+            this.textBox_MatKhau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_MatKhau.MaxLength = 128;
             this.textBox_MatKhau.Multiline = false;
             this.textBox_MatKhau.Name = "textBox_MatKhau";
@@ -212,7 +214,7 @@
             this.textBox_MatKhau.SelectedText = "";
             this.textBox_MatKhau.SelectionLength = 0;
             this.textBox_MatKhau.SelectionStart = 0;
-            this.textBox_MatKhau.Size = new System.Drawing.Size(390, 48);
+            this.textBox_MatKhau.Size = new System.Drawing.Size(347, 43);
             this.textBox_MatKhau.TabIndex = 8;
             this.textBox_MatKhau.TabStop = false;
             this.textBox_MatKhau.UseSystemPasswordChar = true;
@@ -228,8 +230,8 @@
             this.textBox_Email.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.textBox_Email.ForeColor = System.Drawing.Color.Black;
             this.textBox_Email.Hint = "";
-            this.textBox_Email.Location = new System.Drawing.Point(13, 265);
-            this.textBox_Email.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_Email.Location = new System.Drawing.Point(12, 212);
+            this.textBox_Email.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox_Email.MaxLength = 128;
             this.textBox_Email.Multiline = false;
             this.textBox_Email.Name = "textBox_Email";
@@ -238,20 +240,21 @@
             this.textBox_Email.SelectedText = "";
             this.textBox_Email.SelectionLength = 0;
             this.textBox_Email.SelectionStart = 0;
-            this.textBox_Email.Size = new System.Drawing.Size(390, 48);
+            this.textBox_Email.Size = new System.Drawing.Size(347, 43);
             this.textBox_Email.TabIndex = 7;
             this.textBox_Email.TabStop = false;
             this.textBox_Email.UseSystemPasswordChar = false;
             // 
             // fLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 584);
+            this.ClientSize = new System.Drawing.Size(961, 467);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fLogin";

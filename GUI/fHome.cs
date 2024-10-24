@@ -83,5 +83,10 @@ namespace GUI
             fNhanVien fNhanVien = new fNhanVien();
             fNhanVien.Show();
         }
+
+        private void btn_BaoCao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

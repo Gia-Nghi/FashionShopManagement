@@ -14,7 +14,7 @@ namespace DAO
             {
                 if (instance == null)
                     instance = new ProductDAO();
-                return ProductDAO.instance;
+                return instance;
             }
         }
 
@@ -22,7 +22,21 @@ namespace DAO
 
         public DataTable GetAllProduct()
         {
-            string query = "USP_GetAllProduct";
+            string query = "SELECT MaSP, TenSP, DonGia,Size FROM SanPham";
+            try
+            {
+                return DataProvider.Instance.ExecuteQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        // Thêm phương thức để lấy tất cả loại sản phẩm
+        public DataTable GetAllCategories()
+        {
+            string query = "SELECT DISTINCT TenLoaiSP FROM V_ThongTinSanPham";
             try
             {
                 return DataProvider.Instance.ExecuteQuery(query);
@@ -35,7 +49,7 @@ namespace DAO
 
         public DataTable GetListProductByCategory(string category)
         {
-            string query = "USP_GetListProductByCategory @Category";
+            string query = "SELECT * FROM V_ThongTinSanPham WHERE TenLoaiSP = @Category"; 
             try
             {
                 return DataProvider.Instance.ExecuteQuery(query, new object[] { category });
@@ -45,13 +59,12 @@ namespace DAO
                 throw ex;
             }
         }
-
-        public DataTable SearchProductByName(string name)
+        public DataTable SearchProductByNameOrCode(string searchText)
         {
-            string query = string.Format("USP_SearchProductByName @Name");
+            string query = "SELECT * FROM dbo.SanPham WHERE MaSP LIKE '%' + @SearchText + '%' OR TenSP LIKE '%' + @SearchText + '%'"; // Tìm kiếm theo mã hoặc tên sản phẩm
             try
             {
-                return DataProvider.Instance.ExecuteQuery(query, new object[] { name });
+                return DataProvider.Instance.ExecuteQuery(query, new object[] { searchText });
             }
             catch (Exception ex)
             {
@@ -61,22 +74,15 @@ namespace DAO
 
         public bool InsertProduct(Product newProduct)
         {
-            string query = string.Format("USP_InsertProduct @Name , @Price, @Discount, @Category , @Quantity, @Size, @Image");
+            string query = "USP_InsertProduct @Name , @Price, @Category , @Quantity, @Size, @Supplier"; // Bạn cần xác định thủ tục lưu trữ
             int result;
             try
             {
-                result = DataProvider.Instance.ExecuteNonQuery(query,
-                    new object[]
-                    {
-                        newProduct.Name,
-                        newProduct.Price,
-                        newProduct.Discount,
-                        newProduct.Category,
-                        newProduct.Quantity,
-                        newProduct.Size,
-                        newProduct.Image,
-                    }
-                );
+                result = DataProvider.Instance.ExecuteNonQuery(query, new object[] {
+                    newProduct.Name,
+                    newProduct.Price,
+                    newProduct.Size,
+                });
             }
             catch (Exception ex)
             {
@@ -87,22 +93,17 @@ namespace DAO
 
         public bool UpdateProduct(Product product)
         {
-            string query = string.Format("USP_UpdateFood @Id , @Name , @Price, @Discount, @Category , @Quantity, @Size, @Image");
+            string query = "USP_UpdateProduct @Id , @Name , @Price, @Category , @Quantity, @Size, @Supplier"; // Bạn cần xác định thủ tục lưu trữ
             int result;
             try
             {
-                result = DataProvider.Instance.ExecuteNonQuery(query,
-                    new object[] { 
-                        product.Id, 
-                        product.Name,
-                        product.Price,
-                        product.Discount,
-                        product.Category, 
-                        product.Quantity,
-                        product.Size,
-                        product.Image
-                    }
-                );
+                result = DataProvider.Instance.ExecuteNonQuery(query, new object[] {
+                    product.MaSP,
+                    product.Name,
+                    product.Price,
+                    product.Size,
+
+                });
             }
             catch (Exception ex)
             {

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-
 using DTO;
 using DAO;
 
@@ -17,61 +16,58 @@ namespace BUS
             {
                 if (instance == null)
                     instance = new ProductBUS();
-                return ProductBUS.instance;
+                return instance;
             }
         }
 
         private ProductBUS() { }
 
-        public DataTable GetAllProduct()
+        public List<Product> GetAllProducts()
         {
-            try
-            {
-                return ProductDAO.Instance.GetAllProduct();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public DataTable GetListProductByCategory(string category)
-        {
-            try
-            {
-                return ProductDAO.Instance.GetListProductByCategory(category);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public List<Product> SearchProductByName(string name)
-        {
-            if (name == null || name == "")
-            {
-                //throw new ArgumentNullException("name");
-                throw new Exception("Chưa nhập dữ liệu tìm kiếm.");
-            }    
-
-            DataTable table;
-            try
-            {
-                table = ProductDAO.Instance.SearchProductByName(name);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-            List<Product> lstProduct = new List<Product>();
+            DataTable table = ProductDAO.Instance.GetAllProduct();
+            List<Product> products = new List<Product>();
             foreach (DataRow row in table.Rows)
             {
                 Product product = new Product(row);
-                lstProduct.Add(product);
+                products.Add(product);
             }
-            return lstProduct;
+            return products;
+        }
+
+        public List<Product> GetListProductByCategory(string category)
+        {
+            DataTable table = ProductDAO.Instance.GetListProductByCategory(category);
+            List<Product> products = new List<Product>();
+            foreach (DataRow row in table.Rows)
+            {
+                Product product = new Product(row);
+                products.Add(product);
+            }
+            return products;
+        }
+
+        // Thêm phương thức để lấy tất cả loại sản phẩm
+        public List<string> GetAllCategories()
+        {
+            DataTable table = ProductDAO.Instance.GetAllCategories(); // Gọi DAO để lấy danh sách loại sản phẩm
+            List<string> categories = new List<string>();
+            foreach (DataRow row in table.Rows)
+            {
+                categories.Add(row["TenLoaiSP"].ToString());
+            }
+            return categories;
+        }
+
+        public List<Product> SearchProductByNameOrCode(string searchText)
+        {
+            DataTable table = ProductDAO.Instance.SearchProductByNameOrCode(searchText); // Gọi đến DAO
+            List<Product> products = new List<Product>();
+            foreach (DataRow row in table.Rows)
+            {
+                Product product = new Product(row);
+                products.Add(product);
+            }
+            return products;
         }
 
         public bool InsertProduct(Product newProduct)

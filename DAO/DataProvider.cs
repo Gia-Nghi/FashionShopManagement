@@ -18,11 +18,8 @@ namespace DAO
             }
         }
 
-        // Hàm khởi tao
         private DataProvider() { }
-
-        // Kết nối tới DB
-        private string connectionString = @"Data Source=.;Initial Catalog=FashionShopManagement;Integrated Security=True";
+        private string connectionString = @"Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
      
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

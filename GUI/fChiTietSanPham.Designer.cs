@@ -31,12 +31,13 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.picture_SanPham = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox_ChiTietSanPham = new ReaLTaiizor.Controls.CyberRichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNhaCungCap = new System.Windows.Forms.Label();
+            this.buttonXoa = new ReaLTaiizor.Controls.Button();
+            this.buttonChinhSua = new ReaLTaiizor.Controls.Button();
+            this.labelSIZE = new System.Windows.Forms.Label();
+            this.labelSoLuong = new System.Windows.Forms.Label();
+            this.labelLoaiSP = new System.Windows.Forms.Label();
+            this.labelGiaSP = new System.Windows.Forms.Label();
             this.label_TenSanPham = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_SanPham)).BeginInit();
@@ -52,12 +53,12 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(993, 624);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(883, 499);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // picture_SanPham
             // 
@@ -65,138 +66,154 @@
             this.picture_SanPham.BackgroundImage = global::GUI.Properties.Resources.ao_len_1;
             this.picture_SanPham.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picture_SanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picture_SanPham.Location = new System.Drawing.Point(3, 3);
+            this.picture_SanPham.Location = new System.Drawing.Point(3, 2);
+            this.picture_SanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture_SanPham.Name = "picture_SanPham";
-            this.picture_SanPham.Size = new System.Drawing.Size(401, 618);
+            this.picture_SanPham.Size = new System.Drawing.Size(356, 495);
             this.picture_SanPham.TabIndex = 0;
             this.picture_SanPham.TabStop = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Controls.Add(this.textBox_ChiTietSanPham);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.labelNhaCungCap);
+            this.panel1.Controls.Add(this.buttonXoa);
+            this.panel1.Controls.Add(this.buttonChinhSua);
+            this.panel1.Controls.Add(this.labelSIZE);
+            this.panel1.Controls.Add(this.labelSoLuong);
+            this.panel1.Controls.Add(this.labelLoaiSP);
+            this.panel1.Controls.Add(this.labelGiaSP);
             this.panel1.Controls.Add(this.label_TenSanPham);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(410, 3);
+            this.panel1.Location = new System.Drawing.Point(365, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 618);
+            this.panel1.Size = new System.Drawing.Size(515, 495);
             this.panel1.TabIndex = 1;
             // 
-            // textBox_ChiTietSanPham
+            // labelNhaCungCap
             // 
-            this.textBox_ChiTietSanPham.Alpha = 20;
-            this.textBox_ChiTietSanPham.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_ChiTietSanPham.Background_WidthPen = 4F;
-            this.textBox_ChiTietSanPham.BackgroundPen = true;
-            this.textBox_ChiTietSanPham.ColorBackground = System.Drawing.Color.MistyRose;
-            this.textBox_ChiTietSanPham.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox_ChiTietSanPham.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_ChiTietSanPham.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_ChiTietSanPham.ColorPen_2 = System.Drawing.Color.White;
-            this.textBox_ChiTietSanPham.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_ChiTietSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_ChiTietSanPham.Font = new System.Drawing.Font("Arial", 11F);
-            this.textBox_ChiTietSanPham.ForeColor = System.Drawing.Color.Black;
-            this.textBox_ChiTietSanPham.Lighting = false;
-            this.textBox_ChiTietSanPham.LinearGradientPen = false;
-            this.textBox_ChiTietSanPham.Location = new System.Drawing.Point(0, 321);
-            this.textBox_ChiTietSanPham.Name = "textBox_ChiTietSanPham";
-            this.textBox_ChiTietSanPham.PenWidth = 10;
-            this.textBox_ChiTietSanPham.RGB = false;
-            this.textBox_ChiTietSanPham.Rounding = true;
-            this.textBox_ChiTietSanPham.RoundingInt = 10;
-            this.textBox_ChiTietSanPham.Size = new System.Drawing.Size(580, 297);
-            this.textBox_ChiTietSanPham.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_ChiTietSanPham.TabIndex = 6;
-            this.textBox_ChiTietSanPham.Tag = "Cyber";
-            this.textBox_ChiTietSanPham.TextButton = "Vải chính 100% len";
-            this.textBox_ChiTietSanPham.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_ChiTietSanPham.Timer_RGB = 300;
+            this.labelNhaCungCap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNhaCungCap.ForeColor = System.Drawing.Color.Sienna;
+            this.labelNhaCungCap.Location = new System.Drawing.Point(0, 294);
+            this.labelNhaCungCap.Name = "labelNhaCungCap";
+            this.labelNhaCungCap.Size = new System.Drawing.Size(515, 65);
+            this.labelNhaCungCap.TabIndex = 7;
+            this.labelNhaCungCap.Text = "Nha cung cap: abc";
+            this.labelNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // buttonXoa
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("SVN-Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(0, 273);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(580, 48);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Chi tiết sản phẩm:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXoa.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonXoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonXoa.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonXoa.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonXoa.Image = null;
+            this.buttonXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXoa.InactiveColor = System.Drawing.Color.Red;
+            this.buttonXoa.Location = new System.Drawing.Point(306, 416);
+            this.buttonXoa.Name = "buttonXoa";
+            this.buttonXoa.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonXoa.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonXoa.Size = new System.Drawing.Size(167, 47);
+            this.buttonXoa.TabIndex = 6;
+            this.buttonXoa.Text = "Xóa sản phẩm";
+            this.buttonXoa.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
-            // label4
+            // buttonChinhSua
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Font = new System.Drawing.Font("SVN-Book Antiqua", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Sienna;
-            this.label4.Location = new System.Drawing.Point(0, 225);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(580, 48);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Kích cỡ: M/L/XL";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonChinhSua.BackColor = System.Drawing.Color.MistyRose;
+            this.buttonChinhSua.BorderColor = System.Drawing.Color.Blue;
+            this.buttonChinhSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonChinhSua.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonChinhSua.EnteredColor = System.Drawing.Color.Blue;
+            this.buttonChinhSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonChinhSua.Image = null;
+            this.buttonChinhSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonChinhSua.InactiveColor = System.Drawing.Color.Blue;
+            this.buttonChinhSua.Location = new System.Drawing.Point(47, 416);
+            this.buttonChinhSua.Name = "buttonChinhSua";
+            this.buttonChinhSua.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonChinhSua.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.buttonChinhSua.Size = new System.Drawing.Size(167, 47);
+            this.buttonChinhSua.TabIndex = 5;
+            this.buttonChinhSua.Text = "Chỉnh sửa";
+            this.buttonChinhSua.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.buttonChinhSua.Click += new System.EventHandler(this.buttonChinhSua_Click);
             // 
-            // label3
+            // labelSIZE
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("SVN-Book Antiqua", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Sienna;
-            this.label3.Location = new System.Drawing.Point(0, 177);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(580, 48);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Số lượng: 121";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSIZE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelSIZE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSIZE.ForeColor = System.Drawing.Color.Sienna;
+            this.labelSIZE.Location = new System.Drawing.Point(0, 229);
+            this.labelSIZE.Name = "labelSIZE";
+            this.labelSIZE.Size = new System.Drawing.Size(515, 65);
+            this.labelSIZE.TabIndex = 4;
+            this.labelSIZE.Text = "Kích cỡ: M/L/XL";
+            this.labelSIZE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labelSoLuong
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("SVN-Book Antiqua", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Sienna;
-            this.label2.Location = new System.Drawing.Point(0, 129);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(580, 48);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Loại sản phẩm: Áo len";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSoLuong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSoLuong.ForeColor = System.Drawing.Color.Sienna;
+            this.labelSoLuong.Location = new System.Drawing.Point(0, 168);
+            this.labelSoLuong.Name = "labelSoLuong";
+            this.labelSoLuong.Size = new System.Drawing.Size(515, 61);
+            this.labelSoLuong.TabIndex = 3;
+            this.labelSoLuong.Text = "Số lượng: 121";
+            this.labelSoLuong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // labelLoaiSP
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("SVN-Book Antiqua", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(0, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(580, 48);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "1.000.000 VNĐ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelLoaiSP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoaiSP.ForeColor = System.Drawing.Color.Sienna;
+            this.labelLoaiSP.Location = new System.Drawing.Point(0, 103);
+            this.labelLoaiSP.Name = "labelLoaiSP";
+            this.labelLoaiSP.Size = new System.Drawing.Size(515, 65);
+            this.labelLoaiSP.TabIndex = 2;
+            this.labelLoaiSP.Text = "Loại sản phẩm: Áo len";
+            this.labelLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelLoaiSP.Click += new System.EventHandler(this.labelLoaiSP_Click);
+            // 
+            // labelGiaSP
+            // 
+            this.labelGiaSP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelGiaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGiaSP.ForeColor = System.Drawing.Color.Red;
+            this.labelGiaSP.Location = new System.Drawing.Point(0, 65);
+            this.labelGiaSP.Name = "labelGiaSP";
+            this.labelGiaSP.Size = new System.Drawing.Size(515, 38);
+            this.labelGiaSP.TabIndex = 1;
+            this.labelGiaSP.Text = "1.000.000 VNĐ";
+            this.labelGiaSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_TenSanPham
             // 
             this.label_TenSanPham.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label_TenSanPham.Font = new System.Drawing.Font("SVN-Blog Script", 18F, System.Drawing.FontStyle.Bold);
+            this.label_TenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.label_TenSanPham.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label_TenSanPham.Location = new System.Drawing.Point(0, 0);
             this.label_TenSanPham.Name = "label_TenSanPham";
-            this.label_TenSanPham.Size = new System.Drawing.Size(580, 81);
+            this.label_TenSanPham.Size = new System.Drawing.Size(515, 65);
             this.label_TenSanPham.TabIndex = 0;
             this.label_TenSanPham.Text = "Áo len";
             this.label_TenSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fChiTietSanPham
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 624);
+            this.ClientSize = new System.Drawing.Size(883, 499);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fChiTietSanPham";
             this.Text = "Chi tiết sản phẩm";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -211,12 +228,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label_TenSanPham;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.CyberRichTextBox textBox_ChiTietSanPham;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelGiaSP;
+        private System.Windows.Forms.Label labelSIZE;
+        private System.Windows.Forms.Label labelSoLuong;
+        private System.Windows.Forms.Label labelLoaiSP;
         private System.Windows.Forms.PictureBox picture_SanPham;
+        private ReaLTaiizor.Controls.Button buttonXoa;
+        private ReaLTaiizor.Controls.Button buttonChinhSua;
+        private System.Windows.Forms.Label labelNhaCungCap;
     }
 }

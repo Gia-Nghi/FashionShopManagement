@@ -28,102 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.label_DiaChi = new System.Windows.Forms.Label();
-            this.textBox_TenKhachHang = new ReaLTaiizor.Controls.CyberTextBox();
-            this.textBox_SDT = new ReaLTaiizor.Controls.CyberTextBox();
-            this.textBox_NhanVien = new ReaLTaiizor.Controls.CyberTextBox();
-            this.label_SDT = new System.Windows.Forms.Label();
-            this.label_Ho = new System.Windows.Forms.Label();
-            this.data_DSSanPham = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_Them = new ReaLTaiizor.Controls.MaterialButton();
-            this.btn_CapNhat = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_Xoa = new ReaLTaiizor.Controls.MaterialButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_Them = new ReaLTaiizor.Controls.MaterialButton();
             this.label_Cccd = new System.Windows.Forms.Label();
-            this.textBox_DonGia = new ReaLTaiizor.Controls.CyberTextBox();
-            this.textbox_SoLuong = new ReaLTaiizor.Controls.CyberTextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textbox_KhuyenMai = new ReaLTaiizor.Controls.CyberTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox_GiamGia = new ReaLTaiizor.Controls.CyberTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox_ThanhTien = new ReaLTaiizor.Controls.CyberTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox_TongTien = new ReaLTaiizor.Controls.CyberTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox_SanPham = new ReaLTaiizor.Controls.HopeComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.data_DSSanPham = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_TraCuuSDT = new ReaLTaiizor.Controls.MaterialButton();
+            this.label_DiaChi = new System.Windows.Forms.Label();
             this.btn_Luu = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_ThanhToan = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_InHoaDon = new ReaLTaiizor.Controls.MaterialButton();
-            this.btn_TraCuuSDT = new ReaLTaiizor.Controls.MaterialButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox_MaHoaDon = new ReaLTaiizor.Controls.CyberTextBox();
-            this.comboBox_SanPham = new ReaLTaiizor.Controls.HopeComboBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.label_SDT = new System.Windows.Forms.Label();
+            this.label_Ho = new System.Windows.Forms.Label();
+            this.textBox_MaNV = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBox_SDT = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBox_MaKhachHang = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBoxMaHD = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBoxDonGia = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBoxSoLuong = new ReaLTaiizor.Controls.HopeTextBox();
+            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.data_DSSanPham)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_DSSanPham)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox_MaHoaDon);
-            this.panel1.Controls.Add(this.btn_TraCuuSDT);
-            this.panel1.Controls.Add(this.label_DiaChi);
-            this.panel1.Controls.Add(this.textBox_TenKhachHang);
-            this.panel1.Controls.Add(this.textBox_SDT);
-            this.panel1.Controls.Add(this.textBox_NhanVien);
-            this.panel1.Controls.Add(this.label_SDT);
-            this.panel1.Controls.Add(this.label_Ho);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(552, 262);
-            this.panel1.TabIndex = 36;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.data_DSSanPham);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(561, 271);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(552, 309);
-            this.panel2.TabIndex = 37;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.panel4, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 1);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 101);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.08696F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.91304F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1116, 583);
-            this.tableLayoutPanel2.TabIndex = 40;
             // 
             // pictureBox1
             // 
@@ -148,6 +89,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1116, 101);
             this.tableLayoutPanel1.TabIndex = 39;
             // 
@@ -155,7 +97,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("SVN-Blog Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(228, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -164,243 +106,6 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "TẠO HÓA ĐƠN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_DiaChi
-            // 
-            this.label_DiaChi.AutoSize = true;
-            this.label_DiaChi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_DiaChi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_DiaChi.Location = new System.Drawing.Point(16, 153);
-            this.label_DiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_DiaChi.Name = "label_DiaChi";
-            this.label_DiaChi.Size = new System.Drawing.Size(104, 23);
-            this.label_DiaChi.TabIndex = 71;
-            this.label_DiaChi.Text = "Tên khách:";
-            // 
-            // textBox_TenKhachHang
-            // 
-            this.textBox_TenKhachHang.Alpha = 20;
-            this.textBox_TenKhachHang.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_TenKhachHang.Background_WidthPen = 3F;
-            this.textBox_TenKhachHang.BackgroundPen = true;
-            this.textBox_TenKhachHang.ColorBackground = System.Drawing.Color.White;
-            this.textBox_TenKhachHang.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TenKhachHang.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TenKhachHang.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TenKhachHang.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_TenKhachHang.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_TenKhachHang.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_TenKhachHang.ForeColor = System.Drawing.Color.Black;
-            this.textBox_TenKhachHang.Lighting = false;
-            this.textBox_TenKhachHang.LinearGradientPen = false;
-            this.textBox_TenKhachHang.Location = new System.Drawing.Point(136, 144);
-            this.textBox_TenKhachHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_TenKhachHang.Name = "textBox_TenKhachHang";
-            this.textBox_TenKhachHang.PenWidth = 15;
-            this.textBox_TenKhachHang.RGB = false;
-            this.textBox_TenKhachHang.Rounding = true;
-            this.textBox_TenKhachHang.RoundingInt = 60;
-            this.textBox_TenKhachHang.Size = new System.Drawing.Size(399, 50);
-            this.textBox_TenKhachHang.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_TenKhachHang.TabIndex = 75;
-            this.textBox_TenKhachHang.Tag = "Cyber";
-            this.textBox_TenKhachHang.TextButton = "";
-            this.textBox_TenKhachHang.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_TenKhachHang.Timer_RGB = 300;
-            // 
-            // textBox_SDT
-            // 
-            this.textBox_SDT.Alpha = 20;
-            this.textBox_SDT.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_SDT.Background_WidthPen = 3F;
-            this.textBox_SDT.BackgroundPen = true;
-            this.textBox_SDT.ColorBackground = System.Drawing.Color.White;
-            this.textBox_SDT.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_SDT.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_SDT.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_SDT.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_SDT.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_SDT.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_SDT.ForeColor = System.Drawing.Color.Black;
-            this.textBox_SDT.Lighting = false;
-            this.textBox_SDT.LinearGradientPen = false;
-            this.textBox_SDT.Location = new System.Drawing.Point(136, 82);
-            this.textBox_SDT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_SDT.Name = "textBox_SDT";
-            this.textBox_SDT.PenWidth = 15;
-            this.textBox_SDT.RGB = false;
-            this.textBox_SDT.Rounding = true;
-            this.textBox_SDT.RoundingInt = 60;
-            this.textBox_SDT.Size = new System.Drawing.Size(308, 50);
-            this.textBox_SDT.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_SDT.TabIndex = 70;
-            this.textBox_SDT.Tag = "Cyber";
-            this.textBox_SDT.TextButton = "";
-            this.textBox_SDT.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_SDT.Timer_RGB = 300;
-            // 
-            // textBox_NhanVien
-            // 
-            this.textBox_NhanVien.Alpha = 20;
-            this.textBox_NhanVien.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_NhanVien.Background_WidthPen = 3F;
-            this.textBox_NhanVien.BackgroundPen = true;
-            this.textBox_NhanVien.ColorBackground = System.Drawing.Color.White;
-            this.textBox_NhanVien.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_NhanVien.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_NhanVien.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_NhanVien.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_NhanVien.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_NhanVien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox_NhanVien.ForeColor = System.Drawing.Color.Black;
-            this.textBox_NhanVien.Lighting = false;
-            this.textBox_NhanVien.LinearGradientPen = false;
-            this.textBox_NhanVien.Location = new System.Drawing.Point(136, 23);
-            this.textBox_NhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_NhanVien.Name = "textBox_NhanVien";
-            this.textBox_NhanVien.PenWidth = 15;
-            this.textBox_NhanVien.RGB = false;
-            this.textBox_NhanVien.Rounding = true;
-            this.textBox_NhanVien.RoundingInt = 60;
-            this.textBox_NhanVien.Size = new System.Drawing.Size(399, 50);
-            this.textBox_NhanVien.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_NhanVien.TabIndex = 69;
-            this.textBox_NhanVien.Tag = "Cyber";
-            this.textBox_NhanVien.TextButton = "";
-            this.textBox_NhanVien.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_NhanVien.Timer_RGB = 300;
-            // 
-            // label_SDT
-            // 
-            this.label_SDT.AutoSize = true;
-            this.label_SDT.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_SDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_SDT.Location = new System.Drawing.Point(16, 95);
-            this.label_SDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_SDT.Name = "label_SDT";
-            this.label_SDT.Size = new System.Drawing.Size(54, 23);
-            this.label_SDT.TabIndex = 68;
-            this.label_SDT.Text = "SĐT:";
-            // 
-            // label_Ho
-            // 
-            this.label_Ho.AutoSize = true;
-            this.label_Ho.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Ho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_Ho.Location = new System.Drawing.Point(16, 31);
-            this.label_Ho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Ho.Name = "label_Ho";
-            this.label_Ho.Size = new System.Drawing.Size(100, 23);
-            this.label_Ho.TabIndex = 67;
-            this.label_Ho.Text = "Nhân viên:";
-            // 
-            // data_DSSanPham
-            // 
-            this.data_DSSanPham.AllowUserToResizeRows = false;
-            this.data_DSSanPham.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.data_DSSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.data_DSSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.data_DSSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_DSSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.data_DSSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_DSSanPham.DefaultCellStyle = dataGridViewCellStyle2;
-            this.data_DSSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.data_DSSanPham.EnableHeadersVisualStyles = false;
-            this.data_DSSanPham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.data_DSSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.data_DSSanPham.Location = new System.Drawing.Point(0, 0);
-            this.data_DSSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.data_DSSanPham.Name = "data_DSSanPham";
-            this.data_DSSanPham.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_DSSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.data_DSSanPham.RowHeadersWidth = 62;
-            this.data_DSSanPham.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.data_DSSanPham.RowTemplate.Height = 28;
-            this.data_DSSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_DSSanPham.Size = new System.Drawing.Size(552, 309);
-            this.data_DSSanPham.TabIndex = 39;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.comboBox_SanPham);
-            this.panel3.Controls.Add(this.textbox_SoLuong);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textbox_KhuyenMai);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label_Cccd);
-            this.panel3.Controls.Add(this.textBox_DonGia);
-            this.panel3.Controls.Add(this.btn_Them);
-            this.panel3.Controls.Add(this.btn_CapNhat);
-            this.panel3.Controls.Add(this.btn_Xoa);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 271);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(552, 309);
-            this.panel3.TabIndex = 38;
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Them.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_Them.Depth = 0;
-            this.btn_Them.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Them.HighEmphasis = true;
-            this.btn_Them.Icon = null;
-            this.btn_Them.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_Them.Location = new System.Drawing.Point(194, 265);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btn_Them.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_Them.Size = new System.Drawing.Size(64, 36);
-            this.btn_Them.TabIndex = 82;
-            this.btn_Them.Text = "Thêm";
-            this.btn_Them.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_Them.UseAccentColor = false;
-            this.btn_Them.UseVisualStyleBackColor = true;
-            // 
-            // btn_CapNhat
-            // 
-            this.btn_CapNhat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_CapNhat.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_CapNhat.Depth = 0;
-            this.btn_CapNhat.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_CapNhat.HighEmphasis = true;
-            this.btn_CapNhat.Icon = null;
-            this.btn_CapNhat.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_CapNhat.Location = new System.Drawing.Point(294, 265);
-            this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btn_CapNhat.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btn_CapNhat.Name = "btn_CapNhat";
-            this.btn_CapNhat.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_CapNhat.Size = new System.Drawing.Size(93, 36);
-            this.btn_CapNhat.TabIndex = 80;
-            this.btn_CapNhat.Text = "Cập nhật";
-            this.btn_CapNhat.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_CapNhat.UseAccentColor = false;
-            this.btn_CapNhat.UseVisualStyleBackColor = true;
             // 
             // btn_Xoa
             // 
@@ -411,7 +116,7 @@
             this.btn_Xoa.HighEmphasis = true;
             this.btn_Xoa.Icon = null;
             this.btn_Xoa.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_Xoa.Location = new System.Drawing.Point(423, 265);
+            this.btn_Xoa.Location = new System.Drawing.Point(279, 288);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btn_Xoa.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btn_Xoa.Name = "btn_Xoa";
@@ -423,17 +128,26 @@
             this.btn_Xoa.UseAccentColor = false;
             this.btn_Xoa.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btn_Them
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(16, 31);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 23);
-            this.label3.TabIndex = 85;
-            this.label3.Text = "Sản phẩm:";
+            this.btn_Them.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Them.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_Them.Depth = 0;
+            this.btn_Them.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Them.HighEmphasis = true;
+            this.btn_Them.Icon = null;
+            this.btn_Them.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btn_Them.Location = new System.Drawing.Point(166, 288);
+            this.btn_Them.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btn_Them.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_Them.Size = new System.Drawing.Size(64, 36);
+            this.btn_Them.TabIndex = 82;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_Them.UseAccentColor = false;
+            this.btn_Them.UseVisualStyleBackColor = true;
             // 
             // label_Cccd
             // 
@@ -443,83 +157,21 @@
             this.label_Cccd.Location = new System.Drawing.Point(15, 95);
             this.label_Cccd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Cccd.Name = "label_Cccd";
-            this.label_Cccd.Size = new System.Drawing.Size(82, 23);
+            this.label_Cccd.Size = new System.Drawing.Size(72, 19);
             this.label_Cccd.TabIndex = 83;
             this.label_Cccd.Text = "Đơn giá:";
             // 
-            // textBox_DonGia
+            // label3
             // 
-            this.textBox_DonGia.Alpha = 20;
-            this.textBox_DonGia.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_DonGia.Background_WidthPen = 3F;
-            this.textBox_DonGia.BackgroundPen = true;
-            this.textBox_DonGia.ColorBackground = System.Drawing.Color.White;
-            this.textBox_DonGia.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_DonGia.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_DonGia.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_DonGia.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_DonGia.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_DonGia.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_DonGia.ForeColor = System.Drawing.Color.Black;
-            this.textBox_DonGia.Lighting = false;
-            this.textBox_DonGia.LinearGradientPen = false;
-            this.textBox_DonGia.Location = new System.Drawing.Point(136, 78);
-            this.textBox_DonGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_DonGia.Name = "textBox_DonGia";
-            this.textBox_DonGia.PenWidth = 15;
-            this.textBox_DonGia.RGB = false;
-            this.textBox_DonGia.Rounding = true;
-            this.textBox_DonGia.RoundingInt = 60;
-            this.textBox_DonGia.Size = new System.Drawing.Size(399, 50);
-            this.textBox_DonGia.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_DonGia.TabIndex = 84;
-            this.textBox_DonGia.Tag = "Cyber";
-            this.textBox_DonGia.TextButton = "";
-            this.textBox_DonGia.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_DonGia.Timer_RGB = 300;
-            // 
-            // textbox_SoLuong
-            // 
-            this.textbox_SoLuong.Alpha = 20;
-            this.textbox_SoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.textbox_SoLuong.Background_WidthPen = 3F;
-            this.textbox_SoLuong.BackgroundPen = true;
-            this.textbox_SoLuong.ColorBackground = System.Drawing.Color.White;
-            this.textbox_SoLuong.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textbox_SoLuong.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textbox_SoLuong.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textbox_SoLuong.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textbox_SoLuong.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textbox_SoLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.textbox_SoLuong.ForeColor = System.Drawing.Color.Black;
-            this.textbox_SoLuong.Lighting = false;
-            this.textbox_SoLuong.LinearGradientPen = false;
-            this.textbox_SoLuong.Location = new System.Drawing.Point(136, 138);
-            this.textbox_SoLuong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textbox_SoLuong.Name = "textbox_SoLuong";
-            this.textbox_SoLuong.PenWidth = 15;
-            this.textbox_SoLuong.RGB = false;
-            this.textbox_SoLuong.Rounding = true;
-            this.textbox_SoLuong.RoundingInt = 60;
-            this.textbox_SoLuong.Size = new System.Drawing.Size(399, 50);
-            this.textbox_SoLuong.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textbox_SoLuong.TabIndex = 90;
-            this.textbox_SoLuong.Tag = "Cyber";
-            this.textbox_SoLuong.TextButton = "";
-            this.textbox_SoLuong.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textbox_SoLuong.Timer_RGB = 300;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(16, 151);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
-            this.label2.TabIndex = 89;
-            this.label2.Text = "Số lượng:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(16, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 19);
+            this.label3.TabIndex = 85;
+            this.label3.Text = "Sản phẩm:";
             // 
             // label4
             // 
@@ -529,248 +181,129 @@
             this.label4.Location = new System.Drawing.Point(15, 215);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 23);
+            this.label4.Size = new System.Drawing.Size(102, 19);
             this.label4.TabIndex = 87;
             this.label4.Text = "Khuyến mãi:";
             // 
-            // textbox_KhuyenMai
+            // label2
             // 
-            this.textbox_KhuyenMai.Alpha = 20;
-            this.textbox_KhuyenMai.BackColor = System.Drawing.Color.Transparent;
-            this.textbox_KhuyenMai.Background_WidthPen = 3F;
-            this.textbox_KhuyenMai.BackgroundPen = true;
-            this.textbox_KhuyenMai.ColorBackground = System.Drawing.Color.White;
-            this.textbox_KhuyenMai.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textbox_KhuyenMai.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textbox_KhuyenMai.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textbox_KhuyenMai.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textbox_KhuyenMai.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textbox_KhuyenMai.Font = new System.Drawing.Font("Arial", 12F);
-            this.textbox_KhuyenMai.ForeColor = System.Drawing.Color.Black;
-            this.textbox_KhuyenMai.Lighting = false;
-            this.textbox_KhuyenMai.LinearGradientPen = false;
-            this.textbox_KhuyenMai.Location = new System.Drawing.Point(136, 198);
-            this.textbox_KhuyenMai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textbox_KhuyenMai.Name = "textbox_KhuyenMai";
-            this.textbox_KhuyenMai.PenWidth = 15;
-            this.textbox_KhuyenMai.RGB = false;
-            this.textbox_KhuyenMai.Rounding = true;
-            this.textbox_KhuyenMai.RoundingInt = 60;
-            this.textbox_KhuyenMai.Size = new System.Drawing.Size(399, 50);
-            this.textbox_KhuyenMai.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textbox_KhuyenMai.TabIndex = 88;
-            this.textbox_KhuyenMai.Tag = "Cyber";
-            this.textbox_KhuyenMai.TextButton = "";
-            this.textbox_KhuyenMai.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textbox_KhuyenMai.Timer_RGB = 300;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(16, 151);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 19);
+            this.label2.TabIndex = 89;
+            this.label2.Text = "Số lượng:";
             // 
-            // panel4
+            // comboBox_SanPham
             // 
-            this.panel4.Controls.Add(this.textBox_GiamGia);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.textBox_ThanhTien);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.textBox_TongTien);
-            this.panel4.Controls.Add(this.btn_Luu);
-            this.panel4.Controls.Add(this.btn_ThanhToan);
-            this.panel4.Controls.Add(this.btn_InHoaDon);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(561, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(552, 262);
-            this.panel4.TabIndex = 39;
+            this.comboBox_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox_SanPham.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBox_SanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox_SanPham.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.comboBox_SanPham.FormattingEnabled = true;
+            this.comboBox_SanPham.ItemHeight = 30;
+            this.comboBox_SanPham.Location = new System.Drawing.Point(136, 31);
+            this.comboBox_SanPham.Name = "comboBox_SanPham";
+            this.comboBox_SanPham.Size = new System.Drawing.Size(321, 36);
+            this.comboBox_SanPham.TabIndex = 91;
             // 
-            // textBox_GiamGia
+            // panel3
             // 
-            this.textBox_GiamGia.Alpha = 15;
-            this.textBox_GiamGia.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_GiamGia.Background_WidthPen = 3F;
-            this.textBox_GiamGia.BackgroundPen = true;
-            this.textBox_GiamGia.ColorBackground = System.Drawing.Color.White;
-            this.textBox_GiamGia.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_GiamGia.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_GiamGia.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_GiamGia.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_GiamGia.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_GiamGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox_GiamGia.ForeColor = System.Drawing.Color.Black;
-            this.textBox_GiamGia.Lighting = false;
-            this.textBox_GiamGia.LinearGradientPen = false;
-            this.textBox_GiamGia.Location = new System.Drawing.Point(143, 83);
-            this.textBox_GiamGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_GiamGia.Name = "textBox_GiamGia";
-            this.textBox_GiamGia.PenWidth = 15;
-            this.textBox_GiamGia.RGB = false;
-            this.textBox_GiamGia.Rounding = true;
-            this.textBox_GiamGia.RoundingInt = 60;
-            this.textBox_GiamGia.Size = new System.Drawing.Size(399, 50);
-            this.textBox_GiamGia.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_GiamGia.TabIndex = 90;
-            this.textBox_GiamGia.Tag = "Cyber";
-            this.textBox_GiamGia.TextButton = "";
-            this.textBox_GiamGia.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_GiamGia.Timer_RGB = 300;
+            this.panel3.Controls.Add(this.hopeTextBox1);
+            this.panel3.Controls.Add(this.TextBoxSoLuong);
+            this.panel3.Controls.Add(this.TextBoxDonGia);
+            this.panel3.Controls.Add(this.comboBox_SanPham);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.btn_Luu);
+            this.panel3.Controls.Add(this.btn_ThanhToan);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.btn_InHoaDon);
+            this.panel3.Controls.Add(this.label_Cccd);
+            this.panel3.Location = new System.Drawing.Point(586, 99);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(518, 329);
+            this.panel3.TabIndex = 38;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label5
+            // data_DSSanPham
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(23, 96);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 23);
-            this.label5.TabIndex = 89;
-            this.label5.Text = "Giảm giá:";
+            this.data_DSSanPham.AllowUserToResizeRows = false;
+            this.data_DSSanPham.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_DSSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.data_DSSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.data_DSSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_DSSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.data_DSSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_DSSanPham.DefaultCellStyle = dataGridViewCellStyle5;
+            this.data_DSSanPham.EnableHeadersVisualStyles = false;
+            this.data_DSSanPham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.data_DSSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_DSSanPham.Location = new System.Drawing.Point(3, 436);
+            this.data_DSSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.data_DSSanPham.Name = "data_DSSanPham";
+            this.data_DSSanPham.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_DSSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.data_DSSanPham.RowHeadersWidth = 62;
+            this.data_DSSanPham.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.data_DSSanPham.RowTemplate.Height = 28;
+            this.data_DSSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_DSSanPham.Size = new System.Drawing.Size(1101, 243);
+            this.data_DSSanPham.TabIndex = 39;
             // 
-            // label6
+            // panel1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(22, 160);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 23);
-            this.label6.TabIndex = 87;
-            this.label6.Text = "Thành tiền:";
+            this.panel1.Controls.Add(this.TextBoxMaHD);
+            this.panel1.Controls.Add(this.textBox_MaKhachHang);
+            this.panel1.Controls.Add(this.TextBox_SDT);
+            this.panel1.Controls.Add(this.textBox_MaNV);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.btn_TraCuuSDT);
+            this.panel1.Controls.Add(this.label_DiaChi);
+            this.panel1.Controls.Add(this.label_SDT);
+            this.panel1.Controls.Add(this.btn_Them);
+            this.panel1.Controls.Add(this.label_Ho);
+            this.panel1.Controls.Add(this.btn_Xoa);
+            this.panel1.Location = new System.Drawing.Point(0, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(580, 329);
+            this.panel1.TabIndex = 41;
             // 
-            // textBox_ThanhTien
+            // label7
             // 
-            this.textBox_ThanhTien.Alpha = 20;
-            this.textBox_ThanhTien.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_ThanhTien.Background_WidthPen = 3F;
-            this.textBox_ThanhTien.BackgroundPen = true;
-            this.textBox_ThanhTien.ColorBackground = System.Drawing.Color.White;
-            this.textBox_ThanhTien.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_ThanhTien.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_ThanhTien.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_ThanhTien.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_ThanhTien.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_ThanhTien.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_ThanhTien.ForeColor = System.Drawing.Color.Black;
-            this.textBox_ThanhTien.Lighting = false;
-            this.textBox_ThanhTien.LinearGradientPen = false;
-            this.textBox_ThanhTien.Location = new System.Drawing.Point(143, 143);
-            this.textBox_ThanhTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_ThanhTien.Name = "textBox_ThanhTien";
-            this.textBox_ThanhTien.PenWidth = 15;
-            this.textBox_ThanhTien.RGB = false;
-            this.textBox_ThanhTien.Rounding = true;
-            this.textBox_ThanhTien.RoundingInt = 60;
-            this.textBox_ThanhTien.Size = new System.Drawing.Size(399, 50);
-            this.textBox_ThanhTien.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_ThanhTien.TabIndex = 88;
-            this.textBox_ThanhTien.Tag = "Cyber";
-            this.textBox_ThanhTien.TextButton = "";
-            this.textBox_ThanhTien.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_ThanhTien.Timer_RGB = 300;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(22, 40);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 23);
-            this.label8.TabIndex = 83;
-            this.label8.Text = "Tổng tiền:";
-            // 
-            // textBox_TongTien
-            // 
-            this.textBox_TongTien.Alpha = 20;
-            this.textBox_TongTien.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_TongTien.Background_WidthPen = 3F;
-            this.textBox_TongTien.BackgroundPen = true;
-            this.textBox_TongTien.ColorBackground = System.Drawing.Color.White;
-            this.textBox_TongTien.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TongTien.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TongTien.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TongTien.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_TongTien.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_TongTien.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_TongTien.ForeColor = System.Drawing.Color.Black;
-            this.textBox_TongTien.Lighting = false;
-            this.textBox_TongTien.LinearGradientPen = false;
-            this.textBox_TongTien.Location = new System.Drawing.Point(143, 23);
-            this.textBox_TongTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_TongTien.Name = "textBox_TongTien";
-            this.textBox_TongTien.PenWidth = 15;
-            this.textBox_TongTien.RGB = false;
-            this.textBox_TongTien.Rounding = true;
-            this.textBox_TongTien.RoundingInt = 60;
-            this.textBox_TongTien.Size = new System.Drawing.Size(399, 50);
-            this.textBox_TongTien.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_TongTien.TabIndex = 84;
-            this.textBox_TongTien.Tag = "Cyber";
-            this.textBox_TongTien.TextButton = "";
-            this.textBox_TongTien.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_TongTien.Timer_RGB = 300;
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Luu.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_Luu.Depth = 0;
-            this.btn_Luu.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_Luu.HighEmphasis = true;
-            this.btn_Luu.Icon = null;
-            this.btn_Luu.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_Luu.Location = new System.Drawing.Point(172, 206);
-            this.btn_Luu.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btn_Luu.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_Luu.Size = new System.Drawing.Size(64, 36);
-            this.btn_Luu.TabIndex = 82;
-            this.btn_Luu.Text = "Lưu";
-            this.btn_Luu.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_Luu.UseAccentColor = true;
-            this.btn_Luu.UseVisualStyleBackColor = true;
-            // 
-            // btn_ThanhToan
-            // 
-            this.btn_ThanhToan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_ThanhToan.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_ThanhToan.Depth = 0;
-            this.btn_ThanhToan.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_ThanhToan.HighEmphasis = true;
-            this.btn_ThanhToan.Icon = null;
-            this.btn_ThanhToan.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_ThanhToan.Location = new System.Drawing.Point(272, 206);
-            this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btn_ThanhToan.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btn_ThanhToan.Name = "btn_ThanhToan";
-            this.btn_ThanhToan.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_ThanhToan.Size = new System.Drawing.Size(114, 36);
-            this.btn_ThanhToan.TabIndex = 80;
-            this.btn_ThanhToan.Text = "Thanh toán";
-            this.btn_ThanhToan.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_ThanhToan.UseAccentColor = false;
-            this.btn_ThanhToan.UseVisualStyleBackColor = true;
-            // 
-            // btn_InHoaDon
-            // 
-            this.btn_InHoaDon.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_InHoaDon.Depth = 0;
-            this.btn_InHoaDon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_InHoaDon.HighEmphasis = true;
-            this.btn_InHoaDon.Icon = null;
-            this.btn_InHoaDon.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_InHoaDon.Location = new System.Drawing.Point(416, 206);
-            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btn_InHoaDon.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btn_InHoaDon.Name = "btn_InHoaDon";
-            this.btn_InHoaDon.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_InHoaDon.Size = new System.Drawing.Size(104, 36);
-            this.btn_InHoaDon.TabIndex = 81;
-            this.btn_InHoaDon.Text = "In hóa đơn";
-            this.btn_InHoaDon.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_InHoaDon.UseAccentColor = false;
-            this.btn_InHoaDon.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(16, 213);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 19);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "Mã hóa đơn:";
             // 
             // btn_TraCuuSDT
             // 
@@ -793,123 +326,330 @@
             this.btn_TraCuuSDT.UseAccentColor = false;
             this.btn_TraCuuSDT.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // label_DiaChi
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(16, 213);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 23);
-            this.label7.TabIndex = 84;
-            this.label7.Text = "Mã hóa đơn:";
+            this.label_DiaChi.AutoSize = true;
+            this.label_DiaChi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_DiaChi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_DiaChi.Location = new System.Drawing.Point(16, 153);
+            this.label_DiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_DiaChi.Name = "label_DiaChi";
+            this.label_DiaChi.Size = new System.Drawing.Size(89, 19);
+            this.label_DiaChi.TabIndex = 71;
+            this.label_DiaChi.Text = "Tên khách:";
             // 
-            // textBox_MaHoaDon
+            // btn_Luu
             // 
-            this.textBox_MaHoaDon.Alpha = 20;
-            this.textBox_MaHoaDon.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_MaHoaDon.Background_WidthPen = 3F;
-            this.textBox_MaHoaDon.BackgroundPen = true;
-            this.textBox_MaHoaDon.ColorBackground = System.Drawing.Color.White;
-            this.textBox_MaHoaDon.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_MaHoaDon.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_MaHoaDon.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_MaHoaDon.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_MaHoaDon.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_MaHoaDon.Font = new System.Drawing.Font("Arial", 12F);
-            this.textBox_MaHoaDon.ForeColor = System.Drawing.Color.Black;
-            this.textBox_MaHoaDon.Lighting = false;
-            this.textBox_MaHoaDon.LinearGradientPen = false;
-            this.textBox_MaHoaDon.Location = new System.Drawing.Point(136, 204);
-            this.textBox_MaHoaDon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_MaHoaDon.Name = "textBox_MaHoaDon";
-            this.textBox_MaHoaDon.PenWidth = 15;
-            this.textBox_MaHoaDon.RGB = false;
-            this.textBox_MaHoaDon.Rounding = true;
-            this.textBox_MaHoaDon.RoundingInt = 60;
-            this.textBox_MaHoaDon.Size = new System.Drawing.Size(399, 50);
-            this.textBox_MaHoaDon.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_MaHoaDon.TabIndex = 85;
-            this.textBox_MaHoaDon.Tag = "Cyber";
-            this.textBox_MaHoaDon.TextButton = "";
-            this.textBox_MaHoaDon.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_MaHoaDon.Timer_RGB = 300;
+            this.btn_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_Luu.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_Luu.Depth = 0;
+            this.btn_Luu.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_Luu.HighEmphasis = true;
+            this.btn_Luu.Icon = null;
+            this.btn_Luu.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btn_Luu.Location = new System.Drawing.Point(77, 281);
+            this.btn_Luu.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btn_Luu.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_Luu.Size = new System.Drawing.Size(64, 36);
+            this.btn_Luu.TabIndex = 82;
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_Luu.UseAccentColor = true;
+            this.btn_Luu.UseVisualStyleBackColor = true;
             // 
-            // comboBox_SanPham
+            // btn_ThanhToan
             // 
-            this.comboBox_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox_SanPham.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox_SanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox_SanPham.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.comboBox_SanPham.FormattingEnabled = true;
-            this.comboBox_SanPham.ItemHeight = 30;
-            this.comboBox_SanPham.Location = new System.Drawing.Point(136, 31);
-            this.comboBox_SanPham.Name = "comboBox_SanPham";
-            this.comboBox_SanPham.Size = new System.Drawing.Size(399, 36);
-            this.comboBox_SanPham.TabIndex = 91;
+            this.btn_ThanhToan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_ThanhToan.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_ThanhToan.Depth = 0;
+            this.btn_ThanhToan.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_ThanhToan.HighEmphasis = true;
+            this.btn_ThanhToan.Icon = null;
+            this.btn_ThanhToan.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btn_ThanhToan.Location = new System.Drawing.Point(197, 281);
+            this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btn_ThanhToan.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btn_ThanhToan.Name = "btn_ThanhToan";
+            this.btn_ThanhToan.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_ThanhToan.Size = new System.Drawing.Size(114, 36);
+            this.btn_ThanhToan.TabIndex = 80;
+            this.btn_ThanhToan.Text = "Thanh toán";
+            this.btn_ThanhToan.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_ThanhToan.UseAccentColor = false;
+            this.btn_ThanhToan.UseVisualStyleBackColor = true;
+            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
+            // 
+            // btn_InHoaDon
+            // 
+            this.btn_InHoaDon.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_InHoaDon.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_InHoaDon.Depth = 0;
+            this.btn_InHoaDon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_InHoaDon.HighEmphasis = true;
+            this.btn_InHoaDon.Icon = null;
+            this.btn_InHoaDon.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btn_InHoaDon.Location = new System.Drawing.Point(366, 281);
+            this.btn_InHoaDon.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btn_InHoaDon.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btn_InHoaDon.Name = "btn_InHoaDon";
+            this.btn_InHoaDon.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_InHoaDon.Size = new System.Drawing.Size(104, 36);
+            this.btn_InHoaDon.TabIndex = 81;
+            this.btn_InHoaDon.Text = "In hóa đơn";
+            this.btn_InHoaDon.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_InHoaDon.UseAccentColor = false;
+            this.btn_InHoaDon.UseVisualStyleBackColor = true;
+            // 
+            // label_SDT
+            // 
+            this.label_SDT.AutoSize = true;
+            this.label_SDT.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_SDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_SDT.Location = new System.Drawing.Point(16, 95);
+            this.label_SDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_SDT.Name = "label_SDT";
+            this.label_SDT.Size = new System.Drawing.Size(45, 19);
+            this.label_SDT.TabIndex = 68;
+            this.label_SDT.Text = "SĐT:";
+            // 
+            // label_Ho
+            // 
+            this.label_Ho.AutoSize = true;
+            this.label_Ho.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Ho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Ho.Location = new System.Drawing.Point(16, 31);
+            this.label_Ho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Ho.Name = "label_Ho";
+            this.label_Ho.Size = new System.Drawing.Size(88, 19);
+            this.label_Ho.TabIndex = 67;
+            this.label_Ho.Text = "Nhân viên:";
+            // 
+            // textBox_MaNV
+            // 
+            this.textBox_MaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_MaNV.BackColor = System.Drawing.Color.Snow;
+            this.textBox_MaNV.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_MaNV.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_MaNV.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_MaNV.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MaNV.Hint = "";
+            this.textBox_MaNV.Location = new System.Drawing.Point(136, 24);
+            this.textBox_MaNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox_MaNV.MaxLength = 128;
+            this.textBox_MaNV.Multiline = false;
+            this.textBox_MaNV.Name = "textBox_MaNV";
+            this.textBox_MaNV.PasswordChar = '\0';
+            this.textBox_MaNV.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_MaNV.SelectedText = "";
+            this.textBox_MaNV.SelectionLength = 0;
+            this.textBox_MaNV.SelectionStart = 0;
+            this.textBox_MaNV.Size = new System.Drawing.Size(399, 43);
+            this.textBox_MaNV.TabIndex = 86;
+            this.textBox_MaNV.TabStop = false;
+            this.textBox_MaNV.UseSystemPasswordChar = false;
+            // 
+            // TextBox_SDT
+            // 
+            this.TextBox_SDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox_SDT.BackColor = System.Drawing.Color.Snow;
+            this.TextBox_SDT.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBox_SDT.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBox_SDT.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBox_SDT.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBox_SDT.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_SDT.Hint = "";
+            this.TextBox_SDT.Location = new System.Drawing.Point(136, 85);
+            this.TextBox_SDT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBox_SDT.MaxLength = 128;
+            this.TextBox_SDT.Multiline = false;
+            this.TextBox_SDT.Name = "TextBox_SDT";
+            this.TextBox_SDT.PasswordChar = '\0';
+            this.TextBox_SDT.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox_SDT.SelectedText = "";
+            this.TextBox_SDT.SelectionLength = 0;
+            this.TextBox_SDT.SelectionStart = 0;
+            this.TextBox_SDT.Size = new System.Drawing.Size(308, 43);
+            this.TextBox_SDT.TabIndex = 87;
+            this.TextBox_SDT.TabStop = false;
+            this.TextBox_SDT.UseSystemPasswordChar = false;
+            // 
+            // textBox_MaKhachHang
+            // 
+            this.textBox_MaKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_MaKhachHang.BackColor = System.Drawing.Color.Snow;
+            this.textBox_MaKhachHang.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_MaKhachHang.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_MaKhachHang.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_MaKhachHang.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_MaKhachHang.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MaKhachHang.Hint = "";
+            this.textBox_MaKhachHang.Location = new System.Drawing.Point(136, 143);
+            this.textBox_MaKhachHang.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox_MaKhachHang.MaxLength = 128;
+            this.textBox_MaKhachHang.Multiline = false;
+            this.textBox_MaKhachHang.Name = "textBox_MaKhachHang";
+            this.textBox_MaKhachHang.PasswordChar = '\0';
+            this.textBox_MaKhachHang.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_MaKhachHang.SelectedText = "";
+            this.textBox_MaKhachHang.SelectionLength = 0;
+            this.textBox_MaKhachHang.SelectionStart = 0;
+            this.textBox_MaKhachHang.Size = new System.Drawing.Size(399, 43);
+            this.textBox_MaKhachHang.TabIndex = 88;
+            this.textBox_MaKhachHang.TabStop = false;
+            this.textBox_MaKhachHang.UseSystemPasswordChar = false;
+            // 
+            // TextBoxMaHD
+            // 
+            this.TextBoxMaHD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxMaHD.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxMaHD.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxMaHD.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxMaHD.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxMaHD.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxMaHD.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaHD.Hint = "";
+            this.TextBoxMaHD.Location = new System.Drawing.Point(136, 202);
+            this.TextBoxMaHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxMaHD.MaxLength = 128;
+            this.TextBoxMaHD.Multiline = false;
+            this.TextBoxMaHD.Name = "TextBoxMaHD";
+            this.TextBoxMaHD.PasswordChar = '\0';
+            this.TextBoxMaHD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxMaHD.SelectedText = "";
+            this.TextBoxMaHD.SelectionLength = 0;
+            this.TextBoxMaHD.SelectionStart = 0;
+            this.TextBoxMaHD.Size = new System.Drawing.Size(399, 43);
+            this.TextBoxMaHD.TabIndex = 89;
+            this.TextBoxMaHD.TabStop = false;
+            this.TextBoxMaHD.UseSystemPasswordChar = false;
+            // 
+            // TextBoxDonGia
+            // 
+            this.TextBoxDonGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxDonGia.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxDonGia.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxDonGia.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxDonGia.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxDonGia.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxDonGia.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxDonGia.Hint = "";
+            this.TextBoxDonGia.Location = new System.Drawing.Point(136, 85);
+            this.TextBoxDonGia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxDonGia.MaxLength = 128;
+            this.TextBoxDonGia.Multiline = false;
+            this.TextBoxDonGia.Name = "TextBoxDonGia";
+            this.TextBoxDonGia.PasswordChar = '\0';
+            this.TextBoxDonGia.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxDonGia.SelectedText = "";
+            this.TextBoxDonGia.SelectionLength = 0;
+            this.TextBoxDonGia.SelectionStart = 0;
+            this.TextBoxDonGia.Size = new System.Drawing.Size(321, 43);
+            this.TextBoxDonGia.TabIndex = 90;
+            this.TextBoxDonGia.TabStop = false;
+            this.TextBoxDonGia.UseSystemPasswordChar = false;
+            // 
+            // TextBoxSoLuong
+            // 
+            this.TextBoxSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxSoLuong.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxSoLuong.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxSoLuong.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxSoLuong.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxSoLuong.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxSoLuong.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxSoLuong.Hint = "";
+            this.TextBoxSoLuong.Location = new System.Drawing.Point(136, 143);
+            this.TextBoxSoLuong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxSoLuong.MaxLength = 128;
+            this.TextBoxSoLuong.Multiline = false;
+            this.TextBoxSoLuong.Name = "TextBoxSoLuong";
+            this.TextBoxSoLuong.PasswordChar = '\0';
+            this.TextBoxSoLuong.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxSoLuong.SelectedText = "";
+            this.TextBoxSoLuong.SelectionLength = 0;
+            this.TextBoxSoLuong.SelectionStart = 0;
+            this.TextBoxSoLuong.Size = new System.Drawing.Size(321, 43);
+            this.TextBoxSoLuong.TabIndex = 92;
+            this.TextBoxSoLuong.TabStop = false;
+            this.TextBoxSoLuong.UseSystemPasswordChar = false;
+            // 
+            // hopeTextBox1
+            // 
+            this.hopeTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.hopeTextBox1.BackColor = System.Drawing.Color.Snow;
+            this.hopeTextBox1.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBox1.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.hopeTextBox1.BorderColorB = System.Drawing.Color.DarkGray;
+            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.hopeTextBox1.Hint = "";
+            this.hopeTextBox1.Location = new System.Drawing.Point(136, 202);
+            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.hopeTextBox1.MaxLength = 128;
+            this.hopeTextBox1.Multiline = false;
+            this.hopeTextBox1.Name = "hopeTextBox1";
+            this.hopeTextBox1.PasswordChar = '\0';
+            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBox1.SelectedText = "";
+            this.hopeTextBox1.SelectionLength = 0;
+            this.hopeTextBox1.SelectionStart = 0;
+            this.hopeTextBox1.Size = new System.Drawing.Size(321, 43);
+            this.hopeTextBox1.TabIndex = 93;
+            this.hopeTextBox1.TabStop = false;
+            this.hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // fTaoDonHang
             // 
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1116, 684);
-            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.data_DSSanPham);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fTaoDonHang";
             this.Text = "Tạo đơn hàng";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.data_DSSanPham)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_DSSanPham)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private ReaLTaiizor.Controls.DungeonHeaderLabel label1;
-        private System.Windows.Forms.Label label_DiaChi;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_TenKhachHang;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_SDT;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_NhanVien;
-        private System.Windows.Forms.Label label_SDT;
-        private System.Windows.Forms.Label label_Ho;
-        private ReaLTaiizor.Controls.PoisonDataGridView data_DSSanPham;
         private System.Windows.Forms.Panel panel3;
-        private ReaLTaiizor.Controls.MaterialButton btn_Them;
-        private ReaLTaiizor.Controls.MaterialButton btn_CapNhat;
-        private ReaLTaiizor.Controls.MaterialButton btn_Xoa;
-        private ReaLTaiizor.Controls.CyberTextBox textbox_SoLuong;
+        private ReaLTaiizor.Controls.HopeComboBox comboBox_SanPham;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private ReaLTaiizor.Controls.CyberTextBox textbox_KhuyenMai;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_Cccd;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_DonGia;
-        private System.Windows.Forms.Panel panel4;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_GiamGia;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_ThanhTien;
-        private System.Windows.Forms.Label label8;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_TongTien;
+        private ReaLTaiizor.Controls.MaterialButton btn_Them;
+        private ReaLTaiizor.Controls.MaterialButton btn_Xoa;
+        private ReaLTaiizor.Controls.PoisonDataGridView data_DSSanPham;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private ReaLTaiizor.Controls.MaterialButton btn_TraCuuSDT;
+        private System.Windows.Forms.Label label_DiaChi;
         private ReaLTaiizor.Controls.MaterialButton btn_Luu;
         private ReaLTaiizor.Controls.MaterialButton btn_ThanhToan;
         private ReaLTaiizor.Controls.MaterialButton btn_InHoaDon;
-        private ReaLTaiizor.Controls.MaterialButton btn_TraCuuSDT;
-        private System.Windows.Forms.Label label7;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_MaHoaDon;
-        private ReaLTaiizor.Controls.HopeComboBox comboBox_SanPham;
+        private System.Windows.Forms.Label label_SDT;
+        private System.Windows.Forms.Label label_Ho;
+        private ReaLTaiizor.Controls.HopeTextBox TextBoxSoLuong;
+        private ReaLTaiizor.Controls.HopeTextBox TextBoxDonGia;
+        private ReaLTaiizor.Controls.HopeTextBox TextBoxMaHD;
+        private ReaLTaiizor.Controls.HopeTextBox textBox_MaKhachHang;
+        private ReaLTaiizor.Controls.HopeTextBox TextBox_SDT;
+        private ReaLTaiizor.Controls.HopeTextBox textBox_MaNV;
+        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
     }
 }

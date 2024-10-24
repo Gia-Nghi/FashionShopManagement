@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Data;
 using System.Collections.Generic;
-
-using DAO;
+using System.Data.SqlClient;
 using DTO;
 
 namespace BUS
@@ -21,118 +19,43 @@ namespace BUS
             }
         }
 
-        private AccountBUS() { }
-
         public bool CheckLogin(Account account)
         {
-            if (account.UserName == "")
-                return false;
-            if (account.Password == "")
-                return false;
-
-            try
+            string connectionString = "Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                return AccountDAO.Instance.CheckLogin(account);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public DataTable GetAllAcount()
-        {
-            try
-            {
-                return AccountDAO.Instance.GetAllAcount();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
+                connection.Open();
+                string query = "SELECT COUNT(*) FROM NhanVien WHERE MaNV = @MaNV AND Password = @Password";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@MaNV", account.MaNV); // Đã sửa lại tên tham số
+                    command.Parameters.AddWithValue("@Password", account.Password);
+                    int result = (int)command.ExecuteScalar();
+                    return result > 0;
+                }
             }
         }
 
-        public Account GetAccountByUserName(string userName)
+        public Account GetAccountByMaNV(string maNV)
         {
-            DataTable table;
-            try
+            string connectionString = "Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                table = AccountDAO.Instance.GetAccountByUserName(userName);
+                connection.Open();
+                string query = "SELECT * FROM NhanVien WHERE MaNV = @MaNV";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@MaNV", maNV);
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Account(reader["MaNV"].ToString(), reader["Password"].ToString());
+                        }
+                    }
+                }
             }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return new Account(table.Rows[0]);
-        }
-
-        public bool Insert(string userName, string displayName, int type)
-        {
-            try
-            {
-                return AccountDAO.Instance.Insert(userName, displayName, type);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public bool Delete(string userName)
-        {
-            try
-            {
-                return AccountDAO.Instance.Delete(userName);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public bool ResetPassword(string userName)
-        {
-            try
-            {
-                return AccountDAO.Instance.ResetPassword(userName);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public bool UpdateInformation(string userName, string displayName, string password, string newPass)
-        {
-            try
-            {
-                return AccountDAO.Instance.UpdateInformation(userName, displayName, password, newPass);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public List<Account> SearchAccountByUserName(string userName)
-        {
-            List<Account> listAccount = new List<Account>();
-            DataTable table;
-            try
-            {
-                table = AccountDAO.Instance.SearchAccountByUserName(userName);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-            foreach (DataRow row in table.Rows)
-            {
-                Account account = new Account(row);
-                listAccount.Add(account);
-            }
-            return listAccount;
+            return null;
         }
     }
 }

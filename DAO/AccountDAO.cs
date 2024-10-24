@@ -1,141 +1,45 @@
 ﻿using System;
 using System.Data;
-using System.Collections.Generic;
+using System.Data.SqlClient;
 
-using DTO;
-
-namespace DAO
+namespace BUS
 {
-    public class AccountDAO
+    public class DataProvider
     {
-        private static AccountDAO instance;
+        private static DataProvider instance;
 
-        public static AccountDAO Instance
+        public static DataProvider Instance
         {
-            get
-            {
-                if (instance == null)
-                    instance = new AccountDAO();
-                return AccountDAO.instance;
-            }
+            get { if (instance == null) instance = new DataProvider(); return instance; }
+            private set { instance = value; }
         }
 
-        public bool CheckLogin(Account account)
+        private string connectionString = "Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+
+        public DataTable ExecuteQuery(string query, object[] parameters = null)
         {
-            string query = "USP_Login @UserName , @Password";
-            DataTable result = new DataTable();
-            try
-            {
-                result = DataProvider.Instance.ExecuteQuery(query, new object[] { account.UserName, account.Password});
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result.Rows.Count > 0;
-        }
+            DataTable data = new DataTable();
 
-        public DataTable GetAllAcount()
-        {
-            try
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                return DataProvider.Instance.ExecuteQuery("USP_GetAllAccount");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
 
-        public DataTable GetAccountByUserName(string userName)
-        {
-            string query = "USP_GetAccountByUserName @UserName";
-            try
-            {
-                return DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+                if (parameters != null)
+                {
+                    var parameterNames = command.Parameters;
+                    for (int i = 0; i < parameters.Length; i++)
+                    {
+                        command.Parameters.AddWithValue(parameterNames[i].ParameterName, parameters[i]);
+                    }
+                }
 
-        public bool Insert(string userName, string displayName, int typeID)
-        {
-            string query = string.Format("USP_InsertAccount @UserName , @DisplayName , @TypeID");
-            int result;
-            try
-            {
-                result = DataProvider.Instance.ExecuteNonQuery(query,
-                    new object[] { userName, displayName, typeID });
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
+                connection.Close();
             }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
-        }
 
-        public bool ResetPassword(string userName)
-        {
-            string query = string.Format("USP_ResetPassword @UserName");
-            int result;
-            try
-            {
-                result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
-        }
-
-        public bool Delete(string userName)
-        {
-            string query = string.Format("USP_DeleteAccount @UserName");
-            int result;
-            try
-            {
-                result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
-        }
-
-        public bool UpdateInformation(string userName, string displayName, string password, string newPass)
-        {
-            string query = "USP_UpdateAccount @UserName , @DisplayName , @Password , @NewPass";
-            int result;
-            try
-            {
-                result = DataProvider.Instance.ExecuteNonQuery(query,
-                    new object[] { userName, displayName, password, newPass });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
-        }
-
-        public DataTable SearchAccountByUserName(string userName)
-        {
-
-            string query = string.Format("USP_SearchAccountByUserName @UserName");
-
-            DataTable table = new DataTable();
-            try
-            {
-                return DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return data;
         }
     }
 }

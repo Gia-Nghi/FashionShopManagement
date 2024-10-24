@@ -17,7 +17,17 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void buttonChinhSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelLoaiSP_Click(object sender, EventArgs e)
         {
 
         }

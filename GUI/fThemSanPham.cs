@@ -26,5 +26,30 @@ namespace GUI
         {
 
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cyberTextBox3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_SanPhamMoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_TenSP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

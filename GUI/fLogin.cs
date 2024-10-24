@@ -1,13 +1,6 @@
 ﻿using BUS;
 using DTO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI
@@ -39,9 +32,9 @@ namespace GUI
             {
                 if (AccountBUS.Instance.CheckLogin(account))
                 {
-                    Log.WriteLog("----------" + account.UserName + " log in ----------");
+                    Log.WriteLog("----------" + account.MaNV + " log in ----------");
 
-                    Account acc = AccountBUS.Instance.GetAccountByUserName(account.UserName);
+                    Account acc = AccountBUS.Instance.GetAccountByMaNV(account.MaNV);
 
                     fHome form = new fHome(acc);
                     this.Hide();
@@ -50,12 +43,12 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                    MessageBox.Show("Sai mã nhân viên hoặc mật khẩu");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex);
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
 
@@ -65,6 +58,11 @@ namespace GUI
             {
                 DangNhap();
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            // Nếu không có logic vẽ gì, bạn có thể để trống hoặc loại bỏ hoàn toàn sự kiện này
         }
     }
 }
