@@ -5,6 +5,7 @@ using System.Windows.Forms;
 
 namespace GUI
 {
+    // fLogin.cs
     public partial class fLogin : Form
     {
         public fLogin()
@@ -59,10 +60,6 @@ namespace GUI
                 DangNhap();
             }
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            // Nếu không có logic vẽ gì, bạn có thể để trống hoặc loại bỏ hoàn toàn sự kiện này
-        }
     }
+
 }

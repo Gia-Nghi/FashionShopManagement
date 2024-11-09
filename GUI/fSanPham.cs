@@ -1,8 +1,8 @@
 ﻿using BUS;
 using DTO;
-using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System;
 
 namespace GUI
 {
@@ -15,63 +15,71 @@ namespace GUI
 
         private void fSanPham_Load(object sender, EventArgs e)
         {
-            LoadComboBoxCategories(); 
+            LoadComboBoxCategories();
             LoadProducts();
         }
 
-        // Tải dữ liệu sản phẩm vào DataGridView
+        // Load tất cả sản phẩm
         private void LoadProducts()
         {
+            // Lấy tất cả sản phẩm
             List<Product> products = ProductBUS.Instance.GetAllProducts();
-            data_DSSanPham.DataSource = products; // Giả sử data_DSDonHang là DataGridView
+
+            // Cập nhật lại DataGridView với danh sách sản phẩm
+            data_DSSanPham.DataSource = products;
         }
 
-        // Tải các loại sản phẩm vào ComboBox
+
+        // Load danh sách loại sản phẩm vào combobox
         private void LoadComboBoxCategories()
         {
-            List<string> categories = ProductBUS.Instance.GetAllCategories(); // Phương thức để lấy danh sách loại sản phẩm
-            aloneComboBox1.DataSource = categories; // Giả sử aloneComboBox1 là ComboBox
-            aloneComboBox1.SelectedIndex = -1; // Không chọn mục nào khi vừa tải ComboBox
+            List<string> categories = ProductBUS.Instance.GetAllCategories();
+            comboBox.DataSource = categories;
+            comboBox.SelectedIndex = -1; // Không chọn mặc định
         }
 
-        // Khi chọn một loại sản phẩm từ ComboBox, lọc sản phẩm theo loại đó
         private void aloneComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (aloneComboBox1.SelectedIndex >= 0)
+            if (comboBox.SelectedIndex >= 0)
             {
-                string selectedCategory = aloneComboBox1.SelectedItem.ToString();
-                List<Product> filteredProducts = ProductBUS.Instance.GetListProductByCategory(selectedCategory);
-                data_DSSanPham.DataSource = filteredProducts;
+                string selectedCategory = comboBox.SelectedItem.ToString();
+
+                try
+                {
+                    List<Product> filteredProducts = ProductBUS.Instance.GetListProductByCategory(selectedCategory);
+                    data_DSSanPham.DataSource = filteredProducts;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
+
+
+        // Sự kiện khi thêm sản phẩm
         private void btn_ThemSanPham_Click(object sender, EventArgs e)
         {
             fThemSanPham fThemSanPham = new fThemSanPham();
             fThemSanPham.ShowDialog();
-            LoadProducts(); // Tải lại sản phẩm sau khi thêm
-        }
-        private void textBox_TimKiem_Load(object sender, EventArgs e)
-        {
-
+            LoadProducts();
         }
         private void btn_TimKiem_Click(object sender, EventArgs e)
         {
-            // Lấy từ khóa tìm kiếm từ textBox_TimKiem.TextButton
-            string text = textBox_TimKiem.TextButton;
+            string text = textBox_timkiem.Text;
 
             try
             {
-                // Gọi qua Product BUS để thực hiện tìm kiếm
                 List<Product> result = ProductBUS.Instance.SearchProductByNameOrCode(text);
                 if (result.Count > 0)
                 {
                     this.data_DSSanPham.DataSource = result;
-                    foreach (Product product in result)
-                    {
-                        Console.WriteLine(product.Name);
-                    }
                     MessageBox.Show($"Đã tìm thấy {result.Count} sản phẩm");
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy sản phẩm nào");
                 }
             }
             catch (Exception ex)
@@ -79,17 +87,7 @@ namespace GUI
                 MessageBox.Show(ex.Message, "Lỗi !");
             }
         }
-
         private void data_DSSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0) 
-            {
-                fChiTietSanPham fChiTietSanPham = new fChiTietSanPham();
-                fChiTietSanPham.ShowDialog();
-            }
-        }
-
-        private void data_DSSanPham_CellContentDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
