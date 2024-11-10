@@ -81,6 +81,9 @@
     <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="MailKit, Version=4.8.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
       <HintPath>..\packages\MailKit.4.8.0\lib\net48\MailKit.dll</HintPath>
     </Reference>
@@ -238,6 +241,12 @@
     <Compile Include="fDonHang.Designer.cs">
       <DependentUpon>fDonHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDonNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDonNhapHang.Designer.cs">
+      <DependentUpon>fDonNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fDonHang.resx">
       <DependentUpon>fDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDonNhapHang.resx">
+      <DependentUpon>fDonNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fKhachHang.resx">
       <DependentUpon>fKhachHang.cs</DependentUpon>
