@@ -7,7 +7,7 @@ namespace GUI
 {
     public partial class fKhachHang : Form
     {
-        private string connectionString = @"Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+        private string connectionString = @"Data Source=LAPTOP-MDC7IR39\SA;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
 
         public fKhachHang()
         {
