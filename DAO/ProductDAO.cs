@@ -75,9 +75,6 @@ namespace DAO
 
 
 
-
-
-        // Tìm kiếm sản phẩm theo tên hoặc mã
         public List<Product> SearchProductByNameOrCode(string searchText)
         {
             string query = "EXEC sp_TimKiemSanPham @SearchText";

@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.data_DSSanPham = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.btn_ThemSanPham = new ReaLTaiizor.Controls.MaterialButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox_timkiem = new ReaLTaiizor.Controls.HopeTextBox();
             this.btn_TimKiem = new ReaLTaiizor.Controls.MaterialButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
-            this.textBox_timkiem = new ReaLTaiizor.Controls.HopeTextBox();
-            this.comboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.data_DSSanPham)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -58,23 +58,23 @@
             this.data_DSSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.data_DSSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.data_DSSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_DSSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_DSSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.data_DSSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_DSSanPham.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_DSSanPham.DefaultCellStyle = dataGridViewCellStyle2;
             this.data_DSSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_DSSanPham.EnableHeadersVisualStyles = false;
             this.data_DSSanPham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -83,20 +83,21 @@
             this.data_DSSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.data_DSSanPham.Name = "data_DSSanPham";
             this.data_DSSanPham.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_DSSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_DSSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.data_DSSanPham.RowHeadersWidth = 62;
             this.data_DSSanPham.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.data_DSSanPham.RowTemplate.Height = 28;
             this.data_DSSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.data_DSSanPham.Size = new System.Drawing.Size(866, 391);
             this.data_DSSanPham.TabIndex = 41;
+            this.data_DSSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_DSSanPham_CellContentClick);
             // 
             // btn_ThemSanPham
             // 
@@ -144,6 +145,31 @@
             this.panel1.Size = new System.Drawing.Size(502, 38);
             this.panel1.TabIndex = 36;
             // 
+            // textBox_timkiem
+            // 
+            this.textBox_timkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_timkiem.BackColor = System.Drawing.Color.Snow;
+            this.textBox_timkiem.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_timkiem.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_timkiem.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_timkiem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_timkiem.ForeColor = System.Drawing.Color.Black;
+            this.textBox_timkiem.Hint = "";
+            this.textBox_timkiem.Location = new System.Drawing.Point(19, -1);
+            this.textBox_timkiem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox_timkiem.MaxLength = 128;
+            this.textBox_timkiem.Multiline = false;
+            this.textBox_timkiem.Name = "textBox_timkiem";
+            this.textBox_timkiem.PasswordChar = '\0';
+            this.textBox_timkiem.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_timkiem.SelectedText = "";
+            this.textBox_timkiem.SelectionLength = 0;
+            this.textBox_timkiem.SelectionStart = 0;
+            this.textBox_timkiem.Size = new System.Drawing.Size(362, 39);
+            this.textBox_timkiem.TabIndex = 54;
+            this.textBox_timkiem.TabStop = false;
+            this.textBox_timkiem.UseSystemPasswordChar = false;
+            // 
             // btn_TimKiem
             // 
             this.btn_TimKiem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -185,6 +211,17 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(866, 58);
             this.tableLayoutPanel2.TabIndex = 43;
+            // 
+            // comboBox
+            // 
+            this.comboBox.FormattingEnabled = true;
+            this.comboBox.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.comboBox.Location = new System.Drawing.Point(12, 11);
+            this.comboBox.Name = "comboBox";
+            this.comboBox.Size = new System.Drawing.Size(163, 24);
+            this.comboBox.TabIndex = 58;
             // 
             // tableLayoutPanel1
             // 
@@ -235,42 +272,6 @@
             this.entityCommand1.Connection = null;
             this.entityCommand1.EnablePlanCaching = true;
             this.entityCommand1.Transaction = null;
-            // 
-            // textBox_timkiem
-            // 
-            this.textBox_timkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_timkiem.BackColor = System.Drawing.Color.Snow;
-            this.textBox_timkiem.BaseColor = System.Drawing.Color.Transparent;
-            this.textBox_timkiem.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.textBox_timkiem.BorderColorB = System.Drawing.Color.DarkGray;
-            this.textBox_timkiem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_timkiem.ForeColor = System.Drawing.Color.Black;
-            this.textBox_timkiem.Hint = "";
-            this.textBox_timkiem.Location = new System.Drawing.Point(19, -1);
-            this.textBox_timkiem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox_timkiem.MaxLength = 128;
-            this.textBox_timkiem.Multiline = false;
-            this.textBox_timkiem.Name = "textBox_timkiem";
-            this.textBox_timkiem.PasswordChar = '\0';
-            this.textBox_timkiem.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_timkiem.SelectedText = "";
-            this.textBox_timkiem.SelectionLength = 0;
-            this.textBox_timkiem.SelectionStart = 0;
-            this.textBox_timkiem.Size = new System.Drawing.Size(362, 39);
-            this.textBox_timkiem.TabIndex = 54;
-            this.textBox_timkiem.TabStop = false;
-            this.textBox_timkiem.UseSystemPasswordChar = false;
-            // 
-            // comboBox
-            // 
-            this.comboBox.FormattingEnabled = true;
-            this.comboBox.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.comboBox.Location = new System.Drawing.Point(12, 11);
-            this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(163, 24);
-            this.comboBox.TabIndex = 58;
             // 
             // fSanPham
             // 

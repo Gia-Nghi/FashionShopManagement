@@ -5,7 +5,6 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    // fLogin.cs
     public partial class fLogin : Form
     {
         public fLogin()

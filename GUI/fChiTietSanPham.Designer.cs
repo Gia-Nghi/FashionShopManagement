@@ -180,7 +180,6 @@
             this.labelLoaiSP.TabIndex = 2;
             this.labelLoaiSP.Text = "Loại sản phẩm: Áo len";
             this.labelLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelLoaiSP.Click += new System.EventHandler(this.labelLoaiSP_Click);
             // 
             // labelGiaSP
             // 

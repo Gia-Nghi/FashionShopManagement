@@ -19,23 +19,18 @@ namespace GUI
             LoadProducts();
         }
 
-        // Load tất cả sản phẩm
         private void LoadProducts()
         {
-            // Lấy tất cả sản phẩm
             List<Product> products = ProductBUS.Instance.GetAllProducts();
 
-            // Cập nhật lại DataGridView với danh sách sản phẩm
             data_DSSanPham.DataSource = products;
         }
 
-
-        // Load danh sách loại sản phẩm vào combobox
         private void LoadComboBoxCategories()
         {
             List<string> categories = ProductBUS.Instance.GetAllCategories();
             comboBox.DataSource = categories;
-            comboBox.SelectedIndex = -1; // Không chọn mặc định
+            comboBox.SelectedIndex = -1;
         }
 
         private void aloneComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,9 +51,6 @@ namespace GUI
             }
         }
 
-
-
-        // Sự kiện khi thêm sản phẩm
         private void btn_ThemSanPham_Click(object sender, EventArgs e)
         {
             fThemSanPham fThemSanPham = new fThemSanPham();
@@ -87,11 +79,23 @@ namespace GUI
                 MessageBox.Show(ex.Message, "Lỗi !");
             }
         }
+        private void data_DSSanPham_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                string maSP = data_DSSanPham.Rows[e.RowIndex].Cells["MaSP"].Value.ToString();
+
+                fChiTietSanPham fChiTietSanPham = new fChiTietSanPham(maSP);
+                fChiTietSanPham.ShowDialog();
+            }
+        }
+
         private void data_DSSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                fChiTietSanPham fChiTietSanPham = new fChiTietSanPham();
+                string maSP = data_DSSanPham.Rows[e.RowIndex].Cells["MaSP"].Value.ToString();
+                fChiTietSanPham fChiTietSanPham = new fChiTietSanPham(maSP);
                 fChiTietSanPham.ShowDialog();
             }
         }
