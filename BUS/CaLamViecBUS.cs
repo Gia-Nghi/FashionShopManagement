@@ -24,9 +24,14 @@ namespace BUS
             return caLamViecDAO.Update(caLamViec);
         }
 
-        public bool DeleteCaLamViec(string maCa)
+        public bool DeleteCaLamViec(string maCa, DateTime ngayLam)
         {
-            return caLamViecDAO.Delete(maCa);
+            return caLamViecDAO.Delete(maCa, ngayLam);
         }
+        public bool CheckIfCaExists(string maCa, DateTime ngayLam)
+        {
+            return caLamViecDAO.CheckIfCaExists(maCa, ngayLam);
+        }
+
     }
 }

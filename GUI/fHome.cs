@@ -88,5 +88,11 @@ namespace GUI
         {
 
         }
+
+        private void btn_PhanCa_Click(object sender, EventArgs e)
+        {
+            fPhanCa fPhanCa = new fPhanCa();
+            fPhanCa.Show();
+        }
     }
 }

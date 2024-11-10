@@ -26,7 +26,7 @@
         {
             this.MIDPL = new System.Windows.Forms.Panel();
             this.btn_NhanVien = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_CaiDat = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_PhanCa = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_SanPham = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_BaoCao = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_KhachHang = new ReaLTaiizor.Controls.PoisonTile();
@@ -54,7 +54,7 @@
             // 
             this.MIDPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.MIDPL.Controls.Add(this.btn_NhanVien);
-            this.MIDPL.Controls.Add(this.btn_CaiDat);
+            this.MIDPL.Controls.Add(this.btn_PhanCa);
             this.MIDPL.Controls.Add(this.btn_SanPham);
             this.MIDPL.Controls.Add(this.btn_BaoCao);
             this.MIDPL.Controls.Add(this.btn_KhachHang);
@@ -90,28 +90,29 @@
             this.btn_NhanVien.UseTileImage = true;
             this.btn_NhanVien.Click += new System.EventHandler(this.btn_NhanVien_Click);
             // 
-            // btn_CaiDat
+            // btn_PhanCa
             // 
-            this.btn_CaiDat.ActiveControl = null;
-            this.btn_CaiDat.BackColor = System.Drawing.Color.White;
-            this.btn_CaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CaiDat.ForeColor = System.Drawing.Color.Black;
-            this.btn_CaiDat.Location = new System.Drawing.Point(520, 182);
-            this.btn_CaiDat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btn_CaiDat.Name = "btn_CaiDat";
-            this.btn_CaiDat.Size = new System.Drawing.Size(231, 141);
-            this.btn_CaiDat.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_CaiDat.TabIndex = 10;
-            this.btn_CaiDat.Text = "Cài đặt";
-            this.btn_CaiDat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_CaiDat.TileImage = global::GUI.Properties.Resources.cogwheel;
-            this.btn_CaiDat.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_CaiDat.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_CaiDat.UseCustomBackColor = true;
-            this.btn_CaiDat.UseCustomForeColor = true;
-            this.btn_CaiDat.UseSelectable = true;
-            this.btn_CaiDat.UseStyleColors = true;
-            this.btn_CaiDat.UseTileImage = true;
+            this.btn_PhanCa.ActiveControl = null;
+            this.btn_PhanCa.BackColor = System.Drawing.Color.White;
+            this.btn_PhanCa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_PhanCa.ForeColor = System.Drawing.Color.Black;
+            this.btn_PhanCa.Location = new System.Drawing.Point(520, 182);
+            this.btn_PhanCa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_PhanCa.Name = "btn_PhanCa";
+            this.btn_PhanCa.Size = new System.Drawing.Size(231, 141);
+            this.btn_PhanCa.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_PhanCa.TabIndex = 10;
+            this.btn_PhanCa.Text = "Phân ca";
+            this.btn_PhanCa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_PhanCa.TileImage = global::GUI.Properties.Resources.working;
+            this.btn_PhanCa.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_PhanCa.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_PhanCa.UseCustomBackColor = true;
+            this.btn_PhanCa.UseCustomForeColor = true;
+            this.btn_PhanCa.UseSelectable = true;
+            this.btn_PhanCa.UseStyleColors = true;
+            this.btn_PhanCa.UseTileImage = true;
+            this.btn_PhanCa.Click += new System.EventHandler(this.btn_PhanCa_Click);
             // 
             // btn_SanPham
             // 
@@ -465,7 +466,7 @@
         private ReaLTaiizor.Controls.LabelEdit PROTECTLE;
         private System.Windows.Forms.Panel panel_Top;
         private ReaLTaiizor.Controls.PoisonTile btn_NhanVien;
-        private ReaLTaiizor.Controls.PoisonTile btn_CaiDat;
+        private ReaLTaiizor.Controls.PoisonTile btn_PhanCa;
         private ReaLTaiizor.Controls.PoisonTile btn_SanPham;
         private ReaLTaiizor.Controls.PoisonTile btn_BaoCao;
         private ReaLTaiizor.Controls.PoisonTile btn_KhachHang;
