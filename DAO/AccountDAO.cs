@@ -1,45 +1,50 @@
-﻿using System;
-using System.Data;
+﻿using DAO;
+using DTO;
 using System.Data.SqlClient;
+using System.Data;
+using System;
 
-namespace BUS
+public class AccountDAO
 {
-    public class DataProvider
+    private static AccountDAO instance;
+    public static AccountDAO Instance
     {
-        private static DataProvider instance;
-
-        public static DataProvider Instance
+        get
         {
-            get { if (instance == null) instance = new DataProvider(); return instance; }
-            private set { instance = value; }
-        }
-
-        private string connectionString = "Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
-
-        public DataTable ExecuteQuery(string query, object[] parameters = null)
-        {
-            DataTable data = new DataTable();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand(query, connection);
-
-                if (parameters != null)
-                {
-                    var parameterNames = command.Parameters;
-                    for (int i = 0; i < parameters.Length; i++)
-                    {
-                        command.Parameters.AddWithValue(parameterNames[i].ParameterName, parameters[i]);
-                    }
-                }
-
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                adapter.Fill(data);
-                connection.Close();
-            }
-
-            return data;
+            if (instance == null)
+                instance = new AccountDAO();
+            return instance;
         }
     }
+
+    public bool CheckLogin(Account account)
+    {
+        string storedProcedure = "sp_CheckLogin";
+
+        object result = DataProvider.Instance.ExecuteScalar(
+            storedProcedure,
+            new object[] {
+                account.MaNV,
+                account.Password
+            }
+        );
+
+        return result != null && Convert.ToInt32(result) == 1;
+    }
+
+    public Account GetAccountByMaNV(string maNV)
+    {
+        string query = "SELECT * FROM NhanVien WHERE MaNV = @MaNV";
+
+        DataTable dt = DataProvider.Instance.ExecuteQuery(query, new object[] { maNV });
+
+        if (dt.Rows.Count > 0)
+        {
+            DataRow row = dt.Rows[0];
+            return new Account(row["MaNV"].ToString(), row["Password"].ToString());
+        }
+
+        return null;
+    }
 }
+

@@ -1,14 +1,14 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GUI
 {
     public partial class fNhanVien : Form
     {
-        private string connectionString = @"Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+        private NhanVienBUS nhanVienBUS = new NhanVienBUS();
 
         public fNhanVien()
         {
@@ -18,23 +18,8 @@ namespace GUI
 
         private void LoadData()
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    string query = "SELECT * FROM V_ThongTinNhanVien";
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    poisonDataGridView1.DataSource = dataTable;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
-            }
+            DataTable dataTable = nhanVienBUS.GetAllNhanVien();
+            poisonDataGridView1.DataSource = dataTable;
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
@@ -48,36 +33,31 @@ namespace GUI
                 return;
             }
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    connection.Open();
-                    SqlCommand cmd = new SqlCommand("ThemNhanVien", connection);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                NhanVienDTO newNhanVien = new NhanVienDTO(
+                    textBoxMaNV.Text,
+                    textBox_Ho.Text,
+                    TextBox_Ten.Text,
+                    dateTimeNgaySinh.Value,
+                    comboBoxGioiTinh.SelectedItem.ToString(),
+                    TextBox_DiaChi.Text,
+                    dateTimeNgayTuyenDung.Value,
+                    0,
+                    0,
+                    textBox_MaCV.Text,
+                    cyberTextBoxSDT.Text,
+                    cybelPassword.Text
+                );
 
-                    cmd.Parameters.AddWithValue("@MaNV", textBoxMaNV.Text);
-                    cmd.Parameters.AddWithValue("@HoNV", textBox_Ho.Text);
-                    cmd.Parameters.AddWithValue("@TenNV", TextBox_Ten.Text);
-                    cmd.Parameters.AddWithValue("@NgaySinh", dateTimeNgaySinh.Value);
-                    cmd.Parameters.AddWithValue("@GioiTinh", comboBoxGioiTinh.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@DiaChi", TextBox_DiaChi.Text);
-                    cmd.Parameters.AddWithValue("@NgayTuyenDung", dateTimeNgayTuyenDung.Value);
-                    cmd.Parameters.AddWithValue("@SoCa",0);
-                    cmd.Parameters.AddWithValue("@Thuong", 0);
-                    cmd.Parameters.AddWithValue("@MaCV", textBox_MaCV.Text);
-                    cmd.Parameters.AddWithValue("@SDT", cyberTextBoxSDT.Text);
-                    cmd.Parameters.AddWithValue("@Password", cybelPassword.Text);
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm nhân viên thành công!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
+                nhanVienBUS.AddNhanVien(newNhanVien);
+                MessageBox.Show("Thêm nhân viên thành công!");
+                LoadData();
             }
-            LoadData();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
 
         private void btn_CapNhat_Click(object sender, EventArgs e)
@@ -88,75 +68,52 @@ namespace GUI
                 return;
             }
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    connection.Open();
-                    SqlCommand cmd = new SqlCommand("CapNhatNhanVien", connection);
-                    cmd.CommandType = CommandType.StoredProcedure;
+                NhanVienDTO updatedNhanVien = new NhanVienDTO(
+                    textBoxMaNV.Text,
+                    textBox_Ho.Text,
+                    TextBox_Ten.Text,
+                    dateTimeNgaySinh.Value,
+                    comboBoxGioiTinh.SelectedItem.ToString(),
+                    TextBox_DiaChi.Text,
+                    dateTimeNgayTuyenDung.Value,
+                    int.Parse(TextBoxSoCa.Text),
+                    0,
+                    textBox_MaCV.Text,
+                    cyberTextBoxSDT.Text,
+                    cybelPassword.Text
+                );
 
-                    cmd.Parameters.AddWithValue("@MaNV", textBoxMaNV.Text);
-                    cmd.Parameters.AddWithValue("@HoNV", textBox_Ho.Text);
-                    cmd.Parameters.AddWithValue("@TenNV", TextBox_Ten.Text);
-                    cmd.Parameters.AddWithValue("@NgaySinh", dateTimeNgaySinh.Value);
-                    cmd.Parameters.AddWithValue("@GioiTinh", comboBoxGioiTinh.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@DiaChi", TextBox_DiaChi.Text);
-                    cmd.Parameters.AddWithValue("@NgayTuyenDung", dateTimeNgayTuyenDung.Value);
-                    cmd.Parameters.AddWithValue("@SoCa", TextBoxSoCa.Text);
-                    cmd.Parameters.AddWithValue("@MaCV", textBox_MaCV.Text);
-                    cmd.Parameters.AddWithValue("@SDT", cyberTextBoxSDT.Text);
-                    cmd.Parameters.AddWithValue("@Password", cybelPassword.Text);
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Cập nhật nhân viên thành công!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
+                nhanVienBUS.UpdateNhanVien(updatedNhanVien);
+                MessageBox.Show("Cập nhật nhân viên thành công!");
+                LoadData();
             }
-            LoadData();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
+
+
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBoxMaNV.Text))
+            try
             {
-                MessageBox.Show("Vui lòng nhập mã nhân viên để xóa.");
-                return;
-            }
+                if (string.IsNullOrWhiteSpace(textBoxMaNV.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập mã nhân viên để xóa.");
+                    return;
+                }
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+                nhanVienBUS.DeleteNhanVien(textBoxMaNV.Text);
+                MessageBox.Show("Xóa nhân viên thành công!");
+                LoadData();
+            }
+            catch (Exception ex)
             {
-                try
-                {
-                    connection.Open();
-                    SqlCommand cmd = new SqlCommand("XoaNhanVien", connection);
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-                    // Thêm tham số @MaNV vào câu lệnh
-                    cmd.Parameters.AddWithValue("@MaNV", textBoxMaNV.Text);
-
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Xóa nhân viên thành công!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
-            LoadData(); // Cập nhật lại dữ liệu sau khi xóa
-        }
-
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cyberTextBoxMaNV_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

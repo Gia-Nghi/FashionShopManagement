@@ -28,16 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
             this.label1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TextBoxSoCa = new ReaLTaiizor.Controls.HopeTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cybelPassword = new ReaLTaiizor.Controls.HopeTextBox();
+            this.cyberTextBoxSDT = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBox_MaCV = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBox_DiaChi = new ReaLTaiizor.Controls.HopeTextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelSDT = new System.Windows.Forms.Label();
             this.btn_Them = new ReaLTaiizor.Controls.MaterialButton();
@@ -46,6 +52,9 @@
             this.btn_CapNhat = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_Xoa = new ReaLTaiizor.Controls.MaterialButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TextBox_Ten = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBox_Ho = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBoxMaNV = new ReaLTaiizor.Controls.HopeTextBox();
             this.comboBoxGioiTinh = new System.Windows.Forms.ComboBox();
             this.dateTimeNgayTuyenDung = new System.Windows.Forms.DateTimePicker();
             this.labelNgayTuyenDung = new System.Windows.Forms.Label();
@@ -55,15 +64,6 @@
             this.label_NgaySinh = new System.Windows.Forms.Label();
             this.label_Ten = new System.Windows.Forms.Label();
             this.label_Ho = new System.Windows.Forms.Label();
-            this.textBoxMaNV = new ReaLTaiizor.Controls.HopeTextBox();
-            this.textBox_Ho = new ReaLTaiizor.Controls.HopeTextBox();
-            this.TextBox_Ten = new ReaLTaiizor.Controls.HopeTextBox();
-            this.TextBox_DiaChi = new ReaLTaiizor.Controls.HopeTextBox();
-            this.textBox_MaCV = new ReaLTaiizor.Controls.HopeTextBox();
-            this.cyberTextBoxSDT = new ReaLTaiizor.Controls.HopeTextBox();
-            this.cybelPassword = new ReaLTaiizor.Controls.HopeTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TextBoxSoCa = new ReaLTaiizor.Controls.HopeTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.poisonDataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,29 +75,29 @@
             // poisonDataGridView1
             // 
             this.poisonDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.poisonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poisonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.poisonDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.poisonDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.poisonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.poisonDataGridView1.EnableHeadersVisualStyles = false;
             this.poisonDataGridView1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.poisonDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -105,14 +105,14 @@
             this.poisonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.poisonDataGridView1.Name = "poisonDataGridView1";
             this.poisonDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.poisonDataGridView1.RowHeadersWidth = 62;
             this.poisonDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.poisonDataGridView1.RowTemplate.Height = 28;
@@ -195,6 +195,143 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(586, 389);
             this.panel2.TabIndex = 37;
+            // 
+            // TextBoxSoCa
+            // 
+            this.TextBoxSoCa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxSoCa.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxSoCa.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxSoCa.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxSoCa.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxSoCa.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxSoCa.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxSoCa.Hint = "";
+            this.TextBoxSoCa.Location = new System.Drawing.Point(132, 138);
+            this.TextBoxSoCa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxSoCa.MaxLength = 128;
+            this.TextBoxSoCa.Multiline = false;
+            this.TextBoxSoCa.Name = "TextBoxSoCa";
+            this.TextBoxSoCa.PasswordChar = '\0';
+            this.TextBoxSoCa.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxSoCa.SelectedText = "";
+            this.TextBoxSoCa.SelectionLength = 0;
+            this.TextBoxSoCa.SelectionStart = 0;
+            this.TextBoxSoCa.Size = new System.Drawing.Size(334, 43);
+            this.TextBoxSoCa.TabIndex = 66;
+            this.TextBoxSoCa.TabStop = false;
+            this.TextBoxSoCa.UseSystemPasswordChar = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(17, 148);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 19);
+            this.label2.TabIndex = 65;
+            this.label2.Text = "Số Ca";
+            // 
+            // cybelPassword
+            // 
+            this.cybelPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cybelPassword.BackColor = System.Drawing.Color.Snow;
+            this.cybelPassword.BaseColor = System.Drawing.Color.Transparent;
+            this.cybelPassword.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.cybelPassword.BorderColorB = System.Drawing.Color.DarkGray;
+            this.cybelPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cybelPassword.ForeColor = System.Drawing.Color.Black;
+            this.cybelPassword.Hint = "";
+            this.cybelPassword.Location = new System.Drawing.Point(132, 270);
+            this.cybelPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cybelPassword.MaxLength = 128;
+            this.cybelPassword.Multiline = false;
+            this.cybelPassword.Name = "cybelPassword";
+            this.cybelPassword.PasswordChar = '\0';
+            this.cybelPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cybelPassword.SelectedText = "";
+            this.cybelPassword.SelectionLength = 0;
+            this.cybelPassword.SelectionStart = 0;
+            this.cybelPassword.Size = new System.Drawing.Size(334, 43);
+            this.cybelPassword.TabIndex = 64;
+            this.cybelPassword.TabStop = false;
+            this.cybelPassword.UseSystemPasswordChar = false;
+            // 
+            // cyberTextBoxSDT
+            // 
+            this.cyberTextBoxSDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cyberTextBoxSDT.BackColor = System.Drawing.Color.Snow;
+            this.cyberTextBoxSDT.BaseColor = System.Drawing.Color.Transparent;
+            this.cyberTextBoxSDT.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.cyberTextBoxSDT.BorderColorB = System.Drawing.Color.DarkGray;
+            this.cyberTextBoxSDT.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cyberTextBoxSDT.ForeColor = System.Drawing.Color.Black;
+            this.cyberTextBoxSDT.Hint = "";
+            this.cyberTextBoxSDT.Location = new System.Drawing.Point(132, 211);
+            this.cyberTextBoxSDT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cyberTextBoxSDT.MaxLength = 128;
+            this.cyberTextBoxSDT.Multiline = false;
+            this.cyberTextBoxSDT.Name = "cyberTextBoxSDT";
+            this.cyberTextBoxSDT.PasswordChar = '\0';
+            this.cyberTextBoxSDT.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cyberTextBoxSDT.SelectedText = "";
+            this.cyberTextBoxSDT.SelectionLength = 0;
+            this.cyberTextBoxSDT.SelectionStart = 0;
+            this.cyberTextBoxSDT.Size = new System.Drawing.Size(334, 43);
+            this.cyberTextBoxSDT.TabIndex = 63;
+            this.cyberTextBoxSDT.TabStop = false;
+            this.cyberTextBoxSDT.UseSystemPasswordChar = false;
+            // 
+            // textBox_MaCV
+            // 
+            this.textBox_MaCV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_MaCV.BackColor = System.Drawing.Color.Snow;
+            this.textBox_MaCV.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_MaCV.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_MaCV.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_MaCV.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_MaCV.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MaCV.Hint = "";
+            this.textBox_MaCV.Location = new System.Drawing.Point(132, 72);
+            this.textBox_MaCV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox_MaCV.MaxLength = 128;
+            this.textBox_MaCV.Multiline = false;
+            this.textBox_MaCV.Name = "textBox_MaCV";
+            this.textBox_MaCV.PasswordChar = '\0';
+            this.textBox_MaCV.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_MaCV.SelectedText = "";
+            this.textBox_MaCV.SelectionLength = 0;
+            this.textBox_MaCV.SelectionStart = 0;
+            this.textBox_MaCV.Size = new System.Drawing.Size(334, 43);
+            this.textBox_MaCV.TabIndex = 62;
+            this.textBox_MaCV.TabStop = false;
+            this.textBox_MaCV.UseSystemPasswordChar = false;
+            // 
+            // TextBox_DiaChi
+            // 
+            this.TextBox_DiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox_DiaChi.BackColor = System.Drawing.Color.Snow;
+            this.TextBox_DiaChi.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBox_DiaChi.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBox_DiaChi.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBox_DiaChi.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBox_DiaChi.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_DiaChi.Hint = "";
+            this.TextBox_DiaChi.Location = new System.Drawing.Point(132, 10);
+            this.TextBox_DiaChi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBox_DiaChi.MaxLength = 128;
+            this.TextBox_DiaChi.Multiline = false;
+            this.TextBox_DiaChi.Name = "TextBox_DiaChi";
+            this.TextBox_DiaChi.PasswordChar = '\0';
+            this.TextBox_DiaChi.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox_DiaChi.SelectedText = "";
+            this.TextBox_DiaChi.SelectionLength = 0;
+            this.TextBox_DiaChi.SelectionStart = 0;
+            this.TextBox_DiaChi.Size = new System.Drawing.Size(334, 43);
+            this.TextBox_DiaChi.TabIndex = 61;
+            this.TextBox_DiaChi.TabStop = false;
+            this.TextBox_DiaChi.UseSystemPasswordChar = false;
             // 
             // labelPassword
             // 
@@ -329,7 +466,81 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 389);
             this.panel1.TabIndex = 36;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // TextBox_Ten
+            // 
+            this.TextBox_Ten.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox_Ten.BackColor = System.Drawing.Color.Snow;
+            this.TextBox_Ten.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBox_Ten.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBox_Ten.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBox_Ten.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBox_Ten.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_Ten.Hint = "";
+            this.TextBox_Ten.Location = new System.Drawing.Point(142, 124);
+            this.TextBox_Ten.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBox_Ten.MaxLength = 128;
+            this.TextBox_Ten.Multiline = false;
+            this.TextBox_Ten.Name = "TextBox_Ten";
+            this.TextBox_Ten.PasswordChar = '\0';
+            this.TextBox_Ten.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox_Ten.SelectedText = "";
+            this.TextBox_Ten.SelectionLength = 0;
+            this.TextBox_Ten.SelectionStart = 0;
+            this.TextBox_Ten.Size = new System.Drawing.Size(334, 43);
+            this.TextBox_Ten.TabIndex = 60;
+            this.TextBox_Ten.TabStop = false;
+            this.TextBox_Ten.UseSystemPasswordChar = false;
+            // 
+            // textBox_Ho
+            // 
+            this.textBox_Ho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_Ho.BackColor = System.Drawing.Color.Snow;
+            this.textBox_Ho.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_Ho.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_Ho.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_Ho.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_Ho.ForeColor = System.Drawing.Color.Black;
+            this.textBox_Ho.Hint = "";
+            this.textBox_Ho.Location = new System.Drawing.Point(142, 72);
+            this.textBox_Ho.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox_Ho.MaxLength = 128;
+            this.textBox_Ho.Multiline = false;
+            this.textBox_Ho.Name = "textBox_Ho";
+            this.textBox_Ho.PasswordChar = '\0';
+            this.textBox_Ho.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_Ho.SelectedText = "";
+            this.textBox_Ho.SelectionLength = 0;
+            this.textBox_Ho.SelectionStart = 0;
+            this.textBox_Ho.Size = new System.Drawing.Size(334, 43);
+            this.textBox_Ho.TabIndex = 59;
+            this.textBox_Ho.TabStop = false;
+            this.textBox_Ho.UseSystemPasswordChar = false;
+            // 
+            // textBoxMaNV
+            // 
+            this.textBoxMaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMaNV.BackColor = System.Drawing.Color.Snow;
+            this.textBoxMaNV.BaseColor = System.Drawing.Color.Transparent;
+            this.textBoxMaNV.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBoxMaNV.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBoxMaNV.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBoxMaNV.ForeColor = System.Drawing.Color.Black;
+            this.textBoxMaNV.Hint = "";
+            this.textBoxMaNV.Location = new System.Drawing.Point(142, 18);
+            this.textBoxMaNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxMaNV.MaxLength = 128;
+            this.textBoxMaNV.Multiline = false;
+            this.textBoxMaNV.Name = "textBoxMaNV";
+            this.textBoxMaNV.PasswordChar = '\0';
+            this.textBoxMaNV.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxMaNV.SelectedText = "";
+            this.textBoxMaNV.SelectionLength = 0;
+            this.textBoxMaNV.SelectionStart = 0;
+            this.textBoxMaNV.Size = new System.Drawing.Size(334, 43);
+            this.textBoxMaNV.TabIndex = 58;
+            this.textBoxMaNV.TabStop = false;
+            this.textBoxMaNV.UseSystemPasswordChar = false;
             // 
             // comboBoxGioiTinh
             // 
@@ -429,218 +640,6 @@
             this.label_Ho.Size = new System.Drawing.Size(37, 19);
             this.label_Ho.TabIndex = 46;
             this.label_Ho.Text = "Họ:";
-            // 
-            // textBoxMaNV
-            // 
-            this.textBoxMaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxMaNV.BackColor = System.Drawing.Color.Snow;
-            this.textBoxMaNV.BaseColor = System.Drawing.Color.Transparent;
-            this.textBoxMaNV.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.textBoxMaNV.BorderColorB = System.Drawing.Color.DarkGray;
-            this.textBoxMaNV.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.textBoxMaNV.ForeColor = System.Drawing.Color.Black;
-            this.textBoxMaNV.Hint = "";
-            this.textBoxMaNV.Location = new System.Drawing.Point(142, 18);
-            this.textBoxMaNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBoxMaNV.MaxLength = 128;
-            this.textBoxMaNV.Multiline = false;
-            this.textBoxMaNV.Name = "textBoxMaNV";
-            this.textBoxMaNV.PasswordChar = '\0';
-            this.textBoxMaNV.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxMaNV.SelectedText = "";
-            this.textBoxMaNV.SelectionLength = 0;
-            this.textBoxMaNV.SelectionStart = 0;
-            this.textBoxMaNV.Size = new System.Drawing.Size(334, 43);
-            this.textBoxMaNV.TabIndex = 58;
-            this.textBoxMaNV.TabStop = false;
-            this.textBoxMaNV.UseSystemPasswordChar = false;
-            // 
-            // textBox_Ho
-            // 
-            this.textBox_Ho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Ho.BackColor = System.Drawing.Color.Snow;
-            this.textBox_Ho.BaseColor = System.Drawing.Color.Transparent;
-            this.textBox_Ho.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.textBox_Ho.BorderColorB = System.Drawing.Color.DarkGray;
-            this.textBox_Ho.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.textBox_Ho.ForeColor = System.Drawing.Color.Black;
-            this.textBox_Ho.Hint = "";
-            this.textBox_Ho.Location = new System.Drawing.Point(142, 72);
-            this.textBox_Ho.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox_Ho.MaxLength = 128;
-            this.textBox_Ho.Multiline = false;
-            this.textBox_Ho.Name = "textBox_Ho";
-            this.textBox_Ho.PasswordChar = '\0';
-            this.textBox_Ho.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_Ho.SelectedText = "";
-            this.textBox_Ho.SelectionLength = 0;
-            this.textBox_Ho.SelectionStart = 0;
-            this.textBox_Ho.Size = new System.Drawing.Size(334, 43);
-            this.textBox_Ho.TabIndex = 59;
-            this.textBox_Ho.TabStop = false;
-            this.textBox_Ho.UseSystemPasswordChar = false;
-            // 
-            // TextBox_Ten
-            // 
-            this.TextBox_Ten.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBox_Ten.BackColor = System.Drawing.Color.Snow;
-            this.TextBox_Ten.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBox_Ten.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBox_Ten.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBox_Ten.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBox_Ten.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_Ten.Hint = "";
-            this.TextBox_Ten.Location = new System.Drawing.Point(142, 124);
-            this.TextBox_Ten.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBox_Ten.MaxLength = 128;
-            this.TextBox_Ten.Multiline = false;
-            this.TextBox_Ten.Name = "TextBox_Ten";
-            this.TextBox_Ten.PasswordChar = '\0';
-            this.TextBox_Ten.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox_Ten.SelectedText = "";
-            this.TextBox_Ten.SelectionLength = 0;
-            this.TextBox_Ten.SelectionStart = 0;
-            this.TextBox_Ten.Size = new System.Drawing.Size(334, 43);
-            this.TextBox_Ten.TabIndex = 60;
-            this.TextBox_Ten.TabStop = false;
-            this.TextBox_Ten.UseSystemPasswordChar = false;
-            // 
-            // TextBox_DiaChi
-            // 
-            this.TextBox_DiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBox_DiaChi.BackColor = System.Drawing.Color.Snow;
-            this.TextBox_DiaChi.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBox_DiaChi.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBox_DiaChi.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBox_DiaChi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBox_DiaChi.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_DiaChi.Hint = "";
-            this.TextBox_DiaChi.Location = new System.Drawing.Point(132, 10);
-            this.TextBox_DiaChi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBox_DiaChi.MaxLength = 128;
-            this.TextBox_DiaChi.Multiline = false;
-            this.TextBox_DiaChi.Name = "TextBox_DiaChi";
-            this.TextBox_DiaChi.PasswordChar = '\0';
-            this.TextBox_DiaChi.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox_DiaChi.SelectedText = "";
-            this.TextBox_DiaChi.SelectionLength = 0;
-            this.TextBox_DiaChi.SelectionStart = 0;
-            this.TextBox_DiaChi.Size = new System.Drawing.Size(334, 43);
-            this.TextBox_DiaChi.TabIndex = 61;
-            this.TextBox_DiaChi.TabStop = false;
-            this.TextBox_DiaChi.UseSystemPasswordChar = false;
-            // 
-            // textBox_MaCV
-            // 
-            this.textBox_MaCV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_MaCV.BackColor = System.Drawing.Color.Snow;
-            this.textBox_MaCV.BaseColor = System.Drawing.Color.Transparent;
-            this.textBox_MaCV.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.textBox_MaCV.BorderColorB = System.Drawing.Color.DarkGray;
-            this.textBox_MaCV.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.textBox_MaCV.ForeColor = System.Drawing.Color.Black;
-            this.textBox_MaCV.Hint = "";
-            this.textBox_MaCV.Location = new System.Drawing.Point(132, 72);
-            this.textBox_MaCV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox_MaCV.MaxLength = 128;
-            this.textBox_MaCV.Multiline = false;
-            this.textBox_MaCV.Name = "textBox_MaCV";
-            this.textBox_MaCV.PasswordChar = '\0';
-            this.textBox_MaCV.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_MaCV.SelectedText = "";
-            this.textBox_MaCV.SelectionLength = 0;
-            this.textBox_MaCV.SelectionStart = 0;
-            this.textBox_MaCV.Size = new System.Drawing.Size(334, 43);
-            this.textBox_MaCV.TabIndex = 62;
-            this.textBox_MaCV.TabStop = false;
-            this.textBox_MaCV.UseSystemPasswordChar = false;
-            // 
-            // cyberTextBoxSDT
-            // 
-            this.cyberTextBoxSDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cyberTextBoxSDT.BackColor = System.Drawing.Color.Snow;
-            this.cyberTextBoxSDT.BaseColor = System.Drawing.Color.Transparent;
-            this.cyberTextBoxSDT.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.cyberTextBoxSDT.BorderColorB = System.Drawing.Color.DarkGray;
-            this.cyberTextBoxSDT.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cyberTextBoxSDT.ForeColor = System.Drawing.Color.Black;
-            this.cyberTextBoxSDT.Hint = "";
-            this.cyberTextBoxSDT.Location = new System.Drawing.Point(132, 211);
-            this.cyberTextBoxSDT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cyberTextBoxSDT.MaxLength = 128;
-            this.cyberTextBoxSDT.Multiline = false;
-            this.cyberTextBoxSDT.Name = "cyberTextBoxSDT";
-            this.cyberTextBoxSDT.PasswordChar = '\0';
-            this.cyberTextBoxSDT.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cyberTextBoxSDT.SelectedText = "";
-            this.cyberTextBoxSDT.SelectionLength = 0;
-            this.cyberTextBoxSDT.SelectionStart = 0;
-            this.cyberTextBoxSDT.Size = new System.Drawing.Size(334, 43);
-            this.cyberTextBoxSDT.TabIndex = 63;
-            this.cyberTextBoxSDT.TabStop = false;
-            this.cyberTextBoxSDT.UseSystemPasswordChar = false;
-            // 
-            // cybelPassword
-            // 
-            this.cybelPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cybelPassword.BackColor = System.Drawing.Color.Snow;
-            this.cybelPassword.BaseColor = System.Drawing.Color.Transparent;
-            this.cybelPassword.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.cybelPassword.BorderColorB = System.Drawing.Color.DarkGray;
-            this.cybelPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cybelPassword.ForeColor = System.Drawing.Color.Black;
-            this.cybelPassword.Hint = "";
-            this.cybelPassword.Location = new System.Drawing.Point(132, 270);
-            this.cybelPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cybelPassword.MaxLength = 128;
-            this.cybelPassword.Multiline = false;
-            this.cybelPassword.Name = "cybelPassword";
-            this.cybelPassword.PasswordChar = '\0';
-            this.cybelPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.cybelPassword.SelectedText = "";
-            this.cybelPassword.SelectionLength = 0;
-            this.cybelPassword.SelectionStart = 0;
-            this.cybelPassword.Size = new System.Drawing.Size(334, 43);
-            this.cybelPassword.TabIndex = 64;
-            this.cybelPassword.TabStop = false;
-            this.cybelPassword.UseSystemPasswordChar = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(17, 148);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 19);
-            this.label2.TabIndex = 65;
-            this.label2.Text = "Số Ca";
-            // 
-            // TextBoxSoCa
-            // 
-            this.TextBoxSoCa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBoxSoCa.BackColor = System.Drawing.Color.Snow;
-            this.TextBoxSoCa.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBoxSoCa.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBoxSoCa.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBoxSoCa.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBoxSoCa.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxSoCa.Hint = "";
-            this.TextBoxSoCa.Location = new System.Drawing.Point(132, 138);
-            this.TextBoxSoCa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBoxSoCa.MaxLength = 128;
-            this.TextBoxSoCa.Multiline = false;
-            this.TextBoxSoCa.Name = "TextBoxSoCa";
-            this.TextBoxSoCa.PasswordChar = '\0';
-            this.TextBoxSoCa.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBoxSoCa.SelectedText = "";
-            this.TextBoxSoCa.SelectionLength = 0;
-            this.TextBoxSoCa.SelectionStart = 0;
-            this.TextBoxSoCa.Size = new System.Drawing.Size(334, 43);
-            this.TextBoxSoCa.TabIndex = 66;
-            this.TextBoxSoCa.TabStop = false;
-            this.TextBoxSoCa.UseSystemPasswordChar = false;
             // 
             // fNhanVien
             // 

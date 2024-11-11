@@ -1,13 +1,13 @@
 ﻿using DTO;
-using System;
+using System.Collections.Generic;
 using System.Data;
+using System;
 
 namespace DAO
 {
     public class ProductDAO
     {
         private static ProductDAO instance;
-
         public static ProductDAO Instance
         {
             get
@@ -20,110 +20,74 @@ namespace DAO
 
         private ProductDAO() { }
 
-        public DataTable GetAllProduct()
+        // Lấy tất cả sản phẩm
+        public List<Product> GetAllProducts()
         {
-            string query = "SELECT MaSP, TenSP, DonGia,Size FROM SanPham";
+            string query = "SELECT * FROM SanPham";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            List<Product> products = new List<Product>();
+
+            foreach (DataRow row in data.Rows)
+            {
+                products.Add(new Product(row));
+            }
+
+            return products;
+        }
+
+        // Lấy tất cả tên loại sản phẩm (TenLoaiSP)
+        public List<string> GetAllCategories()
+        {
+            string query = "SELECT TenLoaiSP FROM LoaiSanPham"; // Truy vấn lấy TenLoaiSP thay vì MaLoaiSP
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            List<string> categories = new List<string>();
+
+            foreach (DataRow row in data.Rows)
+            {
+                categories.Add(row["TenLoaiSP"].ToString()); // Thêm TenLoaiSP vào danh sách
+            }
+
+            return categories;
+        }
+
+        // Thay thế MessageBox bằng việc trả về giá trị hoặc mã lỗi
+        public List<Product> GetListProductByCategory(string category)
+        {
             try
             {
-                return DataProvider.Instance.ExecuteQuery(query);
+                string query = "EXEC GetProductsByCategory @CategoryName";
+                object[] parameters = new object[] { category };
+                DataTable data = DataProvider.Instance.ExecuteQuery(query, parameters);
+
+                List<Product> products = new List<Product>();
+                foreach (DataRow row in data.Rows)
+                {
+                    products.Add(new Product(row));
+                }
+
+                return products;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Lỗi khi lấy danh sách sản phẩm: " + ex.Message);
             }
         }
 
-        // Thêm phương thức để lấy tất cả loại sản phẩm
-        public DataTable GetAllCategories()
-        {
-            string query = "SELECT DISTINCT TenLoaiSP FROM V_ThongTinSanPham";
-            try
-            {
-                return DataProvider.Instance.ExecuteQuery(query);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
 
-        public DataTable GetListProductByCategory(string category)
-        {
-            string query = "SELECT * FROM V_ThongTinSanPham WHERE TenLoaiSP = @Category"; 
-            try
-            {
-                return DataProvider.Instance.ExecuteQuery(query, new object[] { category });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-        public DataTable SearchProductByNameOrCode(string searchText)
-        {
-            string query = "SELECT * FROM dbo.SanPham WHERE MaSP LIKE '%' + @SearchText + '%' OR TenSP LIKE '%' + @SearchText + '%'"; // Tìm kiếm theo mã hoặc tên sản phẩm
-            try
-            {
-                return DataProvider.Instance.ExecuteQuery(query, new object[] { searchText });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
 
-        public bool InsertProduct(Product newProduct)
+        public List<Product> SearchProductByNameOrCode(string searchText)
         {
-            string query = "USP_InsertProduct @Name , @Price, @Category , @Quantity, @Size, @Supplier"; // Bạn cần xác định thủ tục lưu trữ
-            int result;
-            try
-            {
-                result = DataProvider.Instance.ExecuteNonQuery(query, new object[] {
-                    newProduct.Name,
-                    newProduct.Price,
-                    newProduct.Size,
-                });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
-        }
+            string query = "EXEC sp_TimKiemSanPham @SearchText";
+            object[] parameters = new object[] { searchText };
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, parameters);
+            List<Product> products = new List<Product>();
 
-        public bool UpdateProduct(Product product)
-        {
-            string query = "USP_UpdateProduct @Id , @Name , @Price, @Category , @Quantity, @Size, @Supplier"; // Bạn cần xác định thủ tục lưu trữ
-            int result;
-            try
+            foreach (DataRow row in data.Rows)
             {
-                result = DataProvider.Instance.ExecuteNonQuery(query, new object[] {
-                    product.MaSP,
-                    product.Name,
-                    product.Price,
-                    product.Size,
+                products.Add(new Product(row));
+            }
 
-                });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
-        }
-
-        public bool DeleteProduct(int Id)
-        {
-            int result;
-            try
-            {
-                result = DataProvider.Instance.ExecuteNonQuery("USP_DeleteProduct @Id", new object[] { Id });
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return result > 0;
+            return products;
         }
     }
 }

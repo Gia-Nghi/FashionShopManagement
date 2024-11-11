@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.btn_Xoa = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_Them = new ReaLTaiizor.Controls.MaterialButton();
-            this.label_Cccd = new System.Windows.Forms.Label();
+            this.label_TenKH = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelNgatTao = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_SanPham = new ReaLTaiizor.Controls.HopeComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.data_DSSanPham = new ReaLTaiizor.Controls.PoisonDataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn_TraCuuSDT = new ReaLTaiizor.Controls.MaterialButton();
-            this.label_DiaChi = new System.Windows.Forms.Label();
+            this.dateTimeNgayTaoHD = new System.Windows.Forms.DateTimePicker();
+            this.TextBoxSoLuong = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBoxTenKH = new ReaLTaiizor.Controls.HopeTextBox();
             this.btn_Luu = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_ThanhToan = new ReaLTaiizor.Controls.MaterialButton();
             this.btn_InHoaDon = new ReaLTaiizor.Controls.MaterialButton();
+            this.data_DSSanPham = new ReaLTaiizor.Controls.PoisonDataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.TextBoxMaHD = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBox_MaKhachHang = new ReaLTaiizor.Controls.HopeTextBox();
+            this.TextBox_SDT = new ReaLTaiizor.Controls.HopeTextBox();
+            this.textBox_MaNV = new ReaLTaiizor.Controls.HopeTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_TraCuuSDT = new ReaLTaiizor.Controls.MaterialButton();
+            this.label_DiaChi = new System.Windows.Forms.Label();
             this.label_SDT = new System.Windows.Forms.Label();
             this.label_Ho = new System.Windows.Forms.Label();
-            this.textBox_MaNV = new ReaLTaiizor.Controls.HopeTextBox();
-            this.TextBox_SDT = new ReaLTaiizor.Controls.HopeTextBox();
-            this.textBox_MaKhachHang = new ReaLTaiizor.Controls.HopeTextBox();
-            this.TextBoxMaHD = new ReaLTaiizor.Controls.HopeTextBox();
-            this.TextBoxDonGia = new ReaLTaiizor.Controls.HopeTextBox();
-            this.TextBoxSoLuong = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -116,7 +116,7 @@
             this.btn_Xoa.HighEmphasis = true;
             this.btn_Xoa.Icon = null;
             this.btn_Xoa.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_Xoa.Location = new System.Drawing.Point(279, 288);
+            this.btn_Xoa.Location = new System.Drawing.Point(380, 281);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btn_Xoa.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btn_Xoa.Name = "btn_Xoa";
@@ -127,6 +127,7 @@
             this.btn_Xoa.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_Xoa.UseAccentColor = false;
             this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Them
             // 
@@ -137,7 +138,7 @@
             this.btn_Them.HighEmphasis = true;
             this.btn_Them.Icon = null;
             this.btn_Them.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_Them.Location = new System.Drawing.Point(166, 288);
+            this.btn_Them.Location = new System.Drawing.Point(234, 281);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btn_Them.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btn_Them.Name = "btn_Them";
@@ -148,18 +149,19 @@
             this.btn_Them.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_Them.UseAccentColor = false;
             this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // label_Cccd
+            // label_TenKH
             // 
-            this.label_Cccd.AutoSize = true;
-            this.label_Cccd.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_Cccd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_Cccd.Location = new System.Drawing.Point(15, 95);
-            this.label_Cccd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Cccd.Name = "label_Cccd";
-            this.label_Cccd.Size = new System.Drawing.Size(72, 19);
-            this.label_Cccd.TabIndex = 83;
-            this.label_Cccd.Text = "Đơn giá:";
+            this.label_TenKH.AutoSize = true;
+            this.label_TenKH.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_TenKH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_TenKH.Location = new System.Drawing.Point(1, 95);
+            this.label_TenKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_TenKH.Name = "label_TenKH";
+            this.label_TenKH.Size = new System.Drawing.Size(135, 19);
+            this.label_TenKH.TabIndex = 83;
+            this.label_TenKH.Text = "Tên Khách Hàng:";
             // 
             // label3
             // 
@@ -173,17 +175,17 @@
             this.label3.TabIndex = 85;
             this.label3.Text = "Sản phẩm:";
             // 
-            // label4
+            // labelNgatTao
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(15, 215);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 19);
-            this.label4.TabIndex = 87;
-            this.label4.Text = "Khuyến mãi:";
+            this.labelNgatTao.AutoSize = true;
+            this.labelNgatTao.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.labelNgatTao.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelNgatTao.Location = new System.Drawing.Point(15, 215);
+            this.labelNgatTao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNgatTao.Name = "labelNgatTao";
+            this.labelNgatTao.Size = new System.Drawing.Size(79, 19);
+            this.labelNgatTao.TabIndex = 87;
+            this.labelNgatTao.Text = "Ngày tạo:";
             // 
             // label2
             // 
@@ -209,134 +211,83 @@
             this.comboBox_SanPham.Name = "comboBox_SanPham";
             this.comboBox_SanPham.Size = new System.Drawing.Size(321, 36);
             this.comboBox_SanPham.TabIndex = 91;
+            this.comboBox_SanPham.SelectedIndexChanged += new System.EventHandler(this.comboBox_SanPham_SelectedIndexChanged);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.hopeTextBox1);
+            this.panel3.Controls.Add(this.dateTimeNgayTaoHD);
             this.panel3.Controls.Add(this.TextBoxSoLuong);
-            this.panel3.Controls.Add(this.TextBoxDonGia);
+            this.panel3.Controls.Add(this.TextBoxTenKH);
             this.panel3.Controls.Add(this.comboBox_SanPham);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.labelNgatTao);
             this.panel3.Controls.Add(this.btn_Luu);
             this.panel3.Controls.Add(this.btn_ThanhToan);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.btn_InHoaDon);
-            this.panel3.Controls.Add(this.label_Cccd);
+            this.panel3.Controls.Add(this.label_TenKH);
             this.panel3.Location = new System.Drawing.Point(586, 99);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(518, 329);
             this.panel3.TabIndex = 38;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // data_DSSanPham
+            // dateTimeNgayTaoHD
             // 
-            this.data_DSSanPham.AllowUserToResizeRows = false;
-            this.data_DSSanPham.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.data_DSSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.data_DSSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.data_DSSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_DSSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.data_DSSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data_DSSanPham.DefaultCellStyle = dataGridViewCellStyle5;
-            this.data_DSSanPham.EnableHeadersVisualStyles = false;
-            this.data_DSSanPham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.data_DSSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.data_DSSanPham.Location = new System.Drawing.Point(3, 436);
-            this.data_DSSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.data_DSSanPham.Name = "data_DSSanPham";
-            this.data_DSSanPham.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data_DSSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.data_DSSanPham.RowHeadersWidth = 62;
-            this.data_DSSanPham.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.data_DSSanPham.RowTemplate.Height = 28;
-            this.data_DSSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_DSSanPham.Size = new System.Drawing.Size(1101, 243);
-            this.data_DSSanPham.TabIndex = 39;
+            this.dateTimeNgayTaoHD.Location = new System.Drawing.Point(136, 210);
+            this.dateTimeNgayTaoHD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimeNgayTaoHD.Name = "dateTimeNgayTaoHD";
+            this.dateTimeNgayTaoHD.Size = new System.Drawing.Size(243, 22);
+            this.dateTimeNgayTaoHD.TabIndex = 93;
             // 
-            // panel1
+            // TextBoxSoLuong
             // 
-            this.panel1.Controls.Add(this.TextBoxMaHD);
-            this.panel1.Controls.Add(this.textBox_MaKhachHang);
-            this.panel1.Controls.Add(this.TextBox_SDT);
-            this.panel1.Controls.Add(this.textBox_MaNV);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.btn_TraCuuSDT);
-            this.panel1.Controls.Add(this.label_DiaChi);
-            this.panel1.Controls.Add(this.label_SDT);
-            this.panel1.Controls.Add(this.btn_Them);
-            this.panel1.Controls.Add(this.label_Ho);
-            this.panel1.Controls.Add(this.btn_Xoa);
-            this.panel1.Location = new System.Drawing.Point(0, 99);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 329);
-            this.panel1.TabIndex = 41;
+            this.TextBoxSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxSoLuong.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxSoLuong.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxSoLuong.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxSoLuong.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxSoLuong.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxSoLuong.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxSoLuong.Hint = "";
+            this.TextBoxSoLuong.Location = new System.Drawing.Point(136, 143);
+            this.TextBoxSoLuong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxSoLuong.MaxLength = 128;
+            this.TextBoxSoLuong.Multiline = false;
+            this.TextBoxSoLuong.Name = "TextBoxSoLuong";
+            this.TextBoxSoLuong.PasswordChar = '\0';
+            this.TextBoxSoLuong.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxSoLuong.SelectedText = "";
+            this.TextBoxSoLuong.SelectionLength = 0;
+            this.TextBoxSoLuong.SelectionStart = 0;
+            this.TextBoxSoLuong.Size = new System.Drawing.Size(321, 43);
+            this.TextBoxSoLuong.TabIndex = 92;
+            this.TextBoxSoLuong.TabStop = false;
+            this.TextBoxSoLuong.UseSystemPasswordChar = false;
             // 
-            // label7
+            // TextBoxTenKH
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(16, 213);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 19);
-            this.label7.TabIndex = 84;
-            this.label7.Text = "Mã hóa đơn:";
-            // 
-            // btn_TraCuuSDT
-            // 
-            this.btn_TraCuuSDT.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_TraCuuSDT.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_TraCuuSDT.Depth = 0;
-            this.btn_TraCuuSDT.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_TraCuuSDT.HighEmphasis = true;
-            this.btn_TraCuuSDT.Icon = null;
-            this.btn_TraCuuSDT.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btn_TraCuuSDT.Location = new System.Drawing.Point(453, 95);
-            this.btn_TraCuuSDT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btn_TraCuuSDT.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btn_TraCuuSDT.Name = "btn_TraCuuSDT";
-            this.btn_TraCuuSDT.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_TraCuuSDT.Size = new System.Drawing.Size(82, 36);
-            this.btn_TraCuuSDT.TabIndex = 83;
-            this.btn_TraCuuSDT.Text = "Tra cứu";
-            this.btn_TraCuuSDT.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_TraCuuSDT.UseAccentColor = false;
-            this.btn_TraCuuSDT.UseVisualStyleBackColor = true;
-            // 
-            // label_DiaChi
-            // 
-            this.label_DiaChi.AutoSize = true;
-            this.label_DiaChi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_DiaChi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_DiaChi.Location = new System.Drawing.Point(16, 153);
-            this.label_DiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_DiaChi.Name = "label_DiaChi";
-            this.label_DiaChi.Size = new System.Drawing.Size(89, 19);
-            this.label_DiaChi.TabIndex = 71;
-            this.label_DiaChi.Text = "Tên khách:";
+            this.TextBoxTenKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxTenKH.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxTenKH.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxTenKH.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxTenKH.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxTenKH.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxTenKH.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxTenKH.Hint = "";
+            this.TextBoxTenKH.Location = new System.Drawing.Point(136, 85);
+            this.TextBoxTenKH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxTenKH.MaxLength = 128;
+            this.TextBoxTenKH.Multiline = false;
+            this.TextBoxTenKH.Name = "TextBoxTenKH";
+            this.TextBoxTenKH.PasswordChar = '\0';
+            this.TextBoxTenKH.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxTenKH.SelectedText = "";
+            this.TextBoxTenKH.SelectionLength = 0;
+            this.TextBoxTenKH.SelectionStart = 0;
+            this.TextBoxTenKH.Size = new System.Drawing.Size(321, 43);
+            this.TextBoxTenKH.TabIndex = 90;
+            this.TextBoxTenKH.TabStop = false;
+            this.TextBoxTenKH.UseSystemPasswordChar = false;
             // 
             // btn_Luu
             // 
@@ -358,6 +309,7 @@
             this.btn_Luu.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_Luu.UseAccentColor = true;
             this.btn_Luu.UseVisualStyleBackColor = true;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // btn_ThanhToan
             // 
@@ -401,80 +353,97 @@
             this.btn_InHoaDon.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_InHoaDon.UseAccentColor = false;
             this.btn_InHoaDon.UseVisualStyleBackColor = true;
+            this.btn_InHoaDon.Click += new System.EventHandler(this.btn_InHoaDon_Click);
             // 
-            // label_SDT
+            // data_DSSanPham
             // 
-            this.label_SDT.AutoSize = true;
-            this.label_SDT.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.label_SDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_SDT.Location = new System.Drawing.Point(16, 95);
-            this.label_SDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_SDT.Name = "label_SDT";
-            this.label_SDT.Size = new System.Drawing.Size(45, 19);
-            this.label_SDT.TabIndex = 68;
-            this.label_SDT.Text = "SĐT:";
+            this.data_DSSanPham.AllowUserToResizeRows = false;
+            this.data_DSSanPham.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_DSSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.data_DSSanPham.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.data_DSSanPham.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_DSSanPham.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.data_DSSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data_DSSanPham.DefaultCellStyle = dataGridViewCellStyle2;
+            this.data_DSSanPham.EnableHeadersVisualStyles = false;
+            this.data_DSSanPham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.data_DSSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.data_DSSanPham.Location = new System.Drawing.Point(3, 436);
+            this.data_DSSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.data_DSSanPham.Name = "data_DSSanPham";
+            this.data_DSSanPham.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data_DSSanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.data_DSSanPham.RowHeadersWidth = 62;
+            this.data_DSSanPham.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.data_DSSanPham.RowTemplate.Height = 28;
+            this.data_DSSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_DSSanPham.Size = new System.Drawing.Size(1101, 243);
+            this.data_DSSanPham.TabIndex = 39;
+            this.data_DSSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_DSSanPham_CellContentClick);
             // 
-            // label_Ho
+            // panel1
             // 
-            this.label_Ho.AutoSize = true;
-            this.label_Ho.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Ho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_Ho.Location = new System.Drawing.Point(16, 31);
-            this.label_Ho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Ho.Name = "label_Ho";
-            this.label_Ho.Size = new System.Drawing.Size(88, 19);
-            this.label_Ho.TabIndex = 67;
-            this.label_Ho.Text = "Nhân viên:";
+            this.panel1.Controls.Add(this.TextBoxMaHD);
+            this.panel1.Controls.Add(this.textBox_MaKhachHang);
+            this.panel1.Controls.Add(this.TextBox_SDT);
+            this.panel1.Controls.Add(this.textBox_MaNV);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.btn_TraCuuSDT);
+            this.panel1.Controls.Add(this.label_DiaChi);
+            this.panel1.Controls.Add(this.label_SDT);
+            this.panel1.Controls.Add(this.btn_Them);
+            this.panel1.Controls.Add(this.label_Ho);
+            this.panel1.Controls.Add(this.btn_Xoa);
+            this.panel1.Location = new System.Drawing.Point(0, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(580, 329);
+            this.panel1.TabIndex = 41;
             // 
-            // textBox_MaNV
+            // TextBoxMaHD
             // 
-            this.textBox_MaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_MaNV.BackColor = System.Drawing.Color.Snow;
-            this.textBox_MaNV.BaseColor = System.Drawing.Color.Transparent;
-            this.textBox_MaNV.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.textBox_MaNV.BorderColorB = System.Drawing.Color.DarkGray;
-            this.textBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.textBox_MaNV.ForeColor = System.Drawing.Color.Black;
-            this.textBox_MaNV.Hint = "";
-            this.textBox_MaNV.Location = new System.Drawing.Point(136, 24);
-            this.textBox_MaNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox_MaNV.MaxLength = 128;
-            this.textBox_MaNV.Multiline = false;
-            this.textBox_MaNV.Name = "textBox_MaNV";
-            this.textBox_MaNV.PasswordChar = '\0';
-            this.textBox_MaNV.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBox_MaNV.SelectedText = "";
-            this.textBox_MaNV.SelectionLength = 0;
-            this.textBox_MaNV.SelectionStart = 0;
-            this.textBox_MaNV.Size = new System.Drawing.Size(399, 43);
-            this.textBox_MaNV.TabIndex = 86;
-            this.textBox_MaNV.TabStop = false;
-            this.textBox_MaNV.UseSystemPasswordChar = false;
-            // 
-            // TextBox_SDT
-            // 
-            this.TextBox_SDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBox_SDT.BackColor = System.Drawing.Color.Snow;
-            this.TextBox_SDT.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBox_SDT.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBox_SDT.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBox_SDT.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBox_SDT.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_SDT.Hint = "";
-            this.TextBox_SDT.Location = new System.Drawing.Point(136, 85);
-            this.TextBox_SDT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBox_SDT.MaxLength = 128;
-            this.TextBox_SDT.Multiline = false;
-            this.TextBox_SDT.Name = "TextBox_SDT";
-            this.TextBox_SDT.PasswordChar = '\0';
-            this.TextBox_SDT.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBox_SDT.SelectedText = "";
-            this.TextBox_SDT.SelectionLength = 0;
-            this.TextBox_SDT.SelectionStart = 0;
-            this.TextBox_SDT.Size = new System.Drawing.Size(308, 43);
-            this.TextBox_SDT.TabIndex = 87;
-            this.TextBox_SDT.TabStop = false;
-            this.TextBox_SDT.UseSystemPasswordChar = false;
+            this.TextBoxMaHD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxMaHD.BackColor = System.Drawing.Color.Snow;
+            this.TextBoxMaHD.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBoxMaHD.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBoxMaHD.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBoxMaHD.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBoxMaHD.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxMaHD.Hint = "";
+            this.TextBoxMaHD.Location = new System.Drawing.Point(136, 192);
+            this.TextBoxMaHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBoxMaHD.MaxLength = 128;
+            this.TextBoxMaHD.Multiline = false;
+            this.TextBoxMaHD.Name = "TextBoxMaHD";
+            this.TextBoxMaHD.PasswordChar = '\0';
+            this.TextBoxMaHD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxMaHD.SelectedText = "";
+            this.TextBoxMaHD.SelectionLength = 0;
+            this.TextBoxMaHD.SelectionStart = 0;
+            this.TextBoxMaHD.Size = new System.Drawing.Size(399, 43);
+            this.TextBoxMaHD.TabIndex = 89;
+            this.TextBoxMaHD.TabStop = false;
+            this.TextBoxMaHD.UseSystemPasswordChar = false;
             // 
             // textBox_MaKhachHang
             // 
@@ -501,105 +470,125 @@
             this.textBox_MaKhachHang.TabStop = false;
             this.textBox_MaKhachHang.UseSystemPasswordChar = false;
             // 
-            // TextBoxMaHD
+            // TextBox_SDT
             // 
-            this.TextBoxMaHD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBoxMaHD.BackColor = System.Drawing.Color.Snow;
-            this.TextBoxMaHD.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBoxMaHD.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBoxMaHD.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBoxMaHD.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBoxMaHD.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxMaHD.Hint = "";
-            this.TextBoxMaHD.Location = new System.Drawing.Point(136, 202);
-            this.TextBoxMaHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBoxMaHD.MaxLength = 128;
-            this.TextBoxMaHD.Multiline = false;
-            this.TextBoxMaHD.Name = "TextBoxMaHD";
-            this.TextBoxMaHD.PasswordChar = '\0';
-            this.TextBoxMaHD.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBoxMaHD.SelectedText = "";
-            this.TextBoxMaHD.SelectionLength = 0;
-            this.TextBoxMaHD.SelectionStart = 0;
-            this.TextBoxMaHD.Size = new System.Drawing.Size(399, 43);
-            this.TextBoxMaHD.TabIndex = 89;
-            this.TextBoxMaHD.TabStop = false;
-            this.TextBoxMaHD.UseSystemPasswordChar = false;
+            this.TextBox_SDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBox_SDT.BackColor = System.Drawing.Color.Snow;
+            this.TextBox_SDT.BaseColor = System.Drawing.Color.Transparent;
+            this.TextBox_SDT.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.TextBox_SDT.BorderColorB = System.Drawing.Color.DarkGray;
+            this.TextBox_SDT.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.TextBox_SDT.ForeColor = System.Drawing.Color.Black;
+            this.TextBox_SDT.Hint = "";
+            this.TextBox_SDT.Location = new System.Drawing.Point(136, 85);
+            this.TextBox_SDT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBox_SDT.MaxLength = 128;
+            this.TextBox_SDT.Multiline = false;
+            this.TextBox_SDT.Name = "TextBox_SDT";
+            this.TextBox_SDT.PasswordChar = '\0';
+            this.TextBox_SDT.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBox_SDT.SelectedText = "";
+            this.TextBox_SDT.SelectionLength = 0;
+            this.TextBox_SDT.SelectionStart = 0;
+            this.TextBox_SDT.Size = new System.Drawing.Size(308, 43);
+            this.TextBox_SDT.TabIndex = 87;
+            this.TextBox_SDT.TabStop = false;
+            this.TextBox_SDT.UseSystemPasswordChar = false;
             // 
-            // TextBoxDonGia
+            // textBox_MaNV
             // 
-            this.TextBoxDonGia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBoxDonGia.BackColor = System.Drawing.Color.Snow;
-            this.TextBoxDonGia.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBoxDonGia.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBoxDonGia.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBoxDonGia.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBoxDonGia.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxDonGia.Hint = "";
-            this.TextBoxDonGia.Location = new System.Drawing.Point(136, 85);
-            this.TextBoxDonGia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBoxDonGia.MaxLength = 128;
-            this.TextBoxDonGia.Multiline = false;
-            this.TextBoxDonGia.Name = "TextBoxDonGia";
-            this.TextBoxDonGia.PasswordChar = '\0';
-            this.TextBoxDonGia.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBoxDonGia.SelectedText = "";
-            this.TextBoxDonGia.SelectionLength = 0;
-            this.TextBoxDonGia.SelectionStart = 0;
-            this.TextBoxDonGia.Size = new System.Drawing.Size(321, 43);
-            this.TextBoxDonGia.TabIndex = 90;
-            this.TextBoxDonGia.TabStop = false;
-            this.TextBoxDonGia.UseSystemPasswordChar = false;
+            this.textBox_MaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_MaNV.BackColor = System.Drawing.Color.Snow;
+            this.textBox_MaNV.BaseColor = System.Drawing.Color.Transparent;
+            this.textBox_MaNV.BorderColorA = System.Drawing.Color.DodgerBlue;
+            this.textBox_MaNV.BorderColorB = System.Drawing.Color.DarkGray;
+            this.textBox_MaNV.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.textBox_MaNV.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MaNV.Hint = "";
+            this.textBox_MaNV.Location = new System.Drawing.Point(136, 24);
+            this.textBox_MaNV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox_MaNV.MaxLength = 128;
+            this.textBox_MaNV.Multiline = false;
+            this.textBox_MaNV.Name = "textBox_MaNV";
+            this.textBox_MaNV.PasswordChar = '\0';
+            this.textBox_MaNV.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBox_MaNV.SelectedText = "";
+            this.textBox_MaNV.SelectionLength = 0;
+            this.textBox_MaNV.SelectionStart = 0;
+            this.textBox_MaNV.Size = new System.Drawing.Size(399, 43);
+            this.textBox_MaNV.TabIndex = 86;
+            this.textBox_MaNV.TabStop = false;
+            this.textBox_MaNV.UseSystemPasswordChar = false;
             // 
-            // TextBoxSoLuong
+            // label7
             // 
-            this.TextBoxSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBoxSoLuong.BackColor = System.Drawing.Color.Snow;
-            this.TextBoxSoLuong.BaseColor = System.Drawing.Color.Transparent;
-            this.TextBoxSoLuong.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.TextBoxSoLuong.BorderColorB = System.Drawing.Color.DarkGray;
-            this.TextBoxSoLuong.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.TextBoxSoLuong.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxSoLuong.Hint = "";
-            this.TextBoxSoLuong.Location = new System.Drawing.Point(136, 143);
-            this.TextBoxSoLuong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBoxSoLuong.MaxLength = 128;
-            this.TextBoxSoLuong.Multiline = false;
-            this.TextBoxSoLuong.Name = "TextBoxSoLuong";
-            this.TextBoxSoLuong.PasswordChar = '\0';
-            this.TextBoxSoLuong.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBoxSoLuong.SelectedText = "";
-            this.TextBoxSoLuong.SelectionLength = 0;
-            this.TextBoxSoLuong.SelectionStart = 0;
-            this.TextBoxSoLuong.Size = new System.Drawing.Size(321, 43);
-            this.TextBoxSoLuong.TabIndex = 92;
-            this.TextBoxSoLuong.TabStop = false;
-            this.TextBoxSoLuong.UseSystemPasswordChar = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(16, 213);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 19);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "Mã hóa đơn:";
             // 
-            // hopeTextBox1
+            // btn_TraCuuSDT
             // 
-            this.hopeTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.hopeTextBox1.BackColor = System.Drawing.Color.Snow;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.DodgerBlue;
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.DarkGray;
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(136, 202);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hopeTextBox1.MaxLength = 128;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(321, 43);
-            this.hopeTextBox1.TabIndex = 93;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            this.btn_TraCuuSDT.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_TraCuuSDT.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_TraCuuSDT.Depth = 0;
+            this.btn_TraCuuSDT.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_TraCuuSDT.HighEmphasis = true;
+            this.btn_TraCuuSDT.Icon = null;
+            this.btn_TraCuuSDT.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btn_TraCuuSDT.Location = new System.Drawing.Point(453, 95);
+            this.btn_TraCuuSDT.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btn_TraCuuSDT.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btn_TraCuuSDT.Name = "btn_TraCuuSDT";
+            this.btn_TraCuuSDT.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_TraCuuSDT.Size = new System.Drawing.Size(82, 36);
+            this.btn_TraCuuSDT.TabIndex = 83;
+            this.btn_TraCuuSDT.Text = "Tra cứu";
+            this.btn_TraCuuSDT.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_TraCuuSDT.UseAccentColor = false;
+            this.btn_TraCuuSDT.UseVisualStyleBackColor = true;
+            this.btn_TraCuuSDT.Click += new System.EventHandler(this.btn_TraCuuSDT_Click);
+            // 
+            // label_DiaChi
+            // 
+            this.label_DiaChi.AutoSize = true;
+            this.label_DiaChi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_DiaChi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_DiaChi.Location = new System.Drawing.Point(16, 153);
+            this.label_DiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_DiaChi.Name = "label_DiaChi";
+            this.label_DiaChi.Size = new System.Drawing.Size(89, 19);
+            this.label_DiaChi.TabIndex = 71;
+            this.label_DiaChi.Text = "Tên khách:";
+            // 
+            // label_SDT
+            // 
+            this.label_SDT.AutoSize = true;
+            this.label_SDT.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label_SDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_SDT.Location = new System.Drawing.Point(16, 95);
+            this.label_SDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_SDT.Name = "label_SDT";
+            this.label_SDT.Size = new System.Drawing.Size(45, 19);
+            this.label_SDT.TabIndex = 68;
+            this.label_SDT.Text = "SĐT:";
+            // 
+            // label_Ho
+            // 
+            this.label_Ho.AutoSize = true;
+            this.label_Ho.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Ho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Ho.Location = new System.Drawing.Point(16, 31);
+            this.label_Ho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Ho.Name = "label_Ho";
+            this.label_Ho.Size = new System.Drawing.Size(88, 19);
+            this.label_Ho.TabIndex = 67;
+            this.label_Ho.Text = "Nhân viên:";
             // 
             // fTaoDonHang
             // 
@@ -629,9 +618,9 @@
         private System.Windows.Forms.Panel panel3;
         private ReaLTaiizor.Controls.HopeComboBox comboBox_SanPham;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelNgatTao;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label_Cccd;
+        private System.Windows.Forms.Label label_TenKH;
         private ReaLTaiizor.Controls.MaterialButton btn_Them;
         private ReaLTaiizor.Controls.MaterialButton btn_Xoa;
         private ReaLTaiizor.Controls.PoisonDataGridView data_DSSanPham;
@@ -645,11 +634,11 @@
         private System.Windows.Forms.Label label_SDT;
         private System.Windows.Forms.Label label_Ho;
         private ReaLTaiizor.Controls.HopeTextBox TextBoxSoLuong;
-        private ReaLTaiizor.Controls.HopeTextBox TextBoxDonGia;
+        private ReaLTaiizor.Controls.HopeTextBox TextBoxTenKH;
         private ReaLTaiizor.Controls.HopeTextBox TextBoxMaHD;
         private ReaLTaiizor.Controls.HopeTextBox textBox_MaKhachHang;
         private ReaLTaiizor.Controls.HopeTextBox TextBox_SDT;
         private ReaLTaiizor.Controls.HopeTextBox textBox_MaNV;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
+        private System.Windows.Forms.DateTimePicker dateTimeNgayTaoHD;
     }
 }

@@ -19,7 +19,7 @@ namespace DAO
         }
 
         private DataProvider() { }
-        private string connectionString = @"Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+        private string connectionString = @"Data Source=LAPTOP-MDC7IR39\SA;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
      
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
@@ -77,31 +77,29 @@ namespace DAO
             return row;
         }
 
-        public object ExecuteScalar(string query, object[] parameter = null)
+        public object ExecuteScalar(string query, object[] parameters = null)
         {
             object data = 0;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
+                command.CommandType = CommandType.StoredProcedure;
 
-                if (parameter != null)
+                if (parameters != null)
                 {
-                    string[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string item in listPara)
+                    string[] parameterNames = new string[] { "@MaNV", "@Password" };
+                    for (int i = 0; i < parameters.Length; i++)
                     {
-                        if (item.Contains('@'))
-                        {
-                            command.Parameters.AddWithValue(item, parameter[i]);
-                            i++;
-                        }
+                        command.Parameters.AddWithValue(parameterNames[i], parameters[i]);
                     }
                 }
+
                 data = command.ExecuteScalar();
                 connection.Close();
             }
             return data;
         }
-	}
+
+    }
 }
