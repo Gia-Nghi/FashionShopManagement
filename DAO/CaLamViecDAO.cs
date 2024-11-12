@@ -1,8 +1,8 @@
-﻿using DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using DTO;
 
 namespace DAO
 {
@@ -15,7 +15,7 @@ namespace DAO
             List<CaLamViecDTO> list = new List<CaLamViecDTO>();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM ViewBangPhanCa";
+                string query = "SELECT * FROM ViewBangPhanCa ORDER BY NgayLam DESC";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -26,66 +26,31 @@ namespace DAO
                     DateTime ngayLam = Convert.ToDateTime(reader["NgayLam"]);
                     TimeSpan gioBatDau = TimeSpan.Parse(reader["GioBatDau"].ToString());
                     TimeSpan gioKetThuc = TimeSpan.Parse(reader["GioKetThuc"].ToString());
-                    string hoNV = reader["HoNV"].ToString();
-                    string tenNV = reader["TenNV"].ToString();
+                    string hoTenNV = reader["HoNV"].ToString() + " " + reader["TenNV"].ToString();
 
-                    list.Add(new CaLamViecDTO(maCa, maNV, ngayLam, gioBatDau, gioKetThuc, hoNV, tenNV));
+                    list.Add(new CaLamViecDTO(maCa, maNV, ngayLam, gioBatDau, gioKetThuc, hoTenNV));
                 }
             }
             return list;
         }
 
-        public bool Add(CaLamViecDTO caLamViec)
+
+        public bool AddCaLamViec(string maCa, DateTime ngayLam, string maNV)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand("sp_ThemCaLamViec", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaCa", caLamViec.MaCa);
-                cmd.Parameters.AddWithValue("@NgayLam", caLamViec.NgayLam);
-                cmd.Parameters.AddWithValue("@MaNV", caLamViec.MaNV);
-                cmd.Parameters.AddWithValue("@GioBatDau", caLamViec.GioBatDau);
-                cmd.Parameters.AddWithValue("@GioKetThuc", caLamViec.GioKetThuc);
-
-                conn.Open();
-                return cmd.ExecuteNonQuery() > 0;
-            }
-        }
-        public bool CheckIfCaExists(string maCa, DateTime ngayLam)
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                string query = "SELECT COUNT(*) FROM CaLamViec WHERE MaCa = @MaCa AND NgayLam = @NgayLam";
-                SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaCa", maCa);
                 cmd.Parameters.AddWithValue("@NgayLam", ngayLam);
-
-                conn.Open();
-                int count = (int)cmd.ExecuteScalar();
-                return count > 0;
-            }
-        }
-
-
-
-
-        public bool Update(CaLamViecDTO caLamViec)
-        {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand("sp_SuaCaLamViec", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaCa", caLamViec.MaCa);
-                cmd.Parameters.AddWithValue("@NgayLam", caLamViec.NgayLam);
-                cmd.Parameters.AddWithValue("@GioBatDau", caLamViec.GioBatDau);
-                cmd.Parameters.AddWithValue("@GioKetThuc", caLamViec.GioKetThuc);
+                cmd.Parameters.AddWithValue("@MaNV", maNV);
 
                 conn.Open();
                 return cmd.ExecuteNonQuery() > 0;
             }
         }
 
-        public bool Delete(string maCa, DateTime ngayLam)
+        public bool DeleteCaLamViec(string maCa, DateTime ngayLam, string maNV)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -93,11 +58,42 @@ namespace DAO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@MaCa", maCa);
                 cmd.Parameters.AddWithValue("@NgayLam", ngayLam);
+                cmd.Parameters.AddWithValue("@MaNV", maNV);
 
                 conn.Open();
                 return cmd.ExecuteNonQuery() > 0;
             }
         }
+
+        public bool UpdateCaLamViec(string maCa, DateTime ngayLam, string maNV, string newMaCa, string newMaNV, DateTime newNgayLam)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = "sp_SuaCaLamViec";
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@MaCa", maCa);
+                    cmd.Parameters.AddWithValue("@NgayLam", ngayLam);
+                    cmd.Parameters.AddWithValue("@MaNV", maNV);
+                    cmd.Parameters.AddWithValue("@NewMaCa", newMaCa);
+                    cmd.Parameters.AddWithValue("@NewMaNV", newMaNV);
+                    cmd.Parameters.AddWithValue("@NewNgayLam", newNgayLam);
+
+                    conn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Có lỗi xảy ra: " + ex.Message);
+                return false;
+            }
+        }
+
 
     }
 }

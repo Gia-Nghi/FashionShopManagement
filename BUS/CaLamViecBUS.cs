@@ -1,7 +1,7 @@
-﻿using DAO;
-using DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using DAO;
+using DTO;
 
 namespace BUS
 {
@@ -14,23 +14,19 @@ namespace BUS
             return caLamViecDAO.GetAll();
         }
 
-        public bool AddCaLamViec(CaLamViecDTO caLamViec)
+        public bool AddCaLamViec(string maCa, DateTime ngayLam, string maNV)
         {
-            return caLamViecDAO.Add(caLamViec);
+            return caLamViecDAO.AddCaLamViec(maCa, ngayLam, maNV);
         }
 
-        public bool UpdateCaLamViec(CaLamViecDTO caLamViec)
+        public bool DeleteCaLamViec(string maCa, DateTime ngayLam, string maNV)
         {
-            return caLamViecDAO.Update(caLamViec);
+            return caLamViecDAO.DeleteCaLamViec(maCa, ngayLam, maNV);
         }
 
-        public bool DeleteCaLamViec(string maCa, DateTime ngayLam)
+        public bool UpdateCaLamViec(string maCa, DateTime ngayLam, string maNV, string newMaCa, string newMaNV, DateTime newNgayLam)
         {
-            return caLamViecDAO.Delete(maCa, ngayLam);
-        }
-        public bool CheckIfCaExists(string maCa, DateTime ngayLam)
-        {
-            return caLamViecDAO.CheckIfCaExists(maCa, ngayLam);
+            return caLamViecDAO.UpdateCaLamViec(maCa, ngayLam, maNV, newMaCa, newMaNV, newNgayLam);
         }
 
     }

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using DTO;
 using BUS;
+using DTO;
 
 namespace GUI
 {
@@ -20,6 +20,8 @@ namespace GUI
         {
             List<CaLamViecDTO> list = caLamViecBUS.GetAllCaLamViec();
             dgvCaLamViec.DataSource = list;
+
+            dgvCaLamViec.Columns["HoTenNV"].Width = 200;
         }
 
         private void btnThemCa_Click(object sender, EventArgs e)
@@ -29,84 +31,84 @@ namespace GUI
                 string maCa = txtMaCa.Text;
                 string maNV = txtMaNV.Text;
                 DateTime ngayLam = dtpNgayLam.Value;
-
-                TimeSpan gioBatDau = TimeSpan.Zero;
-                TimeSpan gioKetThuc = TimeSpan.Zero;
-
-                if (!string.IsNullOrEmpty(txtGioBatDau.Text) && TimeSpan.TryParse(txtGioBatDau.Text, out var startTime))
-                {
-                    gioBatDau = startTime;
-                }
-
-                if (!string.IsNullOrEmpty(txtGioKetThuc.Text) && TimeSpan.TryParse(txtGioKetThuc.Text, out var endTime))
-                {
-                    gioKetThuc = endTime;
-                }
-
-                string hoNV = txtHoNV.Text;
-                string tenNV = txtTenNV.Text;
-
-                if (caLamViecBUS.CheckIfCaExists(maCa, ngayLam))
-                {
-                    MessageBox.Show("Ca làm việc đã tồn tại trong ngày này. Vui lòng chọn ca khác.");
-                    return;
-                }
-
-                CaLamViecDTO caLamViec = new CaLamViecDTO(maCa, maNV, ngayLam, gioBatDau, gioKetThuc, hoNV, tenNV);
-
-                if (caLamViecBUS.AddCaLamViec(caLamViec))
+                if (caLamViecBUS.AddCaLamViec(maCa, ngayLam, maNV))
                 {
                     MessageBox.Show("Thêm ca làm việc thành công!");
                     LoadCaLamViec();
                 }
                 else
                 {
-                    MessageBox.Show("Lỗi khi thêm ca làm việc.");
+                    MessageBox.Show("Thêm ca làm việc không thành công.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã có lỗi xảy ra: " + ex.Message);
+                MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
             }
         }
 
-        private void btnSuaCa_Click(object sender, EventArgs e)
-        {
-            string maCa = txtMaCa.Text;
-            string maNV = txtMaNV.Text;
-            DateTime ngayLam = dtpNgayLam.Value;
-            TimeSpan gioBatDau = TimeSpan.Parse(txtGioBatDau.Text);
-            TimeSpan gioKetThuc = TimeSpan.Parse(txtGioKetThuc.Text);
-            string hoNV = txtHoNV.Text;
-            string tenNV = txtTenNV.Text;
-
-            CaLamViecDTO caLamViec = new CaLamViecDTO(maCa, maNV, ngayLam, gioBatDau, gioKetThuc, hoNV, tenNV);
-            if (caLamViecBUS.UpdateCaLamViec(caLamViec))
-            {
-                MessageBox.Show("Sửa ca làm việc thành công!");
-                LoadCaLamViec();
-            }
-            else
-            {
-                MessageBox.Show("Lỗi khi sửa ca làm việc.");
-            }
-        }
 
         private void btnXoaCa_Click(object sender, EventArgs e)
         {
-            string maCa = txtMaCa.Text;
-            DateTime ngayLam = dtpNgayLam.Value;
+            try
+            {
+                string maCa = txtMaCa.Text;
+                string maNV = txtMaNV.Text;
+                DateTime ngayLam = dtpNgayLam.Value;
 
-            if (caLamViecBUS.DeleteCaLamViec(maCa, ngayLam))
-            {
-                MessageBox.Show("Xóa ca làm việc thành công!");
-                LoadCaLamViec();
+                if (string.IsNullOrEmpty(maCa) || string.IsNullOrEmpty(maNV))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin để xóa ca.");
+                    return;
+                }
+
+                if (caLamViecBUS.DeleteCaLamViec(maCa, ngayLam, maNV))
+                {
+                    MessageBox.Show("Xóa ca làm việc thành công!");
+                    LoadCaLamViec();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa ca làm việc không thành công.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi xóa ca làm việc.");
+                MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
             }
         }
+        private void btnSuaCa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string maCa = txtMaCa.Text;
+                DateTime ngayLam = dtpNgayLam.Value;
+                string maNV = txtMaNV.Text;
+                FormSuaCa formSuaCa = new FormSuaCa(maCa, ngayLam, maNV);
+
+                if (formSuaCa.ShowDialog() == DialogResult.OK)
+                {
+                    string newMaCa = formSuaCa.NewMaCa;
+                    string newMaNV = formSuaCa.NewMaNV;
+                    DateTime newNgayLam = formSuaCa.NewNgayLam;
+
+                    if (caLamViecBUS.UpdateCaLamViec(maCa, ngayLam, maNV, newMaCa, newMaNV, newNgayLam))
+                    {
+                        MessageBox.Show("Cập nhật ca làm việc thành công!");
+                        LoadCaLamViec();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật ca làm việc không thành công.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
+            }
+        }
+
 
     }
 }

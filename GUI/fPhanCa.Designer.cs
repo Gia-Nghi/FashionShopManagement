@@ -1,4 +1,6 @@
-﻿namespace GUI
+﻿using System;
+
+namespace GUI
 {
     partial class fPhanCa
     {
@@ -28,45 +30,38 @@
             this.labelMaCa = new System.Windows.Forms.Label();
             this.labelMaNV = new System.Windows.Forms.Label();
             this.labelNgayLam = new System.Windows.Forms.Label();
-            this.txtGioBatDau = new System.Windows.Forms.TextBox();
-            this.txtGioKetThuc = new System.Windows.Forms.TextBox();
-            this.txtHoNV = new System.Windows.Forms.TextBox();
-            this.txtTenNV = new System.Windows.Forms.TextBox();
-            this.labelGioBatDau = new System.Windows.Forms.Label();
-            this.labelGioKetThuc = new System.Windows.Forms.Label();
-            this.labelHoNV = new System.Windows.Forms.Label();
-            this.labelTenNV = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaLamViec)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCaLamViec
             // 
+            this.dgvCaLamViec.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgvCaLamViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCaLamViec.Location = new System.Drawing.Point(28, 60);
+            this.dgvCaLamViec.Location = new System.Drawing.Point(53, 68);
             this.dgvCaLamViec.Name = "dgvCaLamViec";
             this.dgvCaLamViec.ReadOnly = true;
             this.dgvCaLamViec.RowHeadersVisible = false;
             this.dgvCaLamViec.RowHeadersWidth = 51;
-            this.dgvCaLamViec.Size = new System.Drawing.Size(744, 300);
+            this.dgvCaLamViec.Size = new System.Drawing.Size(692, 300);
             this.dgvCaLamViec.TabIndex = 0;
             // 
             // txtMaCa
             // 
-            this.txtMaCa.Location = new System.Drawing.Point(69, 402);
+            this.txtMaCa.Location = new System.Drawing.Point(53, 419);
             this.txtMaCa.Name = "txtMaCa";
             this.txtMaCa.Size = new System.Drawing.Size(100, 22);
             this.txtMaCa.TabIndex = 1;
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(189, 402);
+            this.txtMaNV.Location = new System.Drawing.Point(341, 419);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(100, 22);
             this.txtMaNV.TabIndex = 2;
             // 
             // dtpNgayLam
             // 
-            this.dtpNgayLam.Location = new System.Drawing.Point(309, 402);
+            this.dtpNgayLam.Location = new System.Drawing.Point(545, 419);
             this.dtpNgayLam.Name = "dtpNgayLam";
             this.dtpNgayLam.Size = new System.Drawing.Size(200, 22);
             this.dtpNgayLam.TabIndex = 3;
@@ -76,7 +71,7 @@
             this.btnThemCa.BackColor = System.Drawing.Color.Blue;
             this.btnThemCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemCa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThemCa.Location = new System.Drawing.Point(621, 377);
+            this.btnThemCa.Location = new System.Drawing.Point(53, 467);
             this.btnThemCa.Name = "btnThemCa";
             this.btnThemCa.Size = new System.Drawing.Size(109, 47);
             this.btnThemCa.TabIndex = 4;
@@ -89,7 +84,7 @@
             this.btnSuaCa.BackColor = System.Drawing.Color.Blue;
             this.btnSuaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaCa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSuaCa.Location = new System.Drawing.Point(621, 437);
+            this.btnSuaCa.Location = new System.Drawing.Point(341, 467);
             this.btnSuaCa.Name = "btnSuaCa";
             this.btnSuaCa.Size = new System.Drawing.Size(109, 47);
             this.btnSuaCa.TabIndex = 5;
@@ -99,10 +94,10 @@
             // 
             // btnXoaCa
             // 
-            this.btnXoaCa.BackColor = System.Drawing.Color.Blue;
+            this.btnXoaCa.BackColor = System.Drawing.Color.Crimson;
             this.btnXoaCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaCa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXoaCa.Location = new System.Drawing.Point(621, 490);
+            this.btnXoaCa.Location = new System.Drawing.Point(636, 467);
             this.btnXoaCa.Name = "btnXoaCa";
             this.btnXoaCa.Size = new System.Drawing.Size(109, 47);
             this.btnXoaCa.TabIndex = 6;
@@ -124,7 +119,7 @@
             // labelMaCa
             // 
             this.labelMaCa.AutoSize = true;
-            this.labelMaCa.Location = new System.Drawing.Point(97, 373);
+            this.labelMaCa.Location = new System.Drawing.Point(81, 390);
             this.labelMaCa.Name = "labelMaCa";
             this.labelMaCa.Size = new System.Drawing.Size(46, 16);
             this.labelMaCa.TabIndex = 8;
@@ -133,7 +128,7 @@
             // labelMaNV
             // 
             this.labelMaNV.AutoSize = true;
-            this.labelMaNV.Location = new System.Drawing.Point(217, 373);
+            this.labelMaNV.Location = new System.Drawing.Point(369, 390);
             this.labelMaNV.Name = "labelMaNV";
             this.labelMaNV.Size = new System.Drawing.Size(48, 16);
             this.labelMaNV.TabIndex = 9;
@@ -142,88 +137,16 @@
             // labelNgayLam
             // 
             this.labelNgayLam.AutoSize = true;
-            this.labelNgayLam.Location = new System.Drawing.Point(377, 373);
+            this.labelNgayLam.Location = new System.Drawing.Point(613, 390);
             this.labelNgayLam.Name = "labelNgayLam";
             this.labelNgayLam.Size = new System.Drawing.Size(65, 16);
             this.labelNgayLam.TabIndex = 10;
             this.labelNgayLam.Text = "Ngày làm";
             // 
-            // txtGioBatDau
-            // 
-            this.txtGioBatDau.Location = new System.Drawing.Point(63, 501);
-            this.txtGioBatDau.Name = "txtGioBatDau";
-            this.txtGioBatDau.Size = new System.Drawing.Size(100, 22);
-            this.txtGioBatDau.TabIndex = 11;
-            // 
-            // txtGioKetThuc
-            // 
-            this.txtGioKetThuc.Location = new System.Drawing.Point(183, 501);
-            this.txtGioKetThuc.Name = "txtGioKetThuc";
-            this.txtGioKetThuc.Size = new System.Drawing.Size(100, 22);
-            this.txtGioKetThuc.TabIndex = 12;
-            // 
-            // txtHoNV
-            // 
-            this.txtHoNV.Location = new System.Drawing.Point(303, 501);
-            this.txtHoNV.Name = "txtHoNV";
-            this.txtHoNV.Size = new System.Drawing.Size(100, 22);
-            this.txtHoNV.TabIndex = 13;
-            // 
-            // txtTenNV
-            // 
-            this.txtTenNV.Location = new System.Drawing.Point(423, 501);
-            this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.Size = new System.Drawing.Size(100, 22);
-            this.txtTenNV.TabIndex = 14;
-            // 
-            // labelGioBatDau
-            // 
-            this.labelGioBatDau.AutoSize = true;
-            this.labelGioBatDau.Location = new System.Drawing.Point(76, 468);
-            this.labelGioBatDau.Name = "labelGioBatDau";
-            this.labelGioBatDau.Size = new System.Drawing.Size(76, 16);
-            this.labelGioBatDau.TabIndex = 15;
-            this.labelGioBatDau.Text = "Giờ bắt đầu";
-            // 
-            // labelGioKetThuc
-            // 
-            this.labelGioKetThuc.AutoSize = true;
-            this.labelGioKetThuc.Location = new System.Drawing.Point(207, 468);
-            this.labelGioKetThuc.Name = "labelGioKetThuc";
-            this.labelGioKetThuc.Size = new System.Drawing.Size(76, 16);
-            this.labelGioKetThuc.TabIndex = 16;
-            this.labelGioKetThuc.Text = "Giờ kết thúc";
-            // 
-            // labelHoNV
-            // 
-            this.labelHoNV.AutoSize = true;
-            this.labelHoNV.Location = new System.Drawing.Point(310, 468);
-            this.labelHoNV.Name = "labelHoNV";
-            this.labelHoNV.Size = new System.Drawing.Size(47, 16);
-            this.labelHoNV.TabIndex = 17;
-            this.labelHoNV.Text = "Họ NV";
-            // 
-            // labelTenNV
-            // 
-            this.labelTenNV.AutoSize = true;
-            this.labelTenNV.Location = new System.Drawing.Point(430, 468);
-            this.labelTenNV.Name = "labelTenNV";
-            this.labelTenNV.Size = new System.Drawing.Size(53, 16);
-            this.labelTenNV.TabIndex = 18;
-            this.labelTenNV.Text = "Tên NV";
-            // 
             // fPhanCa
             // 
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 541);
-            this.Controls.Add(this.labelTenNV);
-            this.Controls.Add(this.labelHoNV);
-            this.Controls.Add(this.labelGioKetThuc);
-            this.Controls.Add(this.labelGioBatDau);
-            this.Controls.Add(this.txtTenNV);
-            this.Controls.Add(this.txtHoNV);
-            this.Controls.Add(this.txtGioKetThuc);
-            this.Controls.Add(this.txtGioBatDau);
             this.Controls.Add(this.labelNgayLam);
             this.Controls.Add(this.labelMaNV);
             this.Controls.Add(this.labelMaCa);
@@ -255,13 +178,5 @@
         private System.Windows.Forms.Label labelMaCa;
         private System.Windows.Forms.Label labelMaNV;
         private System.Windows.Forms.Label labelNgayLam;
-        private System.Windows.Forms.TextBox txtGioBatDau;
-        private System.Windows.Forms.TextBox txtGioKetThuc;
-        private System.Windows.Forms.TextBox txtHoNV;
-        private System.Windows.Forms.TextBox txtTenNV;
-        private System.Windows.Forms.Label labelGioBatDau;
-        private System.Windows.Forms.Label labelGioKetThuc;
-        private System.Windows.Forms.Label labelHoNV;
-        private System.Windows.Forms.Label labelTenNV;
     }
 }
