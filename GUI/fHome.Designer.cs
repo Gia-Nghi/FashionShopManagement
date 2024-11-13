@@ -43,7 +43,10 @@
             this.MAILLLE = new ReaLTaiizor.Controls.LinkLabelEdit();
             this.BOTPLSR = new ReaLTaiizor.Controls.LostSeparator();
             this.STATELLE = new ReaLTaiizor.Controls.LinkLabelEdit();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.lbMaNV = new System.Windows.Forms.Label();
             this.MIDPL.SuspendLayout();
+            this.btn_SanPham.SuspendLayout();
             this.FILLPL.SuspendLayout();
             this.panel_Top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).BeginInit();
@@ -53,6 +56,7 @@
             // MIDPL
             // 
             this.MIDPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MIDPL.Controls.Add(this.lbMaNV);
             this.MIDPL.Controls.Add(this.btn_NhanVien);
             this.MIDPL.Controls.Add(this.btn_PhanCa);
             this.MIDPL.Controls.Add(this.btn_SanPham);
@@ -118,6 +122,7 @@
             // 
             this.btn_SanPham.ActiveControl = null;
             this.btn_SanPham.BackColor = System.Drawing.Color.White;
+            this.btn_SanPham.Controls.Add(this.bigLabel1);
             this.btn_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SanPham.ForeColor = System.Drawing.Color.Black;
             this.btn_SanPham.Location = new System.Drawing.Point(34, 30);
@@ -440,6 +445,28 @@
             this.STATELLE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.STATELLE.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Location = new System.Drawing.Point(0, 0);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(0, 57);
+            this.bigLabel1.TabIndex = 0;
+            // 
+            // lbMaNV
+            // 
+            this.lbMaNV.AutoSize = true;
+            this.lbMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaNV.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lbMaNV.Location = new System.Drawing.Point(623, 16);
+            this.lbMaNV.Name = "lbMaNV";
+            this.lbMaNV.Size = new System.Drawing.Size(71, 20);
+            this.lbMaNV.TabIndex = 0;
+            this.lbMaNV.Text = "Mã NV:";
+            // 
             // fHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -453,6 +480,9 @@
             this.Text = "Quản lý cửa hàng thời trang";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             this.MIDPL.ResumeLayout(false);
+            this.MIDPL.PerformLayout();
+            this.btn_SanPham.ResumeLayout(false);
+            this.btn_SanPham.PerformLayout();
             this.FILLPL.ResumeLayout(false);
             this.panel_Top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).EndInit();
@@ -481,5 +511,7 @@
         private ReaLTaiizor.Controls.LinkLabelEdit MAILLLE;
         private ReaLTaiizor.Controls.LostSeparator BOTPLSR;
         private ReaLTaiizor.Controls.LinkLabelEdit STATELLE;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private System.Windows.Forms.Label lbMaNV;
     }
 }

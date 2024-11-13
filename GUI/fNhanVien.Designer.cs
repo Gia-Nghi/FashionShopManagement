@@ -75,7 +75,7 @@
             // poisonDataGridView1
             // 
             this.poisonDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.poisonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.poisonDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.poisonDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -119,6 +119,9 @@
             this.poisonDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.poisonDataGridView1.Size = new System.Drawing.Size(993, 388);
             this.poisonDataGridView1.TabIndex = 21;
+            this.poisonDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             // 
             // label1
             // 
@@ -133,6 +136,7 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "CHI TIẾT NHÂN VIÊN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel1
             // 

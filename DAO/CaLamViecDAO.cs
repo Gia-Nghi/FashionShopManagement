@@ -33,8 +33,6 @@ namespace DAO
             }
             return list;
         }
-
-
         public bool AddCaLamViec(string maCa, DateTime ngayLam, string maNV)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -44,12 +42,10 @@ namespace DAO
                 cmd.Parameters.AddWithValue("@MaCa", maCa);
                 cmd.Parameters.AddWithValue("@NgayLam", ngayLam);
                 cmd.Parameters.AddWithValue("@MaNV", maNV);
-
                 conn.Open();
                 return cmd.ExecuteNonQuery() > 0;
             }
         }
-
         public bool DeleteCaLamViec(string maCa, DateTime ngayLam, string maNV)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -64,7 +60,6 @@ namespace DAO
                 return cmd.ExecuteNonQuery() > 0;
             }
         }
-
         public bool UpdateCaLamViec(string maCa, DateTime ngayLam, string maNV, string newMaCa, string newMaNV, DateTime newNgayLam)
         {
             try
