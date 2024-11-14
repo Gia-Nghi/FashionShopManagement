@@ -109,6 +109,15 @@ namespace GUI
             }
         }
 
-
+        private void dgvCaLamViec_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvCaLamViec.Rows[e.RowIndex];
+                txtMaCa.Text = row.Cells["MaCa"].Value.ToString();
+                txtMaNV.Text = row.Cells["MaNV"].Value.ToString();
+                dtpNgayLam.Value = Convert.ToDateTime(row.Cells["NgayLam"].Value);
+            }
+        }
     }
 }

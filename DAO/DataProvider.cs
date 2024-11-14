@@ -17,6 +17,10 @@ namespace DAO
                 return instance;
             }
         }
+        public string GetConnectionString()
+        {
+            return connectionString;
+        }
 
         private DataProvider() { }
         private string connectionString = @"Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";

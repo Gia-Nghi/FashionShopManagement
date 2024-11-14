@@ -44,6 +44,7 @@ namespace GUI
             this.dgvCaLamViec.RowHeadersWidth = 51;
             this.dgvCaLamViec.Size = new System.Drawing.Size(692, 300);
             this.dgvCaLamViec.TabIndex = 0;
+            this.dgvCaLamViec.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCaLamViec_CellClick);
             // 
             // txtMaCa
             // 

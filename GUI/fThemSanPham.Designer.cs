@@ -39,22 +39,22 @@
             this.textBox_ChiTietSanPham = new ReaLTaiizor.Controls.CyberRichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.TextBoxSL = new ReaLTaiizor.Controls.CyberTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox_NCC = new System.Windows.Forms.ComboBox();
+            this.comboBox_LSP = new System.Windows.Forms.ComboBox();
+            this.textBox_Size = new System.Windows.Forms.TextBox();
+            this.textBox_SL = new System.Windows.Forms.TextBox();
+            this.textBox_Gia = new System.Windows.Forms.TextBox();
+            this.textBox_TenSP = new System.Windows.Forms.TextBox();
+            this.textBox_MaSP = new System.Windows.Forms.TextBox();
+            this.lbMaSP = new System.Windows.Forms.Label();
             this.labelSL = new System.Windows.Forms.Label();
             this.labelSIZE = new System.Windows.Forms.Label();
-            this.textBoxSIZE = new ReaLTaiizor.Controls.CyberTextBox();
-            this.textBox_Gia = new ReaLTaiizor.Controls.CyberTextBox();
             this.labelDonGIa = new System.Windows.Forms.Label();
             this.labelTenSP = new System.Windows.Forms.Label();
-            this.textBox_TenSP = new ReaLTaiizor.Controls.CyberTextBox();
             this.btn_Luu = new ReaLTaiizor.Controls.MaterialButton();
             this.label_SanPhamMoi = new System.Windows.Forms.Label();
-            this.lbMaSP = new System.Windows.Forms.Label();
-            this.TextBoxMaSp = new ReaLTaiizor.Controls.CyberTextBox();
-            this.textBox_MaLSP = new ReaLTaiizor.Controls.CyberTextBox();
-            this.labelMaLSP = new System.Windows.Forms.Label();
-            this.labelMaNCC = new System.Windows.Forms.Label();
-            this.TextBoxMaNCC = new ReaLTaiizor.Controls.CyberTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_SanPham)).BeginInit();
@@ -154,8 +154,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.06658F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.93342F));
             this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -163,8 +163,8 @@
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.03976F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.96024F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.53333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.46667F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(667, 592);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -174,10 +174,10 @@
             this.panel4.Controls.Add(this.textBox_ChiTietSanPham);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 357);
+            this.panel4.Location = new System.Drawing.Point(3, 466);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(661, 233);
+            this.panel4.Size = new System.Drawing.Size(661, 124);
             this.panel4.TabIndex = 0;
             // 
             // textBox_ChiTietSanPham
@@ -197,14 +197,14 @@
             this.textBox_ChiTietSanPham.ForeColor = System.Drawing.Color.Black;
             this.textBox_ChiTietSanPham.Lighting = false;
             this.textBox_ChiTietSanPham.LinearGradientPen = false;
-            this.textBox_ChiTietSanPham.Location = new System.Drawing.Point(0, 38);
+            this.textBox_ChiTietSanPham.Location = new System.Drawing.Point(0, 46);
             this.textBox_ChiTietSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_ChiTietSanPham.Name = "textBox_ChiTietSanPham";
             this.textBox_ChiTietSanPham.PenWidth = 10;
             this.textBox_ChiTietSanPham.RGB = false;
             this.textBox_ChiTietSanPham.Rounding = true;
             this.textBox_ChiTietSanPham.RoundingInt = 10;
-            this.textBox_ChiTietSanPham.Size = new System.Drawing.Size(661, 195);
+            this.textBox_ChiTietSanPham.Size = new System.Drawing.Size(661, 78);
             this.textBox_ChiTietSanPham.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.textBox_ChiTietSanPham.TabIndex = 7;
             this.textBox_ChiTietSanPham.Tag = "Cyber";
@@ -219,7 +219,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(661, 38);
+            this.label5.Size = new System.Drawing.Size(661, 46);
             this.label5.TabIndex = 8;
             this.label5.Text = "Chi tiết sản phẩm:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,58 +227,124 @@
             // panel5
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.panel5, 2);
-            this.panel5.Controls.Add(this.labelMaNCC);
-            this.panel5.Controls.Add(this.TextBoxMaNCC);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.comboBox_NCC);
+            this.panel5.Controls.Add(this.comboBox_LSP);
+            this.panel5.Controls.Add(this.textBox_Size);
+            this.panel5.Controls.Add(this.textBox_SL);
+            this.panel5.Controls.Add(this.textBox_Gia);
+            this.panel5.Controls.Add(this.textBox_TenSP);
+            this.panel5.Controls.Add(this.textBox_MaSP);
             this.panel5.Controls.Add(this.lbMaSP);
-            this.panel5.Controls.Add(this.TextBoxMaSp);
-            this.panel5.Controls.Add(this.labelMaLSP);
-            this.panel5.Controls.Add(this.textBox_MaLSP);
-            this.panel5.Controls.Add(this.TextBoxSL);
             this.panel5.Controls.Add(this.labelSL);
             this.panel5.Controls.Add(this.labelSIZE);
-            this.panel5.Controls.Add(this.textBoxSIZE);
-            this.panel5.Controls.Add(this.textBox_Gia);
             this.panel5.Controls.Add(this.labelDonGIa);
             this.panel5.Controls.Add(this.labelTenSP);
-            this.panel5.Controls.Add(this.textBox_TenSP);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 2);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(661, 351);
+            this.panel5.Size = new System.Drawing.Size(661, 460);
             this.panel5.TabIndex = 1;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // TextBoxSL
+            // label2
             // 
-            this.TextBoxSL.Alpha = 15;
-            this.TextBoxSL.BackColor = System.Drawing.Color.Transparent;
-            this.TextBoxSL.Background_WidthPen = 3F;
-            this.TextBoxSL.BackgroundPen = true;
-            this.TextBoxSL.ColorBackground = System.Drawing.Color.White;
-            this.TextBoxSL.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxSL.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxSL.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxSL.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.TextBoxSL.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.TextBoxSL.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.TextBoxSL.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxSL.Lighting = false;
-            this.TextBoxSL.LinearGradientPen = false;
-            this.TextBoxSL.Location = new System.Drawing.Point(231, 154);
-            this.TextBoxSL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TextBoxSL.Name = "TextBoxSL";
-            this.TextBoxSL.PenWidth = 15;
-            this.TextBoxSL.RGB = false;
-            this.TextBoxSL.Rounding = true;
-            this.TextBoxSL.RoundingInt = 60;
-            this.TextBoxSL.Size = new System.Drawing.Size(355, 40);
-            this.TextBoxSL.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.TextBoxSL.TabIndex = 143;
-            this.TextBoxSL.Tag = "Cyber";
-            this.TextBoxSL.TextButton = "";
-            this.TextBoxSL.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBoxSL.Timer_RGB = 300;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(76, 310);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 19);
+            this.label2.TabIndex = 160;
+            this.label2.Text = "Nhà cung cấp:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(76, 262);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 19);
+            this.label1.TabIndex = 159;
+            this.label1.Text = "Loại sản phẩm:";
+            // 
+            // comboBox_NCC
+            // 
+            this.comboBox_NCC.FormattingEnabled = true;
+            this.comboBox_NCC.Location = new System.Drawing.Point(278, 306);
+            this.comboBox_NCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_NCC.Name = "comboBox_NCC";
+            this.comboBox_NCC.Size = new System.Drawing.Size(253, 24);
+            this.comboBox_NCC.TabIndex = 158;
+            this.comboBox_NCC.SelectedIndexChanged += new System.EventHandler(this.comboBox_NCC_SelectedIndexChanged);
+            // 
+            // comboBox_LSP
+            // 
+            this.comboBox_LSP.FormattingEnabled = true;
+            this.comboBox_LSP.Location = new System.Drawing.Point(278, 258);
+            this.comboBox_LSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_LSP.Name = "comboBox_LSP";
+            this.comboBox_LSP.Size = new System.Drawing.Size(253, 24);
+            this.comboBox_LSP.TabIndex = 157;
+            this.comboBox_LSP.SelectedIndexChanged += new System.EventHandler(this.comboBox_LSP_SelectedIndexChanged);
+            // 
+            // textBox_Size
+            // 
+            this.textBox_Size.Location = new System.Drawing.Point(278, 215);
+            this.textBox_Size.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_Size.Name = "textBox_Size";
+            this.textBox_Size.Size = new System.Drawing.Size(253, 22);
+            this.textBox_Size.TabIndex = 154;
+            // 
+            // textBox_SL
+            // 
+            this.textBox_SL.Location = new System.Drawing.Point(278, 162);
+            this.textBox_SL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_SL.Name = "textBox_SL";
+            this.textBox_SL.Size = new System.Drawing.Size(253, 22);
+            this.textBox_SL.TabIndex = 153;
+            // 
+            // textBox_Gia
+            // 
+            this.textBox_Gia.Location = new System.Drawing.Point(278, 114);
+            this.textBox_Gia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_Gia.Name = "textBox_Gia";
+            this.textBox_Gia.Size = new System.Drawing.Size(253, 22);
+            this.textBox_Gia.TabIndex = 152;
+            // 
+            // textBox_TenSP
+            // 
+            this.textBox_TenSP.Location = new System.Drawing.Point(278, 70);
+            this.textBox_TenSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_TenSP.Name = "textBox_TenSP";
+            this.textBox_TenSP.Size = new System.Drawing.Size(253, 22);
+            this.textBox_TenSP.TabIndex = 151;
+            // 
+            // textBox_MaSP
+            // 
+            this.textBox_MaSP.Location = new System.Drawing.Point(278, 23);
+            this.textBox_MaSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_MaSP.Name = "textBox_MaSP";
+            this.textBox_MaSP.Size = new System.Drawing.Size(253, 22);
+            this.textBox_MaSP.TabIndex = 150;
+            // 
+            // lbMaSP
+            // 
+            this.lbMaSP.AutoSize = true;
+            this.lbMaSP.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
+            this.lbMaSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbMaSP.Location = new System.Drawing.Point(76, 23);
+            this.lbMaSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMaSP.Name = "lbMaSP";
+            this.lbMaSP.Size = new System.Drawing.Size(111, 19);
+            this.lbMaSP.TabIndex = 146;
+            this.lbMaSP.Text = "Mã sản phẩm:";
+            this.lbMaSP.Click += new System.EventHandler(this.label4_Click);
             // 
             // labelSL
             // 
@@ -304,68 +370,6 @@
             this.labelSIZE.TabIndex = 140;
             this.labelSIZE.Text = "Kích cỡ:";
             // 
-            // textBoxSIZE
-            // 
-            this.textBoxSIZE.Alpha = 20;
-            this.textBoxSIZE.BackColor = System.Drawing.Color.Transparent;
-            this.textBoxSIZE.Background_WidthPen = 3F;
-            this.textBoxSIZE.BackgroundPen = true;
-            this.textBoxSIZE.ColorBackground = System.Drawing.Color.White;
-            this.textBoxSIZE.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBoxSIZE.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBoxSIZE.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBoxSIZE.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBoxSIZE.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBoxSIZE.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBoxSIZE.ForeColor = System.Drawing.Color.Black;
-            this.textBoxSIZE.Lighting = false;
-            this.textBoxSIZE.LinearGradientPen = false;
-            this.textBoxSIZE.Location = new System.Drawing.Point(231, 202);
-            this.textBoxSIZE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxSIZE.Name = "textBoxSIZE";
-            this.textBoxSIZE.PenWidth = 15;
-            this.textBoxSIZE.RGB = false;
-            this.textBoxSIZE.Rounding = true;
-            this.textBoxSIZE.RoundingInt = 60;
-            this.textBoxSIZE.Size = new System.Drawing.Size(355, 40);
-            this.textBoxSIZE.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBoxSIZE.TabIndex = 141;
-            this.textBoxSIZE.Tag = "Cyber";
-            this.textBoxSIZE.TextButton = "";
-            this.textBoxSIZE.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBoxSIZE.Timer_RGB = 300;
-            // 
-            // textBox_Gia
-            // 
-            this.textBox_Gia.Alpha = 15;
-            this.textBox_Gia.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_Gia.Background_WidthPen = 3F;
-            this.textBox_Gia.BackgroundPen = true;
-            this.textBox_Gia.ColorBackground = System.Drawing.Color.White;
-            this.textBox_Gia.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Gia.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Gia.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_Gia.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_Gia.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_Gia.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox_Gia.ForeColor = System.Drawing.Color.Black;
-            this.textBox_Gia.Lighting = false;
-            this.textBox_Gia.LinearGradientPen = false;
-            this.textBox_Gia.Location = new System.Drawing.Point(231, 106);
-            this.textBox_Gia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox_Gia.Name = "textBox_Gia";
-            this.textBox_Gia.PenWidth = 15;
-            this.textBox_Gia.RGB = false;
-            this.textBox_Gia.Rounding = true;
-            this.textBox_Gia.RoundingInt = 60;
-            this.textBox_Gia.Size = new System.Drawing.Size(355, 40);
-            this.textBox_Gia.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_Gia.TabIndex = 139;
-            this.textBox_Gia.Tag = "Cyber";
-            this.textBox_Gia.TextButton = "";
-            this.textBox_Gia.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_Gia.Timer_RGB = 300;
-            // 
             // labelDonGIa
             // 
             this.labelDonGIa.AutoSize = true;
@@ -390,38 +394,6 @@
             this.labelTenSP.TabIndex = 134;
             this.labelTenSP.Text = "Tên sản phẩm:";
             // 
-            // textBox_TenSP
-            // 
-            this.textBox_TenSP.Alpha = 20;
-            this.textBox_TenSP.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_TenSP.Background_WidthPen = 3F;
-            this.textBox_TenSP.BackgroundPen = true;
-            this.textBox_TenSP.ColorBackground = System.Drawing.Color.White;
-            this.textBox_TenSP.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TenSP.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TenSP.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_TenSP.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_TenSP.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_TenSP.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox_TenSP.ForeColor = System.Drawing.Color.Black;
-            this.textBox_TenSP.Lighting = false;
-            this.textBox_TenSP.LinearGradientPen = false;
-            this.textBox_TenSP.Location = new System.Drawing.Point(231, 58);
-            this.textBox_TenSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox_TenSP.Name = "textBox_TenSP";
-            this.textBox_TenSP.PenWidth = 15;
-            this.textBox_TenSP.RGB = false;
-            this.textBox_TenSP.Rounding = true;
-            this.textBox_TenSP.RoundingInt = 60;
-            this.textBox_TenSP.Size = new System.Drawing.Size(355, 40);
-            this.textBox_TenSP.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_TenSP.TabIndex = 135;
-            this.textBox_TenSP.Tag = "Cyber";
-            this.textBox_TenSP.TextButton = "";
-            this.textBox_TenSP.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_TenSP.Timer_RGB = 300;
-            this.textBox_TenSP.Load += new System.EventHandler(this.textBox_TenSP_Load);
-            // 
             // btn_Luu
             // 
             this.btn_Luu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -443,6 +415,7 @@
             this.btn_Luu.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_Luu.UseAccentColor = true;
             this.btn_Luu.UseVisualStyleBackColor = true;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // label_SanPhamMoi
             // 
@@ -456,137 +429,6 @@
             this.label_SanPhamMoi.Text = "Sản phẩm mới";
             this.label_SanPhamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_SanPhamMoi.Click += new System.EventHandler(this.label_SanPhamMoi_Click);
-            // 
-            // lbMaSP
-            // 
-            this.lbMaSP.AutoSize = true;
-            this.lbMaSP.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.lbMaSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbMaSP.Location = new System.Drawing.Point(76, 23);
-            this.lbMaSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbMaSP.Name = "lbMaSP";
-            this.lbMaSP.Size = new System.Drawing.Size(111, 19);
-            this.lbMaSP.TabIndex = 146;
-            this.lbMaSP.Text = "Mã sản phẩm:";
-            this.lbMaSP.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // TextBoxMaSp
-            // 
-            this.TextBoxMaSp.Alpha = 20;
-            this.TextBoxMaSp.BackColor = System.Drawing.Color.Transparent;
-            this.TextBoxMaSp.Background_WidthPen = 3F;
-            this.TextBoxMaSp.BackgroundPen = true;
-            this.TextBoxMaSp.ColorBackground = System.Drawing.Color.White;
-            this.TextBoxMaSp.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxMaSp.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxMaSp.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxMaSp.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.TextBoxMaSp.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.TextBoxMaSp.Font = new System.Drawing.Font("Arial", 10F);
-            this.TextBoxMaSp.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxMaSp.Lighting = false;
-            this.TextBoxMaSp.LinearGradientPen = false;
-            this.TextBoxMaSp.Location = new System.Drawing.Point(231, 10);
-            this.TextBoxMaSp.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBoxMaSp.Name = "TextBoxMaSp";
-            this.TextBoxMaSp.PenWidth = 15;
-            this.TextBoxMaSp.RGB = false;
-            this.TextBoxMaSp.Rounding = true;
-            this.TextBoxMaSp.RoundingInt = 60;
-            this.TextBoxMaSp.Size = new System.Drawing.Size(355, 40);
-            this.TextBoxMaSp.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.TextBoxMaSp.TabIndex = 147;
-            this.TextBoxMaSp.Tag = "Cyber";
-            this.TextBoxMaSp.TextButton = "";
-            this.TextBoxMaSp.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBoxMaSp.Timer_RGB = 300;
-            this.TextBoxMaSp.Load += new System.EventHandler(this.cyberTextBox3_Load);
-            // 
-            // textBox_MaLSP
-            // 
-            this.textBox_MaLSP.Alpha = 20;
-            this.textBox_MaLSP.BackColor = System.Drawing.Color.Transparent;
-            this.textBox_MaLSP.Background_WidthPen = 3F;
-            this.textBox_MaLSP.BackgroundPen = true;
-            this.textBox_MaLSP.ColorBackground = System.Drawing.Color.White;
-            this.textBox_MaLSP.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_MaLSP.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_MaLSP.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.textBox_MaLSP.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.textBox_MaLSP.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.textBox_MaLSP.Font = new System.Drawing.Font("Arial", 10F);
-            this.textBox_MaLSP.ForeColor = System.Drawing.Color.Black;
-            this.textBox_MaLSP.Lighting = false;
-            this.textBox_MaLSP.LinearGradientPen = false;
-            this.textBox_MaLSP.Location = new System.Drawing.Point(231, 250);
-            this.textBox_MaLSP.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox_MaLSP.Name = "textBox_MaLSP";
-            this.textBox_MaLSP.PenWidth = 15;
-            this.textBox_MaLSP.RGB = false;
-            this.textBox_MaLSP.Rounding = true;
-            this.textBox_MaLSP.RoundingInt = 60;
-            this.textBox_MaLSP.Size = new System.Drawing.Size(355, 40);
-            this.textBox_MaLSP.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.textBox_MaLSP.TabIndex = 145;
-            this.textBox_MaLSP.Tag = "Cyber";
-            this.textBox_MaLSP.TextButton = "";
-            this.textBox_MaLSP.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.textBox_MaLSP.Timer_RGB = 300;
-            // 
-            // labelMaLSP
-            // 
-            this.labelMaLSP.AutoSize = true;
-            this.labelMaLSP.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.labelMaLSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelMaLSP.Location = new System.Drawing.Point(76, 263);
-            this.labelMaLSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelMaLSP.Name = "labelMaLSP";
-            this.labelMaLSP.Size = new System.Drawing.Size(149, 19);
-            this.labelMaLSP.TabIndex = 144;
-            this.labelMaLSP.Text = "Mã Loại sản phẩm:";
-            // 
-            // labelMaNCC
-            // 
-            this.labelMaNCC.AutoSize = true;
-            this.labelMaNCC.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.labelMaNCC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelMaNCC.Location = new System.Drawing.Point(76, 311);
-            this.labelMaNCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelMaNCC.Name = "labelMaNCC";
-            this.labelMaNCC.Size = new System.Drawing.Size(137, 19);
-            this.labelMaNCC.TabIndex = 148;
-            this.labelMaNCC.Text = "Mã nhà cung cấp:";
-            // 
-            // TextBoxMaNCC
-            // 
-            this.TextBoxMaNCC.Alpha = 20;
-            this.TextBoxMaNCC.BackColor = System.Drawing.Color.Transparent;
-            this.TextBoxMaNCC.Background_WidthPen = 3F;
-            this.TextBoxMaNCC.BackgroundPen = true;
-            this.TextBoxMaNCC.ColorBackground = System.Drawing.Color.White;
-            this.TextBoxMaNCC.ColorBackground_Pen = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxMaNCC.ColorLighting = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxMaNCC.ColorPen_1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(200)))), ((int)(((byte)(238)))));
-            this.TextBoxMaNCC.ColorPen_2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(52)))), ((int)(((byte)(68)))));
-            this.TextBoxMaNCC.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            this.TextBoxMaNCC.Font = new System.Drawing.Font("Arial", 10F);
-            this.TextBoxMaNCC.ForeColor = System.Drawing.Color.Black;
-            this.TextBoxMaNCC.Lighting = false;
-            this.TextBoxMaNCC.LinearGradientPen = false;
-            this.TextBoxMaNCC.Location = new System.Drawing.Point(231, 298);
-            this.TextBoxMaNCC.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBoxMaNCC.Name = "TextBoxMaNCC";
-            this.TextBoxMaNCC.PenWidth = 15;
-            this.TextBoxMaNCC.RGB = false;
-            this.TextBoxMaNCC.Rounding = true;
-            this.TextBoxMaNCC.RoundingInt = 60;
-            this.TextBoxMaNCC.Size = new System.Drawing.Size(355, 40);
-            this.TextBoxMaNCC.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.TextBoxMaNCC.TabIndex = 149;
-            this.TextBoxMaNCC.Tag = "Cyber";
-            this.TextBoxMaNCC.TextButton = "";
-            this.TextBoxMaNCC.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.TextBoxMaNCC.Timer_RGB = 300;
             // 
             // fThemSanPham
             // 
@@ -629,19 +471,19 @@
         private ReaLTaiizor.Controls.CyberRichTextBox textBox_ChiTietSanPham;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
-        private ReaLTaiizor.Controls.CyberTextBox TextBoxSL;
         private System.Windows.Forms.Label labelSL;
         private System.Windows.Forms.Label labelSIZE;
-        private ReaLTaiizor.Controls.CyberTextBox textBoxSIZE;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_Gia;
         private System.Windows.Forms.Label labelDonGIa;
         private System.Windows.Forms.Label labelTenSP;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_TenSP;
         private System.Windows.Forms.Label lbMaSP;
-        private ReaLTaiizor.Controls.CyberTextBox TextBoxMaSp;
-        private System.Windows.Forms.Label labelMaNCC;
-        private ReaLTaiizor.Controls.CyberTextBox TextBoxMaNCC;
-        private System.Windows.Forms.Label labelMaLSP;
-        private ReaLTaiizor.Controls.CyberTextBox textBox_MaLSP;
+        private System.Windows.Forms.TextBox textBox_Size;
+        private System.Windows.Forms.TextBox textBox_SL;
+        private System.Windows.Forms.TextBox textBox_Gia;
+        private System.Windows.Forms.TextBox textBox_TenSP;
+        private System.Windows.Forms.TextBox textBox_MaSP;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox_NCC;
+        private System.Windows.Forms.ComboBox comboBox_LSP;
     }
 }
