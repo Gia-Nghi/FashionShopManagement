@@ -40,7 +40,7 @@ namespace GUI
         {
 
         }
-
+        //fgffdgfdgrdg
         private void MINIMIZEB_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
