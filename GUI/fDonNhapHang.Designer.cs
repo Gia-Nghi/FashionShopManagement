@@ -38,10 +38,10 @@
             // lb_PhieuChi
             // 
             this.lb_PhieuChi.AutoSize = true;
-            this.lb_PhieuChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_PhieuChi.Location = new System.Drawing.Point(22, 25);
+            this.lb_PhieuChi.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_PhieuChi.Location = new System.Drawing.Point(21, 25);
             this.lb_PhieuChi.Name = "lb_PhieuChi";
-            this.lb_PhieuChi.Size = new System.Drawing.Size(164, 36);
+            this.lb_PhieuChi.Size = new System.Drawing.Size(169, 38);
             this.lb_PhieuChi.TabIndex = 0;
             this.lb_PhieuChi.Text = "PHIẾU CHI";
             // 
@@ -67,7 +67,9 @@
             // 
             // dgv_PhieuChi
             // 
+            this.dgv_PhieuChi.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgv_PhieuChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_PhieuChi.GridColor = System.Drawing.Color.MistyRose;
             this.dgv_PhieuChi.Location = new System.Drawing.Point(28, 89);
             this.dgv_PhieuChi.Name = "dgv_PhieuChi";
             this.dgv_PhieuChi.RowHeadersWidth = 51;
@@ -80,6 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1308, 538);
             this.Controls.Add(this.dgv_PhieuChi);
             this.Controls.Add(this.btnXuat);
