@@ -33,18 +33,18 @@
             this.Menu_DoanhThu = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgv_PhieuChi = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnXuat = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.lb_PhieuChi = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dgv_PhieuChi = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PhieuChi)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -96,6 +96,28 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1209, 593);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dgv_PhieuChi);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 116);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1203, 474);
+            this.panel3.TabIndex = 6;
+            // 
+            // dgv_PhieuChi
+            // 
+            this.dgv_PhieuChi.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.dgv_PhieuChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_PhieuChi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_PhieuChi.GridColor = System.Drawing.Color.MistyRose;
+            this.dgv_PhieuChi.Location = new System.Drawing.Point(0, 0);
+            this.dgv_PhieuChi.Name = "dgv_PhieuChi";
+            this.dgv_PhieuChi.RowHeadersWidth = 51;
+            this.dgv_PhieuChi.RowTemplate.Height = 24;
+            this.dgv_PhieuChi.Size = new System.Drawing.Size(1203, 474);
+            this.dgv_PhieuChi.TabIndex = 4;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnXuat);
@@ -109,22 +131,26 @@
             // 
             // btnXuat
             // 
+            this.btnXuat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnXuat.ForeColor = System.Drawing.Color.White;
             this.btnXuat.Location = new System.Drawing.Point(984, 32);
             this.btnXuat.Name = "btnXuat";
             this.btnXuat.Size = new System.Drawing.Size(114, 38);
             this.btnXuat.TabIndex = 5;
             this.btnXuat.Text = "XUẤT";
-            this.btnXuat.UseVisualStyleBackColor = true;
+            this.btnXuat.UseVisualStyleBackColor = false;
             this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
             this.btnLamMoi.Location = new System.Drawing.Point(831, 32);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(114, 38);
             this.btnLamMoi.TabIndex = 4;
             this.btnLamMoi.Text = "LÀM MỚI";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // lb_PhieuChi
@@ -137,30 +163,11 @@
             this.lb_PhieuChi.TabIndex = 3;
             this.lb_PhieuChi.Text = "PHIẾU CHI";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dgv_PhieuChi);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 116);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1203, 474);
-            this.panel3.TabIndex = 6;
-            // 
-            // dgv_PhieuChi
-            // 
-            this.dgv_PhieuChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_PhieuChi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_PhieuChi.Location = new System.Drawing.Point(0, 0);
-            this.dgv_PhieuChi.Name = "dgv_PhieuChi";
-            this.dgv_PhieuChi.RowHeadersWidth = 51;
-            this.dgv_PhieuChi.RowTemplate.Height = 24;
-            this.dgv_PhieuChi.Size = new System.Drawing.Size(1203, 474);
-            this.dgv_PhieuChi.TabIndex = 4;
-            // 
             // fBaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1209, 621);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -172,10 +179,10 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PhieuChi)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
