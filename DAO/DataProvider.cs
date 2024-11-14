@@ -60,6 +60,7 @@ namespace DAO
 
                 if (parameter != null)
                 {
+                    query = query.Replace(",","");
                     string[] listPara = query.Split(' ');
                     int i = 0;
                     foreach (string item in listPara)

@@ -1,8 +1,10 @@
 ﻿using BUS;
 using DTO;
+using NPOI.SS.Formula.Functions;
 using System;
 using System.Data;
 using System.Windows.Forms;
+using static NPOI.POIFS.Crypt.CryptoFunctions;
 
 namespace GUI
 {
@@ -13,7 +15,7 @@ namespace GUI
         public fNhanVien()
         {
             InitializeComponent();
-            LoadData(); 
+            LoadData();
         }
 
         private void LoadData()
@@ -70,6 +72,12 @@ namespace GUI
 
             try
             {
+
+                if (TextBoxSoCa.Text == "")
+                {
+                    TextBoxSoCa.Text = "0";
+                }
+
                 NhanVienDTO updatedNhanVien = new NhanVienDTO(
                     textBoxMaNV.Text,
                     textBox_Ho.Text,
@@ -95,7 +103,6 @@ namespace GUI
             }
         }
 
-
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             try
@@ -116,7 +123,47 @@ namespace GUI
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void poisonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = poisonDataGridView1.Rows[e.RowIndex];
+                string maNV = row.Cells["MaNV"].Value.ToString();
+                LoadNhanVienDetails(maNV);
+            }
+        }
+        private void LoadNhanVienDetails(string maNV)
+        {
+            try
+            {
+                NhanVienDTO nhanVien = nhanVienBUS.GetNhanVienByMaNV(maNV);
+
+                if (nhanVien != null)
+                {
+                    textBoxMaNV.Text = nhanVien.MaNV;
+                    textBox_Ho.Text = nhanVien.HoNV;
+                    TextBox_Ten.Text = nhanVien.TenNV;
+                    dateTimeNgaySinh.Value = nhanVien.NgaySinh;
+                    comboBoxGioiTinh.SelectedItem = nhanVien.GioiTinh;
+                    TextBox_DiaChi.Text = nhanVien.DiaChi;
+                    dateTimeNgayTuyenDung.Value = nhanVien.NgayTuyenDung;
+                    TextBoxSoCa.Text = nhanVien.SoCa.ToString();
+                    textBox_MaCV.Text = nhanVien.MaCV;
+                    cyberTextBoxSDT.Text = nhanVien.SDT;
+                    cybelPassword.Text = nhanVien.Password;
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy nhân viên với mã: " + maNV);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải thông tin nhân viên: " + ex.Message);
+            }
+        }
+
+        private void comboBoxGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

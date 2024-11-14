@@ -54,16 +54,17 @@ namespace GUI
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(341, 419);
+            this.txtMaNV.Location = new System.Drawing.Point(350, 421);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(100, 22);
             this.txtMaNV.TabIndex = 2;
             // 
             // dtpNgayLam
             // 
-            this.dtpNgayLam.Location = new System.Drawing.Point(545, 419);
+            this.dtpNgayLam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayLam.Location = new System.Drawing.Point(612, 419);
             this.dtpNgayLam.Name = "dtpNgayLam";
-            this.dtpNgayLam.Size = new System.Drawing.Size(200, 22);
+            this.dtpNgayLam.Size = new System.Drawing.Size(133, 22);
             this.dtpNgayLam.TabIndex = 3;
             // 
             // btnThemCa
@@ -110,7 +111,7 @@ namespace GUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(295, 9);
+            this.label1.Location = new System.Drawing.Point(264, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(320, 38);
             this.label1.TabIndex = 7;
@@ -128,7 +129,7 @@ namespace GUI
             // labelMaNV
             // 
             this.labelMaNV.AutoSize = true;
-            this.labelMaNV.Location = new System.Drawing.Point(369, 390);
+            this.labelMaNV.Location = new System.Drawing.Point(377, 390);
             this.labelMaNV.Name = "labelMaNV";
             this.labelMaNV.Size = new System.Drawing.Size(48, 16);
             this.labelMaNV.TabIndex = 9;
@@ -137,7 +138,7 @@ namespace GUI
             // labelNgayLam
             // 
             this.labelNgayLam.AutoSize = true;
-            this.labelNgayLam.Location = new System.Drawing.Point(613, 390);
+            this.labelNgayLam.Location = new System.Drawing.Point(651, 390);
             this.labelNgayLam.Name = "labelNgayLam";
             this.labelNgayLam.Size = new System.Drawing.Size(65, 16);
             this.labelNgayLam.TabIndex = 10;

@@ -27,5 +27,9 @@ namespace BUS
         {
             dao.DeleteNhanVien(maNV);
         }
+        public NhanVienDTO GetNhanVienByMaNV(string maNV)
+        {
+            return dao.GetNhanVienByMaNV(maNV);
+        }
     }
 }
