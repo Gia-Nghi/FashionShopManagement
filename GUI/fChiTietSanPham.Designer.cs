@@ -31,6 +31,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.picture_SanPham = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox_NCC = new System.Windows.Forms.ComboBox();
+            this.comboBox_LSP = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.buttonXoa = new ReaLTaiizor.Controls.Button();
             this.buttonChinhSua = new ReaLTaiizor.Controls.Button();
             this.label_TenSanPham = new System.Windows.Forms.Label();
-            this.comboBox_LSP = new System.Windows.Forms.ComboBox();
-            this.comboBox_NCC = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_SanPham)).BeginInit();
             this.panel1.SuspendLayout();
@@ -104,7 +104,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(580, 620);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // comboBox_NCC
+            // 
+            this.comboBox_NCC.FormattingEnabled = true;
+            this.comboBox_NCC.Location = new System.Drawing.Point(238, 412);
+            this.comboBox_NCC.Name = "comboBox_NCC";
+            this.comboBox_NCC.Size = new System.Drawing.Size(294, 28);
+            this.comboBox_NCC.TabIndex = 21;
+            this.comboBox_NCC.SelectedIndexChanged += new System.EventHandler(this.comboBox_NCC_SelectedIndexChanged);
+            this.comboBox_NCC.Click += new System.EventHandler(this.comboBox_NCC_Click);
+            // 
+            // comboBox_LSP
+            // 
+            this.comboBox_LSP.FormattingEnabled = true;
+            this.comboBox_LSP.Location = new System.Drawing.Point(238, 352);
+            this.comboBox_LSP.Name = "comboBox_LSP";
+            this.comboBox_LSP.Size = new System.Drawing.Size(294, 28);
+            this.comboBox_LSP.TabIndex = 20;
+            this.comboBox_LSP.SelectedIndexChanged += new System.EventHandler(this.comboBox_LSP_SelectedIndexChanged);
+            this.comboBox_LSP.Click += new System.EventHandler(this.comboBox_LSP_Click);
             // 
             // label4
             // 
@@ -254,26 +273,6 @@
             this.label_TenSanPham.Text = "Áo len";
             this.label_TenSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox_LSP
-            // 
-            this.comboBox_LSP.FormattingEnabled = true;
-            this.comboBox_LSP.Location = new System.Drawing.Point(238, 352);
-            this.comboBox_LSP.Name = "comboBox_LSP";
-            this.comboBox_LSP.Size = new System.Drawing.Size(294, 28);
-            this.comboBox_LSP.TabIndex = 20;
-            this.comboBox_LSP.SelectedIndexChanged += new System.EventHandler(this.comboBox_LSP_SelectedIndexChanged);
-            this.comboBox_LSP.Click += new System.EventHandler(this.comboBox_LSP_Click);
-            // 
-            // comboBox_NCC
-            // 
-            this.comboBox_NCC.FormattingEnabled = true;
-            this.comboBox_NCC.Location = new System.Drawing.Point(238, 412);
-            this.comboBox_NCC.Name = "comboBox_NCC";
-            this.comboBox_NCC.Size = new System.Drawing.Size(294, 28);
-            this.comboBox_NCC.TabIndex = 21;
-            this.comboBox_NCC.SelectedIndexChanged += new System.EventHandler(this.comboBox_NCC_SelectedIndexChanged);
-            this.comboBox_NCC.Click += new System.EventHandler(this.comboBox_NCC_Click);
-            // 
             // fChiTietSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -296,7 +295,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label_TenSanPham;
         private System.Windows.Forms.PictureBox picture_SanPham;
         private ReaLTaiizor.Controls.Button buttonXoa;
         private ReaLTaiizor.Controls.Button buttonChinhSua;
@@ -312,5 +310,6 @@
         private System.Windows.Forms.TextBox textBox_Gia;
         private System.Windows.Forms.ComboBox comboBox_NCC;
         private System.Windows.Forms.ComboBox comboBox_LSP;
+        private System.Windows.Forms.Label label_TenSanPham;
     }
 }

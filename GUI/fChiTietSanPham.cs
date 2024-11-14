@@ -31,7 +31,7 @@ namespace GUI
             if (sanPhamData.Rows.Count > 0)
             {
                 DataRow row = sanPhamData.Rows[0];
-                label_TenSanPham.Text = row["TenSP"].ToString();
+                //label_TenSanPham.Text = row["TenSP"].ToString();
                 textBox_Ten.Text = row["TenSP"].ToString();
                 textBox_Gia.Text = row["DonGia"].ToString();
                 textBox_SL.Text = row["SL"].ToString();
@@ -146,11 +146,6 @@ namespace GUI
         private void comboBox_NCC_Click(object sender, EventArgs e)
         {
             LoadComboBoxSupplier();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
