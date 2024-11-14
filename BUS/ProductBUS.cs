@@ -23,9 +23,15 @@ namespace BUS
             return ProductDAO.Instance.GetAllProducts();
         }
 
-        public List<string> GetAllCategories()
+        
+        public DataTable GetAllCategories()
         {
             return ProductDAO.Instance.GetAllCategories();
+        }
+
+        public DataTable GetAllSupplier()
+        {
+            return ProductDAO.Instance.GetAllSupplier();
         }
 
         public List<Product> GetListProductByCategory(string category)
@@ -33,9 +39,35 @@ namespace BUS
             return ProductDAO.Instance.GetListProductByCategory(category);
         }
 
+
         public List<Product> SearchProductByNameOrCode(string searchText)
         {
             return ProductDAO.Instance.SearchProductByNameOrCode(searchText);
+        }
+
+        public bool ThemSanPham(Product sanPham)
+        {
+            return ProductDAO.Instance.ThemSanPham(sanPham);
+        }
+
+        public bool XoaSanPham(string maSP)
+        {
+            return ProductDAO.Instance.XoaSanPham(maSP);
+        }
+
+        public bool ChinhSuaSanPham(Product sanPham)
+        {
+            return ProductDAO.Instance.ChinhSuaSanPham(sanPham);
+        }
+
+        public List<Product> LocSanPhamTheoLoai(string maLoaiSP)
+        {
+            return ProductDAO.Instance.LocSanPhamTheoLoai(maLoaiSP);
+        }
+
+        public DataTable GetChiTietSanPhamByMaSP(string maSP)
+        {
+            return ProductDAO.Instance.GetChiTietSanPhamByMaSP(maSP);
         }
     }
 }

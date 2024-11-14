@@ -6,6 +6,8 @@ namespace DTO
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public string MaLoaiSP { get; set; }
+        public string TenLoaiSP { get; set; }
 
         public Category() { }
 

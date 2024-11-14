@@ -19,7 +19,8 @@ namespace DAO
         }
 
         private DataProvider() { }
-        private string connectionString = @"Data Source=ASUS-TUFGAMING;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
+        private string connectionString = @"Data Source=.;Initial Catalog=KVShop;Integrated Security=True";
+
      
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
