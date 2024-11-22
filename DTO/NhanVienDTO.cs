@@ -17,8 +17,7 @@ namespace DTO
         public string SDT { get; set; }
         public string Password { get; set; }
 
-        public NhanVienDTO() { }
-
+        // Constructor
         public NhanVienDTO(string maNV, string hoNV, string tenNV, DateTime ngaySinh, string gioiTinh, string diaChi, DateTime ngayTuyenDung, int soCa, int thuong, string maCV, string sdt, string password)
         {
             MaNV = maNV;

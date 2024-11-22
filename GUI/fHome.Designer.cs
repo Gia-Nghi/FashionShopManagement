@@ -26,7 +26,7 @@
         {
             this.MIDPL = new System.Windows.Forms.Panel();
             this.btn_NhanVien = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_CaiDat = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_PhanCa = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_SanPham = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_BaoCao = new ReaLTaiizor.Controls.PoisonTile();
             this.btn_KhachHang = new ReaLTaiizor.Controls.PoisonTile();
@@ -43,7 +43,10 @@
             this.MAILLLE = new ReaLTaiizor.Controls.LinkLabelEdit();
             this.BOTPLSR = new ReaLTaiizor.Controls.LostSeparator();
             this.STATELLE = new ReaLTaiizor.Controls.LinkLabelEdit();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.lbMaNV = new System.Windows.Forms.Label();
             this.MIDPL.SuspendLayout();
+            this.btn_SanPham.SuspendLayout();
             this.FILLPL.SuspendLayout();
             this.panel_Top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).BeginInit();
@@ -53,8 +56,9 @@
             // MIDPL
             // 
             this.MIDPL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MIDPL.Controls.Add(this.lbMaNV);
             this.MIDPL.Controls.Add(this.btn_NhanVien);
-            this.MIDPL.Controls.Add(this.btn_CaiDat);
+            this.MIDPL.Controls.Add(this.btn_PhanCa);
             this.MIDPL.Controls.Add(this.btn_SanPham);
             this.MIDPL.Controls.Add(this.btn_BaoCao);
             this.MIDPL.Controls.Add(this.btn_KhachHang);
@@ -90,33 +94,35 @@
             this.btn_NhanVien.UseTileImage = true;
             this.btn_NhanVien.Click += new System.EventHandler(this.btn_NhanVien_Click);
             // 
-            // btn_CaiDat
+            // btn_PhanCa
             // 
-            this.btn_CaiDat.ActiveControl = null;
-            this.btn_CaiDat.BackColor = System.Drawing.Color.White;
-            this.btn_CaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CaiDat.ForeColor = System.Drawing.Color.Black;
-            this.btn_CaiDat.Location = new System.Drawing.Point(520, 182);
-            this.btn_CaiDat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btn_CaiDat.Name = "btn_CaiDat";
-            this.btn_CaiDat.Size = new System.Drawing.Size(231, 141);
-            this.btn_CaiDat.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_CaiDat.TabIndex = 10;
-            this.btn_CaiDat.Text = "Cài đặt";
-            this.btn_CaiDat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_CaiDat.TileImage = global::GUI.Properties.Resources.cogwheel;
-            this.btn_CaiDat.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_CaiDat.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_CaiDat.UseCustomBackColor = true;
-            this.btn_CaiDat.UseCustomForeColor = true;
-            this.btn_CaiDat.UseSelectable = true;
-            this.btn_CaiDat.UseStyleColors = true;
-            this.btn_CaiDat.UseTileImage = true;
+            this.btn_PhanCa.ActiveControl = null;
+            this.btn_PhanCa.BackColor = System.Drawing.Color.White;
+            this.btn_PhanCa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_PhanCa.ForeColor = System.Drawing.Color.Black;
+            this.btn_PhanCa.Location = new System.Drawing.Point(520, 182);
+            this.btn_PhanCa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_PhanCa.Name = "btn_PhanCa";
+            this.btn_PhanCa.Size = new System.Drawing.Size(231, 141);
+            this.btn_PhanCa.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_PhanCa.TabIndex = 10;
+            this.btn_PhanCa.Text = "Phân ca";
+            this.btn_PhanCa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_PhanCa.TileImage = global::GUI.Properties.Resources.working;
+            this.btn_PhanCa.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_PhanCa.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_PhanCa.UseCustomBackColor = true;
+            this.btn_PhanCa.UseCustomForeColor = true;
+            this.btn_PhanCa.UseSelectable = true;
+            this.btn_PhanCa.UseStyleColors = true;
+            this.btn_PhanCa.UseTileImage = true;
+            this.btn_PhanCa.Click += new System.EventHandler(this.btn_PhanCa_Click);
             // 
             // btn_SanPham
             // 
             this.btn_SanPham.ActiveControl = null;
             this.btn_SanPham.BackColor = System.Drawing.Color.White;
+            this.btn_SanPham.Controls.Add(this.bigLabel1);
             this.btn_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SanPham.ForeColor = System.Drawing.Color.Black;
             this.btn_SanPham.Location = new System.Drawing.Point(34, 30);
@@ -439,6 +445,28 @@
             this.STATELLE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.STATELLE.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Location = new System.Drawing.Point(0, 0);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(0, 57);
+            this.bigLabel1.TabIndex = 0;
+            // 
+            // lbMaNV
+            // 
+            this.lbMaNV.AutoSize = true;
+            this.lbMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaNV.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lbMaNV.Location = new System.Drawing.Point(623, 16);
+            this.lbMaNV.Name = "lbMaNV";
+            this.lbMaNV.Size = new System.Drawing.Size(71, 20);
+            this.lbMaNV.TabIndex = 0;
+            this.lbMaNV.Text = "Mã NV:";
+            // 
             // fHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -452,6 +480,9 @@
             this.Text = "Quản lý cửa hàng thời trang";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             this.MIDPL.ResumeLayout(false);
+            this.MIDPL.PerformLayout();
+            this.btn_SanPham.ResumeLayout(false);
+            this.btn_SanPham.PerformLayout();
             this.FILLPL.ResumeLayout(false);
             this.panel_Top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).EndInit();
@@ -465,7 +496,7 @@
         private ReaLTaiizor.Controls.LabelEdit PROTECTLE;
         private System.Windows.Forms.Panel panel_Top;
         private ReaLTaiizor.Controls.PoisonTile btn_NhanVien;
-        private ReaLTaiizor.Controls.PoisonTile btn_CaiDat;
+        private ReaLTaiizor.Controls.PoisonTile btn_PhanCa;
         private ReaLTaiizor.Controls.PoisonTile btn_SanPham;
         private ReaLTaiizor.Controls.PoisonTile btn_BaoCao;
         private ReaLTaiizor.Controls.PoisonTile btn_KhachHang;
@@ -480,5 +511,7 @@
         private ReaLTaiizor.Controls.LinkLabelEdit MAILLLE;
         private ReaLTaiizor.Controls.LostSeparator BOTPLSR;
         private ReaLTaiizor.Controls.LinkLabelEdit STATELLE;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private System.Windows.Forms.Label lbMaNV;
     }
 }

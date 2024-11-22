@@ -277,6 +277,18 @@
     <Compile Include="fNhanVien.Designer.cs">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSuaCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaCa.Designer.cs">
+      <DependentUpon>FormSuaCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhanCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhanCa.Designer.cs">
+      <DependentUpon>fPhanCa.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaCa.resx">
+      <DependentUpon>FormSuaCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhanCa.resx">
+      <DependentUpon>fPhanCa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTaoDonHang.resx">
       <DependentUpon>fTaoDonHang.cs</DependentUpon>

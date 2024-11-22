@@ -17,6 +17,10 @@ namespace DAO
                 return instance;
             }
         }
+        public string GetConnectionString()
+        {
+            return connectionString;
+        }
 
         private DataProvider() { }
         private string connectionString = @"Data Source=LAPTOP-MDC7IR39\SA;Initial Catalog=KVShop;Integrated Security=True;Encrypt=False";
@@ -60,6 +64,7 @@ namespace DAO
 
                 if (parameter != null)
                 {
+                    query = query.Replace(",","");
                     string[] listPara = query.Split(' ');
                     int i = 0;
                     foreach (string item in listPara)

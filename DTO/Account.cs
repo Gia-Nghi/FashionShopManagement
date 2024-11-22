@@ -13,17 +13,12 @@ namespace DTO
             this.Password = password;
         }
 
-        public Account(string maNV, string displayName, int typeID, string password = null)
-        {
-            this.MaNV = maNV;
-            this.Password = password;
-        }
-
         public Account(DataRow row)
         {
             this.MaNV = row["MaNV"].ToString();
-            this.Password = row["Password"].ToString();
+            this.Password = row["Password"]?.ToString();
         }
+
         public bool IsValid()
         {
             return !string.IsNullOrWhiteSpace(MaNV) && !string.IsNullOrWhiteSpace(Password);

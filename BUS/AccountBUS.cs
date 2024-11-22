@@ -26,5 +26,4 @@ namespace BUS
             return AccountDAO.Instance.GetAccountByMaNV(maNV);
         }
     }
-
 }

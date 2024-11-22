@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class fChiTietHoaDon : Form
+    public partial class fSuaCa : Form
     {
-        public fChiTietHoaDon()
+        public fSuaCa()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void fSuaCa_Load(object sender, EventArgs e)
         {
 
         }

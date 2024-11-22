@@ -44,6 +44,7 @@
     <Compile Include="AccountType.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="BillInfo.cs" />
+    <Compile Include="CaLamViecDTO.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="Product.cs" />

@@ -22,7 +22,9 @@ namespace GUI
 
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+
         private Account loginAccount;
+
         public Account LoginAccount
         {
             get { return loginAccount; }
@@ -33,7 +35,18 @@ namespace GUI
         {
             InitializeComponent();
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+
             this.LoginAccount = loginAccount;
+            lbMaNV.Text = "Mã NV: " + this.LoginAccount.MaNV;
+        }
+
+        private void MOVE_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
         }
 
         private void SCANT_Click(object sender, EventArgs e)
@@ -51,14 +64,7 @@ namespace GUI
             Application.Exit();
             Environment.Exit(1);
         }
-        private void MOVE_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                _ = SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
+
 
         private void btn_SanPham_Click(object sender, EventArgs e)
         {
@@ -87,6 +93,12 @@ namespace GUI
         private void btn_BaoCao_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_PhanCa_Click(object sender, EventArgs e)
+        {
+            fPhanCa fPhanCa = new fPhanCa();
+            fPhanCa.Show();
         }
     }
 }
